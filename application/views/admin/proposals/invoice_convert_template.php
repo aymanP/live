@@ -1,0 +1,46 @@
+<div class="modal fade proposal-convert-modal" id="convert_to_invoice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <?php echo form_open('admin/proposals/convert_to_invoice/'.$proposal->id,array('id'=>'proposal_convert_to_invoice_form','class'=>'_transaction_form')); ?>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close dismiss-proposal-convert-modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">
+                    <span class="edit-title"><?php echo _l('proposal_convert_to_invoice'); ?></span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <?php $this->load->view('admin/invoices/invoice_template'); ?>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default dismiss-proposal-convert-modal"><?php echo _l('close'); ?></button>
+                <button type="submit" class="btn btn-info"><?php echo _l('submit'); ?></button>
+            </div>
+        </div>
+        <?php echo form_close(); ?>
+    </div>
+</div>
+<?php
+ if($proposal->rel_type == 'lead'){
+    $this->db->where('leadid',$proposal->rel_id);
+    $clientid = $this->db->get('tblclients')->row()->userid;
+} else {
+    $clientid = $proposal->rel_id;
+}
+?>
+<script>
+    init_selectpicker();
+    init_datepicker();
+    init_items_sortable();
+    init_items_search();
+    validate_invoice_form('#proposal_convert_to_invoice_form');
+    <?php if($proposal->assigned != 0){ ?>
+     $('#convert_to_invoice #sale_agent').selectpicker('val',<?php echo $proposal->assigned; ?>);
+    <?php } ?>
+    $('#convert_to_invoice #clientid').selectpicker('val',<?php echo $clientid; ?>);
+    $('#convert_to_invoice #clientid').change();
+</script>
+
