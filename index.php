@@ -3,7 +3,7 @@
  * CodeIgniter
  *
  * An open source application development framework for PHP
- *
+ *jjhgjhgjhgjhgjhg
  * This content is released under the MIT License (MIT)
  *
  * Copyright (c) 2014 - 2016, British Columbia Institute of Technology
@@ -86,6 +86,7 @@ switch (ENVIRONMENT)
 	default:
 		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
 		echo 'The application environment is not set correctly.';
+		echo " test " ; 
 		exit(1); // EXIT_ERROR
 }
 
