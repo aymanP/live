@@ -46,10 +46,22 @@
                         </div>
                       </div>
                       <div class="panel_s">
-                        <div class="panel-heading">
-                          <span class="client-profile-company"><?php echo $title; ?></span>
-                          <div class="clearfix"></div>
-                        </div>
+
+                          <div class="panel-heading">
+
+                            <span class="client-profile-company">
+                                <?php
+                                echo '<a href="' . admin_url('clients/client/' . $client->userid) . '">' . client_profile_image($client->userid, array('client-profile-image-small')) . '</a>';
+                                ?>
+                            </span>
+                              <span class="client-profile-company1">
+                              <?php echo $title;
+
+                              ?>
+                          </span>
+
+                              <div class="clearfix"></div>
+                          </div>
                         <div class="panel-body">
                           <?php if(isset($client)){ ?>
                             <?php echo form_hidden( 'isedit'); ?>

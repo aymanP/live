@@ -162,6 +162,7 @@
                         <?php
                             $table_data = array();
                             $_table_data = array(
+                                _l('settings_general_company_logo'),
                                 _l('clients_list_company'),
                                 _l('contact_primary'),
                                 _l('company_primary_email'),

@@ -36,6 +36,23 @@ class Utilities extends Admin_controller
         $data['title'] = _l('utility_activity_log');
         $this->load->view('admin/utilities/activity_log', $data);
     }
+    public function param_image(){
+
+        if($this->input->post()){
+            $dur = $this->input->post('duree');
+            $eff = $this->input->post('effect');
+            $pos = $this->input->post('position');
+            if(($this->input->post('active'))) {
+                $active = 1;
+            }
+            else
+                $active = 0;
+            $id = $this->input->post('id');
+            $this->utilities_model->set_param_image($id, $eff, $pos, $active);
+            //dump(generate_slider($dur));
+            redirect('http://localhost/CRM/live/admin/utilities/home_slider');
+        }
+    }
     /* All perfex activity log */
     public function pipe_log()
     {

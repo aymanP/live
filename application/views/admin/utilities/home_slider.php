@@ -56,6 +56,13 @@
 															<?php } ?>
 															<button type="button" data-toggle="modal" data-file-name="<?php echo $value['file_name']; ?>" data-filetype="<?php echo $value['filetype']; ?>" data-path="<?php echo $path; ?>" data-target="#rename" class="btn btn-default btn-icon"><i class="fa fa-pencil-square-o"></i></button>
 																<a href="<?php echo admin_url('utilities/delete_slider/'.$value['id']); ?>" class="btn btn-danger btn-icon _delete"><i class="fa fa-remove"></i></a>
+
+															<button type="button" data-toggle="modal" data-file-name="<?php echo $value['file_name']; ?>" data-filetype="<?php echo $value['filetype']; ?>" data-path="<?php echo $path; ?>" data-target="#rename" class="btn btn-info1 btn-icon" value="Caractéristiques">
+																<i class="fa fa-cog fa-lg" aria-hidden="true" name="Caractéristiques"></i> </button>
+
+															<a href="<?php echo "http://localhost/live/uploads/sliders/".$value['image']; ?>" class="btn btn-primary btn-icon" download>
+																<i class="fa fa-download" title="download"></i>
+															</a>
 														</td>
 
 													</tr>
@@ -64,6 +71,93 @@
 											</table>
 
 											<a href="#" onclick="save_menu();return false;" class="btn btn-info"><?php echo _l('utilities_save_slider_order'); ?></a>
+
+											<div class="modal fade in" id="rename" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="padding-left: 6px;">
+												<div class="modal-dialog modal-lg" role="document">
+													<div class="modal-content">
+														<?php echo form_open('admin/Utilities/param_image'); ?>
+														<form action="" id="rename_form" method="post" accept-charset="utf-8" novalidate="novalidate">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+																<h4 class="modal-title" id="myModalLabel">Modifier les caractéristiques de : <?php echo $value['name']; ?> </h4>
+															</div>
+															<div class="modal-body">
+																<div class="row">
+																	<div class="col-md-6">
+
+
+																		<div class="input-group">
+																			<label> Effect </label> &nbsp;
+																			<select class="form-control" id="effect" name="effect">
+																				<option value="linear">linear</option>
+																				<option value="ease">ease</option>
+																				<option value="ease-in">ease-in</option>
+																				<option value="ease-out">ease-out</option>
+																				<option value="ease-out">ease-in-out</option>
+																			</select>
+																			<!-- var index = document.getElementById('effect');
+																			var valeur = indexjour.options[select.selectedIndex].value; -->
+
+																		</div>
+																	</div>
+																</div> </br>
+																<div class="row">
+																	<div class="col-md-6">
+
+
+																		<div class="input-group">
+																			<label> Durée d'affichage </label> &nbsp;
+																			<select class="form-control" id="duree" name="duree">
+																				<option value="2"> 2 secondes</option>
+																				<option value="3"> 3 secondes</option>
+																				<option value="4"> 4 secondes</option>
+																				<option value="5"> 5 secondes</option>
+																				<option value="6"> 6 secondes</option>
+																				<option value="15"> 15 secondes</option>
+
+																			</select>
+																			<!-- var index = document.getElementById('effect');
+																			var valeur = indexjour.options[select.selectedIndex].value;-->
+
+																		</div>
+																	</div>
+																</div> </br>
+																<div class="row">
+																	<div class="col-md-6">
+
+																		<div class="input-group">
+																			<label> Position </label>
+																			<input type="hidden" name="id" value="<?php echo $value['id']; ?>" />
+																			<input type="text" class="form-control" placeholder="Tapez ici ..." name="position" value="" />
+																			<?php echo $this->input->post('position');?>
+																		</div>
+																	</div>
+																</div> </br>
+
+																<div class="row">
+																	<div class="col-md-6">
+
+																		<div class="input-group">
+																			<input type="checkbox" id="cbox2" value="deuxieme_checkbox" name="active" > &nbsp;<label for="cbox2">  Active  </label>
+																			<?php
+																			if (isset($_POST['active']))
+																				$active = 1;
+																			else
+																				$active = 2;
+																			?>
+
+																		</div>
+																	</div>
+																</div> </br>
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+																<button type="submit" class="btn btn-info" data-loading-text="Please wait..." autocomplete="off" data-form="#rename_form">Enregistrer</button>
+															</div>
+														</form> <?php echo form_close(); ?>        </div>
+												</div>
+
+											</div>
 
 
 										</div>

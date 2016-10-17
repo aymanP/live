@@ -294,5 +294,30 @@ class Utilities_model extends CRM_Model
 
             return $this->db->update('tblsliders');
     }
+    public function set_param_image($id, $eff = null, $pos = null, $act = null){
+
+        if($eff == null && $pos == null && $act == null)
+        {
+            return false;
+        }
+
+        if($eff != null)
+        {
+            $this->db->set('effect', $eff);
+        }
+        if($pos != null)
+        {
+            $this->db->set('position', $pos);
+        }
+        if($act != null)
+        {
+            $this->db->set('active', $act);
+        }
+
+        //	La condition
+        $this->db->where('id', (int) $id);
+
+        return $this->db->update('tblsliders');
+    }
 
 }

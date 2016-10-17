@@ -479,7 +479,7 @@ $lang['settings_email_password']  = 'Mot de passe SMTP';
 $lang['settings_email_charset']   = 'Type d\'encodage';
 $lang['settings_email_signature'] = 'Signature Email';
 
-$lang['settings_general_company_logo']                = 'Logo de la société';
+$lang['settings_general_company_logo']                = '     ';
 $lang['settings_general_company_logo_tooltip']        = 'Dimensions recommandées : 150 x 34px';
 $lang['settings_general_company_remove_logo_tooltip'] = 'Retirer le logo';
 $lang['settings_general_company_name']                = 'Nom de la société';

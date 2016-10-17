@@ -5,7 +5,7 @@ $custom_fields = get_custom_fields('customers', array(
     'show_on_table' => 1
 ));
 
-$aColumns = array(
+$aColumns = array('tblclients.profile_image',
     'company',
     'tblcontacts.id',
     'tblcontacts.email',
@@ -135,11 +135,16 @@ foreach ($rResult as $aRow) {
                 }
             }
         }else if ($aColumns[$i] == 'company') {
-           $_data = '<a href="' . admin_url('clients/client/' . $aRow['userid']) . '">' . client_profile_image($aRow['userid'], array(
+
+            $_data .= ' <a href="' . admin_url('clients/client/' . $aRow['userid']) . '">' . $aRow['company'] . '</a>';
+        }else if ($aColumns[$i] == 'tblclients.profile_image')
+        {
+            $_data = '<a href="' . admin_url('clients/client/' . $aRow['userid']) . '">' . client_profile_image($aRow['userid'], array(
                     'client-profile-image-small'
                 )) . '</a>';
-            $_data .= ' <a href="' . admin_url('clients/client/' . $aRow['userid']) . '">' . $aRow['company'] . '</a>';
-        } else if ($aColumns[$i] == 'phonenumber') {
+
+        }
+        else if ($aColumns[$i] == 'phonenumber') {
             $_data = '<a href="tel:' . $_data . '">' . $_data . '</a>';
         } else if ($aColumns[$i] == $aColumns[2]) {
             $_data = '<a href="mailto:' . $_data . '">' . $_data . '</a>';

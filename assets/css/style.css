@@ -4224,6 +4224,11 @@ ul.dt-button-collection.dropdown-menu {
   position: relative;
   top: -3px;
 }
+.client-profile-company1 {
+    margin-left: 38cm;
+    display: inline-block;
+    font-size: 22px;
+}
 .email-template-heading {
     padding:10px;
     background-color: #fbfbfb;
