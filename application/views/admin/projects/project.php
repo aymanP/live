@@ -139,7 +139,7 @@
                         <p class="bold"><?php echo _l('project_description'); ?></p>
                         <?php $contents = ''; if(isset($project)){$contents = $project->description;} ?>
                         <?php echo render_textarea('description','',$contents,array(),array(),'','tinymce'); ?>
-                        <button type="submit" data-form="#project_form" class="btn btn-info pull-right" autocomplete="off" data-loading-text="<?php echo _l('wait_text'); ?>"><?php echo _l('submit'); ?></button>
+                        <button type="submit" data-form="#project_form" class="btn btn-info pull-right" autocomplete="off" data-loading-text="<?php echo _l('wait_text'); ?>"><?php echo _l('submit');echo $project_contacts; ?></button>
                     </div>
                 </div>
             </div>

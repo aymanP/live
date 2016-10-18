@@ -5,7 +5,18 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">
-                    <?php echo _l('invoice_send_to_client_modal_heading'); ?>
+                    <?php echo _l('invoice_send_to_client_modal_heading');
+                   // echo ($invoice->project_id);
+                    $contac = $this->clients_model->get_contact_project($invoice->project_id);
+                    $contacts = $this->clients_model->get_contacts($invoice->clientid);
+
+                    //echo $invoice->id;
+                   // print_r ($contac);
+                    //echo 'contacts';
+                    //print_r($contacts);
+                    //if( has_contact_permission('invoices',$contac['id'])) echo 'tata';
+
+                    ?>
                 </h4>
             </div>
             <div class="modal-body">
@@ -15,7 +26,8 @@
                             <?php
                                 $selected = array();
                                 $contacts = $this->clients_model->get_contacts($invoice->clientid);
-                                foreach($contacts as $contact){
+                                $contac = $this->clients_model->get_contact_project($invoice->project_id);
+                                foreach($contac as $contact){
                                     if(has_contact_permission('invoices',$contact['id'])){
                                         array_push($selected,$contact['id']);
                                     }
@@ -52,7 +64,7 @@
                 <?php } ?>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo _l('close'); ?></button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo _l('close'); echo $project_id; ?></button>
                 <button type="submit" autocomplete="off" data-loading-text="<?php echo _l('wait_text'); ?>" class="btn btn-info"><?php echo _l('send'); ?></button>
             </div>
         </div>

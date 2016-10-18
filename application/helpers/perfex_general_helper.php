@@ -396,11 +396,10 @@ function has_contact_permission($permission, $userid = '')
         $_userid = $userid;
     }
     foreach ($permissions as $_permission) {
-        if ($_permission['short_name'] == $permission) {
-            if (total_rows('tblcontactpermissions', array(
-                'permission_id' => $_permission['id'],
-                'userid' => $_userid
-            )) > 0) {
+        if ($_permission['short_name'] == $permission)
+        {
+            if (total_rows('tblcontactpermissions', array('permission_id' => $_permission['id'], 'userid' => $_userid)) > 0)
+            {
                 return true;
             }
         }
