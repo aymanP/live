@@ -705,3 +705,595 @@ ERROR - 2016-10-18 11:12:59 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-18 11:12:59 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-18 11:13:00 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-18 11:13:00 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:21:54 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:21:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:21:55 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:21:55 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:21:55 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:44:05 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:44:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:44:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:44:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:44:06 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:44:09 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:44:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:44:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:44:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:44:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:44:16 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:44:16 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:44:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:44:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:44:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:44:23 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:44:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:44:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:44:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:44:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:45:10 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:45:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:45:14 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:45:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:45:22 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:45:22 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 11:45:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:45:43 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'test_sanaa', `clientid` = '3', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '2', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = '4.00', `start_date` = '2016-10-17', `deadline` = '2016-10-31', `description` = 'projet test'
+WHERE `id` = '5'
+ERROR - 2016-10-18 13:45:44 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:45:44 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:45 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:45 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:45 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:45:52 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:45:52 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:52 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:52 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:45:52 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:46:56 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:46:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:46:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:46:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:46:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:48:19 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:48:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:48:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:48:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:48:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:49:49 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:49:49 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:49:50 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:49:50 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:49:50 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:51:13 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:51:13 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:51:13 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:51:13 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:51:13 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:53:46 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:53:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:53:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:53:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:53:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:54:23 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:54:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:54:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:54:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:54:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:56:27 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:56:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:56:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:56:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:56:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:57:38 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:57:39 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:57:39 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:57:39 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:57:39 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:57:42 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:57:42 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:57:42 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:57:42 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:57:42 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:33 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:59:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:59:34 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:59:34 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:59:34 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:37 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:59:37 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:59:38 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:59:38 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:59:38 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:54 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 11:59:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:59:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:59:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 11:59:55 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:00 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 12:00:00 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:00:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:00:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:00:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:04 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 12:00:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:00:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:00:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:00:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:47 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 12:01:47 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:01:47 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:01:47 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:01:47 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:02:25 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 12:02:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:02:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:02:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:02:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:02:55 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 12:02:55 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:02:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:02:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 12:02:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:02:07 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:02:07 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:02:07 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:02:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:02:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:03:21 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:03:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:03:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:03:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:03:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:04:35 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:04:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:04:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:04:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:04:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:05:05 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:05:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:05:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:05:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:05:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:06:02 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:06:02 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:02 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:02 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:02 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:06:06 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:06:06 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:06 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:06 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:06 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:06:11 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:06:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:06:21 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:06:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:06:27 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:06:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:06:32 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:06:32 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:06:58 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:06:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:59 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:59 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:06:59 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:07:04 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:07:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:07:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:07:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:07:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:07:09 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:07:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:07:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:07:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:07:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:07:19 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:07:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:07:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:07:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:07:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:07:54 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:07:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:07:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:07:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:07:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:08:05 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:08:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:08:06 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:08:06 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:08:06 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:08:14 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:08:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:08:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:08:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:08:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:08:25 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:08:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:08:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:08:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:08:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:08:43 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:08:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:08:44 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:08:44 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:08:44 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:24:29 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:24:29 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:24:30 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:24:30 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:24:30 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:35:08 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:35:08 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 13:35:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:35:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:35:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:35:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:56:59 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'Testing contact see project', `clientid` = '2', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '3', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = 0, `start_date` = '2016-09-14', `deadline` = '2016-09-16', `description` = ''
+WHERE `id` = '3'
+ERROR - 2016-10-18 15:57:01 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:57:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:57:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:57:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:57:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:57:43 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:57:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:57:44 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:57:44 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:57:44 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:57:49 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:57:49 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 13:57:49 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:57:49 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:57:49 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:57:49 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:58:00 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp\www\CRM\live\application\models\Projects_model.php 69
+ERROR - 2016-10-18 15:58:01 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:58:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:58:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:58:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:58:02 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:58:37 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:58:37 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 13:58:37 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:58:37 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:58:37 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:58:37 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:58:49 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'Testing contact see project', `clientid` = '2', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '3', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = 0, `start_date` = '2016-09-14', `deadline` = '2016-09-16', `description` = ''
+WHERE `id` = '3'
+ERROR - 2016-10-18 15:58:50 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:58:51 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:58:51 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:58:51 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:58:51 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:58:56 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:58:56 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 13:58:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:58:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:58:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:58:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:12 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'Testing contact see project', `clientid` = '1', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '3', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = 0, `start_date` = '2016-09-14', `deadline` = '2016-09-16', `description` = ''
+WHERE `id` = '3'
+ERROR - 2016-10-18 15:59:13 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:59:13 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:18 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:59:18 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 13:59:18 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:52 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:59:52 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 13:59:52 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:53 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:53 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:53 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:56 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 13:59:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 13:59:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:00:04 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:00:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:00:14 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:00:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:00:21 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:00:21 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 14:00:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:00:32 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'Testing contact see project', `clientid` = '1', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '3', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = 0, `start_date` = '2016-09-14', `deadline` = '2016-09-16', `description` = ''
+WHERE `id` = '3'
+ERROR - 2016-10-18 16:00:34 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:00:34 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:34 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:34 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:34 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:00:42 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:00:42 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 14:00:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:00:52 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'Testing contact see project', `clientid` = '3', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '3', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = 0, `start_date` = '2016-09-14', `deadline` = '2016-09-16', `description` = ''
+WHERE `id` = '3'
+ERROR - 2016-10-18 16:00:54 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:00:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:00:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:01:14 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:01:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:01:20 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:01:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:01:27 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:01:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:01:36 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:01:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:01:40 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:01:40 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 14:01:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:41 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:41 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:41 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:01:56 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'test_sanaa', `clientid` = '2', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '2', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = '4.00', `start_date` = '2016-10-17', `deadline` = '2016-10-31', `description` = 'projet test'
+WHERE `id` = '5'
+ERROR - 2016-10-18 16:01:57 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:01:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:01:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:02:12 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:02:12 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 14:02:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:02:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:02:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:02:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:02:25 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'test_sanaa', `clientid` = '2', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '2', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = '4.00', `start_date` = '2016-10-17', `deadline` = '2016-10-31', `description` = 'projet test'
+WHERE `id` = '5'
+ERROR - 2016-10-18 16:02:26 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:03:06 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:03:56 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:04:08 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:04:08 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 16:04:18 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'Testing contact see project', `clientid` = '1', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '3', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = 0, `start_date` = '2016-09-14', `deadline` = '2016-09-16', `description` = ''
+WHERE `id` = '3'
+ERROR - 2016-10-18 16:04:20 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:04:25 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:04:25 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 16:04:34 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'Testing contact see project', `clientid` = '1', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '3', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = 0, `start_date` = '2016-09-14', `deadline` = '2016-09-16', `description` = ''
+WHERE `id` = '3'
+ERROR - 2016-10-18 16:04:35 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:04:40 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:04:51 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:04:57 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:05:12 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:05:19 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:05:26 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:05:26 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 16:05:35 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'Testing contact see project', `clientid` = '1', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '3', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = 0, `start_date` = '2016-09-14', `deadline` = '2016-09-16', `description` = ''
+WHERE `id` = '3'
+ERROR - 2016-10-18 16:05:36 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:10:08 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:10:08 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 16:10:16 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp\www\CRM\live\application\models\Projects_model.php 69
+ERROR - 2016-10-18 16:10:17 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:10:23 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:10:23 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 16:10:28 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp\www\CRM\live\application\models\Projects_model.php 69
+ERROR - 2016-10-18 16:10:29 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:10:35 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:10:35 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 16:10:42 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'Testing contact see project', `clientid` = '2', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '3', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = 0, `start_date` = '2016-09-14', `deadline` = '2016-09-16', `description` = ''
+WHERE `id` = '3'
+ERROR - 2016-10-18 16:10:43 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:10:49 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:10:49 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 16:11:00 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'Testing contact see project', `clientid` = '2', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '3', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = 0, `start_date` = '2016-09-14', `deadline` = '2016-09-16', `description` = ''
+WHERE `id` = '3'
+ERROR - 2016-10-18 16:11:01 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:11:06 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:11:06 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 16:11:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp\www\CRM\live\application\models\Projects_model.php 69
+ERROR - 2016-10-18 16:11:12 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:11:26 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:11:32 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:11:32 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 16:11:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp\www\CRM\live\application\models\Projects_model.php 69
+ERROR - 2016-10-18 16:11:39 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:11:44 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:11:49 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:11:49 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 16:11:57 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp\www\CRM\live\application\models\Projects_model.php 69
+ERROR - 2016-10-18 16:11:58 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:12:03 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:12:07 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:12:07 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 16:12:25 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'Testing contact see project', `clientid` = '1', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '3', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = 0, `start_date` = '2016-09-14', `deadline` = '2016-09-16', `description` = ''
+WHERE `id` = '3'
+ERROR - 2016-10-18 16:12:26 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:12:44 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:13:02 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:13:59 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:14:04 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:14:08 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:15:37 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:16:03 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:16:18 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:18:49 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:18:49 --> Could not find the language line "Contact"
+ERROR - 2016-10-18 16:19:14 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: UPDATE `tblprojects` SET `name` = 'test_sanaa', `clientid` = '2', `contactid` = Array, `progress_from_tasks` = 1, `progress` = '100', `billing_type` = '2', `status` = '2', `project_cost` = 0, `project_rate_per_hour` = '4.00', `start_date` = '2016-10-17', `deadline` = '2016-10-31', `description` = 'projet test'
+WHERE `id` = '5'
+ERROR - 2016-10-18 16:19:16 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:22:30 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:23:21 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\wamp\www\CRM\live\system\libraries\Email.php 1862
+ERROR - 2016-10-18 16:23:23 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\wamp\www\CRM\live\system\libraries\Email.php 1862
+ERROR - 2016-10-18 16:23:24 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:23:44 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:23:50 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:23:58 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:24:02 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:24:47 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:25:17 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:27:06 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-18 16:27:06 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-18 14:27:06 --> 404 Page Not Found: Uploads/sliders
+ERROR - 2016-10-18 16:27:13 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-18 16:27:13 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-18 14:27:13 --> 404 Page Not Found: Uploads/sliders
+ERROR - 2016-10-18 16:27:17 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:27:27 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:27:33 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:27:39 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:27:39 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:27:39 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:27:39 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:39:35 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:39:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:39:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:39:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:39:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:40:20 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:40:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:40:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:40:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:40:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:40:50 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:40:50 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:40:50 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:40:50 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:40:50 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:43:13 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:43:13 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:43:13 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:43:13 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:43:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:54:04 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:54:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:54:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:54:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:54:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:54:31 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 14:54:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:54:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:54:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 14:54:32 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:25:36 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:25:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:25:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:25:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:25:37 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:27:17 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:27:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:27:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:27:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:27:18 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:35:46 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 17:36:19 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:36:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:36:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:36:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:36:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:37:27 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:37:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:37:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:37:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:37:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:39:45 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:39:45 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:39:45 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:39:45 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:39:45 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:50:19 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:50:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:50:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:50:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:50:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:51:32 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:51:32 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:51:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:51:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:51:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:52:23 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:52:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:52:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:52:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:52:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:58:45 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:58:45 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:58:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:58:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:58:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:59:09 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:59:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:59:13 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:59:13 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:59:19 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:59:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:59:27 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:59:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:59:31 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:59:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 17:59:44 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\wamp\www\CRM\live\system\libraries\Email.php 1862
+ERROR - 2016-10-18 17:59:45 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 15:59:45 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 15:59:46 --> 404 Page Not Found: Assets/plugins

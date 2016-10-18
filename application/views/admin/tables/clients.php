@@ -32,7 +32,8 @@ $filter = array();
 // Filter by custom groups
 $groups = $this->_instance->clients_model->get_groups();
 $_groups = array();
-foreach($groups as $group){
+foreach($groups as $group)
+{
     if($this->_instance->input->post('customer_group_'.$group['id'])){
         array_push($_groups,$group['id']);
     }
@@ -42,17 +43,21 @@ if(count($_groups) > 0){
 }
 // Filter by invoices
 $_invoice_statuses = array();
-foreach(array(1,2,3,4) as $status){
-     if($this->_instance->input->post('invoices_'.$status)){
+foreach(array(1,2,3,4) as $status)
+{
+     if($this->_instance->input->post('invoices_'.$status))
+     {
         array_push($_invoice_statuses,$status);
      }
 }
-if(count($_invoice_statuses) > 0){
+if(count($_invoice_statuses) > 0)
+{
     array_push($filter, 'OR tblclients.userid IN (SELECT clientid FROM tblinvoices WHERE status IN (' . implode(', ',$_invoice_statuses) . '))');
 }
 // Filter by estimates
 $_estimate_statuses = array();
-foreach(array(1,2,3,4) as $status){
+foreach(array(1,2,3,4) as $status)
+{
      if($this->_instance->input->post('estimates_'.$status)){
         array_push($_estimate_statuses,$status);
      }
@@ -63,8 +68,10 @@ if(count($_estimate_statuses) > 0){
 // Filter by projects
 $_projects = array();
 $this->_instance->load->model('projects_model');
-foreach($this->_instance->projects_model->get_project_statuses() as $status){
-     if($this->_instance->input->post('projects_'.$status)){
+foreach($this->_instance->projects_model->get_project_statuses() as $status)
+{
+     if($this->_instance->input->post('projects_'.$status))
+     {
         array_push($_projects,$status);
      }
 }
@@ -73,12 +80,15 @@ if(count($_projects) > 0){
 }
 // Filter by proposals
 $_proposals = array();
-foreach(array(1,2,3,4,5) as $status){
-     if($this->_instance->input->post('proposals_'.$status)){
+foreach(array(1,2,3,4,5) as $status)
+{
+     if($this->_instance->input->post('proposals_'.$status))
+     {
         array_push($_proposals,$status);
      }
 }
-if(count($_proposals) > 0){
+if(count($_proposals) > 0)
+{
     array_push($where, 'OR tblclients.userid IN (SELECT rel_id FROM tblproposals WHERE status IN (' . implode(', ',$_proposals) . ') AND rel_type="customer")');
 }
 // Filter by having contracts by type
@@ -119,24 +129,29 @@ foreach ($rResult as $aRow) {
 
     $row = array();
 
-    for ($i = 0; $i < count($aColumns); $i++) {
-        if (strpos($aColumns[$i], 'as') !== false && !isset($aRow[$aColumns[$i]])) {
+    for ($i = 0; $i < count($aColumns); $i++)
+    {
+        if (strpos($aColumns[$i], 'as') !== false && !isset($aRow[$aColumns[$i]]))
+        {
             $_data = $aRow[strafter($aColumns[$i], 'as ')];
         } else {
             $_data = $aRow[$aColumns[$i]];
         }
 
-        if ($i == 4) {
-            if ($_data != '') {
+        if ($i == 4)
+        {
+            if ($_data != '')
+            {
                 $groups = explode(',', $_data);
                 $_data  = '';
-                foreach ($groups as $group) {
+                foreach ($groups as $group)
+                {
                     $_data .= '<span class="label label-default mleft5 inline-block">' . $group . '</span>';
                 }
             }
         }else if ($aColumns[$i] == 'company') {
 
-            $_data .= ' <a href="' . admin_url('clients/client/' . $aRow['userid']) . '">' . $aRow['company'] . '</a>';
+            $_data = ' <a href="' . admin_url('clients/client/' . $aRow['userid']) . '">' . $aRow['company'] . '</a>';
         }else if ($aColumns[$i] == 'tblclients.profile_image')
         {
             $_data = '<a href="' . admin_url('clients/client/' . $aRow['userid']) . '">' . client_profile_image($aRow['userid'], array(
@@ -151,7 +166,8 @@ foreach ($rResult as $aRow) {
         } else if($i == 1){
             // primary contact add link
             $_data = '<a href="'.admin_url('clients/client/'.$aRow['userid'].'?contactid='.get_primary_contact_user_id($aRow['userid'])).'" target="_blank">'.$aRow['firstname']. ' ' .$aRow['lastname']. '</a>';
-        } else if ($aColumns[$i] == 'actif') {
+        } else if ($aColumns[$i] == 'actif')
+        {
              $checked = '';
              if ($aRow['actif'] == 1) {
                  $checked = 'checked';
@@ -159,7 +175,8 @@ foreach ($rResult as $aRow) {
              $_data = '<input type="checkbox" class="switch-box input-xs" data-size="mini" data-id="' . $aRow['userid'] . '" data-switch-url="'.ADMIN_URL.'/clients/change_clients_status" ' . $checked . '>';
              // For exporting
              $_data .=  '<span class="hide">' . ($checked == 'checked' ? _l('is_active_export') : _l('is_not_active_export')) .'</span>';
-        } else if ($aColumns[$i] == 'mode_alami') {
+        } else if ($aColumns[$i] == 'mode_alami')
+        {
             $checked = '';
             if ($aRow['mode_alami'] == 1) {
                 $checked = 'checked';
@@ -173,7 +190,8 @@ foreach ($rResult as $aRow) {
 
     $options = '';
     $options .= icon_btn('clients/client/' . $aRow['userid'], 'pencil-square-o');
-    if(has_permission('customers','','delete')){
+    if(has_permission('customers','','delete'))
+    {
          $options .= icon_btn('clients/delete/' . $aRow['userid'], 'remove', 'btn-danger _delete', array(
             'data-toggle' => 'tooltip',
             'data-placement' => 'left',

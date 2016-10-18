@@ -9,11 +9,16 @@
                    // echo ($invoice->project_id);
                     $contac = $this->clients_model->get_contact_project($invoice->project_id);
                     $contacts = $this->clients_model->get_contacts($invoice->clientid);
+                    $primar = $this->clients_model->get_contact_primary($invoice->clientid);
 
                     //echo $invoice->id;
-                   // print_r ($contac);
-                    //echo 'contacts';
-                    //print_r($contacts);
+                   //print_r ($primar);
+                    foreach($primar as $p)
+                    {
+                        echo $p['email_cc'];
+                    }
+
+                    //print_r($contac);
                     //if( has_contact_permission('invoices',$contac['id'])) echo 'tata';
 
                     ?>
@@ -26,10 +31,18 @@
                             <?php
                                 $selected = array();
                                 $contacts = $this->clients_model->get_contacts($invoice->clientid);
+                                $primar = $this->clients_model->get_contact_primary($invoice->clientid);
                                 $contac = $this->clients_model->get_contact_project($invoice->project_id);
                                 foreach($contac as $contact){
                                     if(has_contact_permission('invoices',$contact['id'])){
                                         array_push($selected,$contact['id']);
+                                    }
+                                }
+                                foreach($primar as $p)
+                                {
+                                    if( $p['email_cc'] == 1);
+                                    {
+                                        array_push($selected,$p['id']);
                                     }
                                 }
                                 echo render_select('sent_to[]',$contacts,array('id','email','firstname,lastname'),'invoice_estimate_sent_to_email',$selected,array('multiple'=>true),array(),'','',false);
