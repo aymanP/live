@@ -57,7 +57,7 @@
 															<button type="button" data-toggle="modal" data-file-name="<?php echo $value['file_name']; ?>" data-filetype="<?php echo $value['filetype']; ?>" data-path="<?php echo $path; ?>" data-target="#rename" class="btn btn-default btn-icon"><i class="fa fa-pencil-square-o"></i></button>
 																<a href="<?php echo admin_url('utilities/delete_slider/'.$value['id']); ?>" class="btn btn-danger btn-icon _delete"><i class="fa fa-remove"></i></a>
 
-															<button type="button" data-toggle="modal" data-file-name="<?php echo $value['file_name']; ?>" data-filetype="<?php echo $value['filetype']; ?>" data-path="<?php echo $path; ?>" data-target="#rename" class="btn btn-info1 btn-icon" value="Caractéristiques">
+															<button type="button" data-toggle="modal" data-file-name="<?php echo $value['file_name']; ?>" data-filetype="<?php echo $value['filetype']; ?>" data-path="<?php echo $path; ?>" data-target="#carac" class="btn btn-info1 btn-icon" value="Caractéristiques">
 																<i class="fa fa-cog fa-lg" aria-hidden="true" name="Caractéristiques"></i> </button>
 
 															<a href="<?php echo "http://localhost/live/uploads/sliders/".$value['image']; ?>" class="btn btn-primary btn-icon" download>
@@ -72,11 +72,11 @@
 
 											<a href="#" onclick="save_menu();return false;" class="btn btn-info"><?php echo _l('utilities_save_slider_order'); ?></a>
 
-											<div class="modal fade in" id="rename" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="padding-left: 6px;">
+											<div class="modal fade in" id="carac" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="padding-left: 6px;">
 												<div class="modal-dialog modal-lg" role="document">
 													<div class="modal-content">
 														<?php echo form_open('admin/Utilities/param_image'); ?>
-														<form action="" id="rename_form" method="post" accept-charset="utf-8" novalidate="novalidate">
+														<form action="" id="carac_form" method="post" accept-charset="utf-8" novalidate="novalidate">
 															<div class="modal-header">
 																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
 																<h4 class="modal-title" id="myModalLabel">Modifier les caractéristiques de : <?php echo $value['name']; ?> </h4>
@@ -152,7 +152,7 @@
 															</div>
 															<div class="modal-footer">
 																<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-																<button type="submit" class="btn btn-info" data-loading-text="Please wait..." autocomplete="off" data-form="#rename_form">Enregistrer</button>
+																<button type="submit" class="btn btn-info" data-loading-text="Please wait..." autocomplete="off" data-form="#carac_form">Enregistrer</button>
 															</div>
 														</form> <?php echo form_close(); ?>        </div>
 												</div>

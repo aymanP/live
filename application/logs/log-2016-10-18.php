@@ -1297,3 +1297,43 @@ ERROR - 2016-10-18 15:59:45 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-18 15:59:46 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-18 15:59:46 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-18 15:59:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 18:06:20 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:06:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:06:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:06:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:06:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 18:06:31 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:06:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:06:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:06:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:06:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 18:06:35 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:06:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:06:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:06:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:06:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 18:06:40 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:06:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:06:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:06:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:06:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 18:11:33 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:11:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:11:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:11:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:11:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 18:25:07 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:25:07 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:25:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:25:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:25:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 18:27:46 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:27:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:27:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:27:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:27:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 18:32:16 --> Could not find the language line "Home slider"
+ERROR - 2016-10-18 16:32:16 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:32:16 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:32:16 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-18 16:32:16 --> 404 Page Not Found: Assets/plugins

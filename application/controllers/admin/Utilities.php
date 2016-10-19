@@ -19,7 +19,7 @@ class Utilities extends Admin_controller
         $rename = $this->input->post('rename');
         $id = $this->input->post('id');
         $this->utilities_model->rename_image($id,$rename);
-            redirect('http://[::1]/live/admin/utilities/home_slider');
+            redirect('http://localhost/CRM/live/admin/utilities/home_slider');
         }
     }
 

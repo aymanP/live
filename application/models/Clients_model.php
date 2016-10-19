@@ -68,6 +68,12 @@ class Clients_model extends CRM_Model
         $this->db->where('id', $proj->contactid);
         return $this->db->get('tblcontacts')->result_array();
     }
+    public function get_project($id)
+    {
+        $this->db->where('id', $id);
+        return $this->db->get('tblprojects')->result_array();
+
+    }
     public function get_contact_primary($id)
     {
         $val =1;

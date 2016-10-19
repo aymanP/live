@@ -6,7 +6,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">
                     <?php echo _l('invoice_send_to_client_modal_heading');
-                   // echo ($invoice->project_id);
+                   /* echo ($invoice->project_id);
                     $contac = $this->clients_model->get_contact_project($invoice->project_id);
                     $contacts = $this->clients_model->get_contacts($invoice->clientid);
                     $primar = $this->clients_model->get_contact_primary($invoice->clientid);
@@ -20,7 +20,7 @@
 
                     //print_r($contac);
                     //if( has_contact_permission('invoices',$contac['id'])) echo 'tata';
-
+*/
                     ?>
                 </h4>
             </div>
@@ -46,6 +46,7 @@
                                     }
                                 }
                                 echo render_select('sent_to[]',$contacts,array('id','email','firstname,lastname'),'invoice_estimate_sent_to_email',$selected,array('multiple'=>true),array(),'','',false);
+                            //print_r($selected);
 
                                 ?>
                         </div>
