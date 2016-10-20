@@ -175,23 +175,39 @@
 <div class="modal fade in" id="rename" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="padding-left: 6px;">
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
-			<?php echo form_open('admin/Utilities/rename_image'); ?>
+			<?php echo form_open('admin/Utilities/update_image'); ?>
 			<form action="" id="rename_form" method="post" accept-charset="utf-8" novalidate="novalidate">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-					<h4 class="modal-title" id="myModalLabel">Renommer l'image  : <?php echo $value['name']; ?> </h4>
+					<h4 class="modal-title" id="myModalLabel">Modifier l'image <?php echo $value['name']; ?> </h4>
 				</div>
 				<div class="modal-body">
 					<div class="row">
 						<div class="col-md-6">
 
 							<div class="input-group">
+								<label for="rename">Renommer l'image :</label>
 								<input type="hidden" name="id" value="<?php echo $value['id']; ?>" />
 								<input type="text" class="form-control" placeholder="Tapez ici ..." name="rename" value="" />
 								<?php echo form_error('rename'); ?>
 							</div>
 						</div>
 					</div>
+					<br>
+					<div class="row">
+						<div class="col-xs-3">
+							<div class="form-group">
+								<label for="right_user">Choisir qui peut voir l'image </label>
+								<input type="hidden" name="id" value="<?php echo $value['id']; ?>" />
+								<select name = "right_user" class="selectpicker form-control show-tick" title=" " data-live-search="true">
+									<option value="0">Staff</option>
+									<option value="1">Clients</option>
+									<option value="2">Both</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>

@@ -277,6 +277,21 @@ class Utilities_model extends CRM_Model
         return false;
     }
 
+    public function right_user($id,$right_user = null){
+
+        if($right_user == null){
+            return false ;
+        }
+
+        if($right_user != null){
+            $this->db->set('right_user',(int) $right_user);
+        }
+
+        $this->db->where('id', (int) $id);
+
+        return $this->db->update('tblsliders');
+    }
+
     public function rename_image($id, $name = null){
 
             if($name == null)
