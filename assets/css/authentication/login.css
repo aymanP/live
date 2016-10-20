@@ -394,10 +394,10 @@ body{
             width:100%;
         }
 		.form-group {
-			margin-bottom: 20px;
+			margin-bottom: 25px;
 			border: 1px solid #DDD;
 			border-radius: 2px;
-			padding-bottom: 7px;
+			padding-bottom: 0px;
 			-webkit-font-smoothing: antialiased;
 			background: #fff;
 		}
