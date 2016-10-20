@@ -13,12 +13,19 @@ class Utilities extends Admin_controller
     }
     /* All perfex activity log */
 
-    public function rename_image(){
+    public function update_image(){
 
         if($this->input->post()){
-        $rename = $this->input->post('rename');
-        $id = $this->input->post('id');
-        $this->utilities_model->rename_image($id,$rename);
+            if($this->input->post('rename')) {
+                $rename = $this->input->post('rename');
+                $id = $this->input->post('id');
+                $this->utilities_model->rename_image($id, $rename);
+            }
+            if($this->input->post('right_user')) {
+                $right_user = $this->input->post('right_user');
+                $id = $this->input->post('id');
+                $this->utilities_model->right_user($id, $right_user);
+            }
             redirect('http://localhost/CRM/live/admin/utilities/home_slider');
         }
     }

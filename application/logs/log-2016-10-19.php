@@ -347,3 +347,51 @@ ERROR - 2016-10-19 11:06:38 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-19 11:06:39 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-19 11:06:39 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-19 11:06:39 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-19 11:42:52 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e.
+ C:\wamp64\www\CRM\live\system\database\drivers\mysqli\mysqli_driver.php 202
+ERROR - 2016-10-19 11:42:52 --> Unable to connect to the database
+ERROR - 2016-10-19 11:42:54 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e.
+ C:\wamp64\www\CRM\live\system\database\drivers\mysqli\mysqli_driver.php 202
+ERROR - 2016-10-19 11:42:54 --> Unable to connect to the database
+ERROR - 2016-10-19 11:42:54 --> Query error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ - Invalid query: SELECT *
+FROM `tbloptions`
+ERROR - 2016-10-19 11:42:54 --> Severity: Error --> Call to a member function result_array() on boolean C:\wamp64\www\CRM\live\application\libraries\Perfex_base.php 27
+ERROR - 2016-10-19 11:43:35 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e.
+ C:\wamp64\www\CRM\live\system\database\drivers\mysqli\mysqli_driver.php 202
+ERROR - 2016-10-19 11:43:35 --> Unable to connect to the database
+ERROR - 2016-10-19 11:43:37 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e.
+ C:\wamp64\www\CRM\live\system\database\drivers\mysqli\mysqli_driver.php 202
+ERROR - 2016-10-19 11:43:37 --> Unable to connect to the database
+ERROR - 2016-10-19 11:43:37 --> Query error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ - Invalid query: SELECT *
+FROM `tbloptions`
+ERROR - 2016-10-19 11:43:37 --> Severity: Error --> Call to a member function result_array() on boolean C:\wamp64\www\CRM\live\application\libraries\Perfex_base.php 27
+ERROR - 2016-10-19 11:43:42 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e.
+ C:\wamp64\www\CRM\live\system\database\drivers\mysqli\mysqli_driver.php 202
+ERROR - 2016-10-19 11:43:42 --> Unable to connect to the database
+ERROR - 2016-10-19 13:43:45 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-19 13:43:45 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-19 13:43:58 --> Could not find the language line "Home slider"
+ERROR - 2016-10-19 13:44:10 --> Could not find the language line "Home slider"
+ERROR - 2016-10-19 13:44:10 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\admin\utilities\home_slider.php on line 6 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-19 15:24:42 --> Could not find the language line "Home slider"
+ERROR - 2016-10-19 15:24:42 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\admin\utilities\home_slider.php on line 6 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-19 15:35:10 --> Could not find the language line "Home slider"
+ERROR - 2016-10-19 15:35:10 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\admin\utilities\home_slider.php on line 6 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-19 15:37:18 --> Could not find the language line "Home slider"
+ERROR - 2016-10-19 15:37:18 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\admin\utilities\home_slider.php on line 6 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-19 15:39:15 --> Could not find the language line "Home slider"
+ERROR - 2016-10-19 15:39:15 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\admin\utilities\home_slider.php on line 6 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-19 15:41:50 --> Could not find the language line "Home slider"
+ERROR - 2016-10-19 15:41:50 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\admin\utilities\home_slider.php on line 6 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-19 15:57:48 --> Could not find the language line "Home slider"
+ERROR - 2016-10-19 15:57:48 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\admin\utilities\home_slider.php on line 6 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-19 15:57:56 --> Could not find the language line "Home slider"
+ERROR - 2016-10-19 15:57:56 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\admin\utilities\home_slider.php on line 6 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-19 15:58:31 --> Could not find the language line "Home slider"
+ERROR - 2016-10-19 15:58:31 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\admin\utilities\home_slider.php on line 6 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-19 15:58:56 --> Could not find the language line "Home slider"
+ERROR - 2016-10-19 15:58:56 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\admin\utilities\home_slider.php on line 6 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
+ERROR - 2016-10-19 15:59:45 --> Could not find the language line "Home slider"
+ERROR - 2016-10-19 15:59:45 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\admin\utilities\home_slider.php on line 6 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 844
