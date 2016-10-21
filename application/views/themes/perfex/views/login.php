@@ -66,8 +66,8 @@
 		<?php } ?>
 
 		<br clear="both">
-		<a href="<?php echo site_url('/authentication/admin'); ?>"><div class="admin-login">Login as Admin</div></a>
-		<a href="<?php echo site_url('/clients/login'); ?>"><div class="client-login">Login as Client</div></a>
+		<a href="<?php echo site_url('/authentication/admin'); ?>"><div class="admin-login"><?php echo _l('login_as_admin'); ?></div></a>
+		<a href="<?php echo site_url('/clients/login'); ?>"><div class="client-login"><?php echo _l('login_as_client'); ?></div></a>
 		<br clear="both">
 
 		<?php echo form_close(); ?>

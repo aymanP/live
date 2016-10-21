@@ -140,7 +140,29 @@ if (!empty($invoice->duedate)) {
 }
 if ($invoice->sale_agent != 0) {
     if (get_option('show_sale_agent_on_invoices') == 1) {
-        $pdf->Cell(0, 0, _l('sale_agent_string') . ': ' . get_staff_full_name($invoice->sale_agent), 0, 1, ($swap == '1' ? 'L' : 'R'), 0, '', 0);
+       $mode = get_mode((int)$invoice->clientid);
+        $alami = mode_alami();
+      if($mode != null)
+        {
+            foreach ($mode as $mod){
+               // if($mod->mode_alami != null)
+                $mode_alami = (int) $mod['mode_alami'];
+            }
+        }
+       if($alami != null){
+            foreach($alami as $alam ){
+                if ($alam['firstname'] != null)
+                    $username = $alam['firstname_alami'].' '.$alam['lastname_alami'];
+                $firstname = $alam['firstname'];
+                $lastname = $alam['lastname'];
+            }
+        }
+        if($mode_alami == 1 && get_staff_full_name($invoice->sale_agent) == $firstname.' '.$lastname) {
+            $adminName =  $username;
+        }
+        else $adminName = get_staff_full_name($invoice->sale_agent);
+
+        $pdf->Cell(0, 0, _l('sale_agent_string') . ': '.$username, 0, 1, ($swap == '1' ? 'L' : 'R'), 0, '', 0);
     }
 }
 // check for invoice custom fields which is checked show on pdf

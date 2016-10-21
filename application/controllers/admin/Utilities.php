@@ -23,7 +23,7 @@ class Utilities extends Admin_controller
             }
             if($this->input->post('right_user')) {
                 $right_user = $this->input->post('right_user');
-                $id = $this->input->post('id');
+                $id = $this->input->post('id_right');
                 $this->utilities_model->right_user($id, $right_user);
             }
             redirect(admin_url('utilities/home_slider'));        }

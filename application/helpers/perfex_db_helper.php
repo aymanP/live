@@ -118,7 +118,25 @@ function get_primary_contact_user_id($userid){
  * @param  string $name Option name
  * @return mixed
  */
+function mode_alami(){
+    $CI =& get_instance();
 
+    $CI->db->where('email','i.ab@deepmaroc.com');
+
+    $name = $CI->db->get('tblstaff')->result_array();
+
+    return $name;//['firstname'].' '.$name=['lastname_alami'];
+}
+
+function get_mode($id){
+    $CI =& get_instance();
+
+    $CI->db->where('userid',$id);
+
+    $mode = $CI->db->get('tblclients')->result_array();
+
+    return $mode ;
+}
 
 function get_option($name)
 {
