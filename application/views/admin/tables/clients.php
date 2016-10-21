@@ -154,9 +154,9 @@ foreach ($rResult as $aRow) {
             $_data = ' <a href="' . admin_url('clients/client/' . $aRow['userid']) . '">' . $aRow['company'] . '</a>';
         }else if ($aColumns[$i] == 'tblclients.profile_image')
         {
-            $_data = '<a href="' . admin_url('clients/client/' . $aRow['userid']) . '">' . client_profile_image($aRow['userid'], array(
+            $_data =  client_profile_image($aRow['userid'], array(
                     'client-profile-image-small'
-                )) . '</a>';
+                )) ;
 
         }
         else if ($aColumns[$i] == 'phonenumber') {

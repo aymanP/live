@@ -102,7 +102,7 @@
 																	</div>
 																</div> </br>
 																<div class="row">
-																	<div class="col-md-6">
+																	<!--<div class="col-md-6">
 
 
 																		<div class="input-group">
@@ -117,10 +117,10 @@
 
 																			</select>
 																			<!-- var index = document.getElementById('effect');
-																			var valeur = indexjour.options[select.selectedIndex].value;-->
+																			var valeur = indexjour.options[select.selectedIndex].value;
 
 																		</div>
-																	</div>
+																	</div>-->
 																</div> </br>
 																<div class="row">
 																	<div class="col-md-6">
@@ -140,10 +140,10 @@
 																		<div class="input-group">
 																			<input type="checkbox" id="cbox2" value="deuxieme_checkbox" name="active" > &nbsp;<label for="cbox2">  Active  </label>
 																			<?php
-																			if (isset($_POST['active']))
+																			/*if (isset($_POST['active']))
 																				$active = 1;
 																			else
-																				$active = 2;
+																				$active = 2;*/
 																			?>
 
 																		</div>

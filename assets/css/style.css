@@ -305,10 +305,15 @@ body.page-small.show-sidebar #wrapper {
 .navbar-nav > li > a.profile {
     display: block
 }
-.client-profile-image-small {
-    height: 32px;
-    width: 32px;
+.client-profile-image-small1 {
+    height: 48px;
+    width: 61px;
     //border-radius: 50%;
+}
+.client-profile-image-small {
+    height: 38px;
+    width: 38px;
+//border-radius: 50%;
 }
 .client-profile-company {
     margin-left: 10px;
