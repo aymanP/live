@@ -11,6 +11,9 @@ function client_have_transactions($id){
     }
     return false;
 }
+
+
+
 /**
  * Check if field is used in table
  * @param  string  $field column
@@ -18,6 +21,10 @@ function client_have_transactions($id){
  * @param  integer  $id   ID used
  * @return boolean
  */
+
+
+
+
 function is_reference_in_table($field, $table, $id)
 {
     $CI =& get_instance();
@@ -111,6 +118,8 @@ function get_primary_contact_user_id($userid){
  * @param  string $name Option name
  * @return mixed
  */
+
+
 function get_option($name)
 {
     $CI =& get_instance();

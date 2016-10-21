@@ -197,7 +197,7 @@
                                             if(get_option('show_sale_agent_on_invoices') == 1){ ?>
                                         <br /><span class="mtop20">
                                         <span class="bold"><?php echo _l('sale_agent_string'); ?>: </span>
-                                        <?php echo get_staff_full_name($invoice->sale_agent); ?>
+                                        <?php echo get_staff_full_name($invoice->sale_agent);?>
                                         </span>
                                         <?php }
                                             }

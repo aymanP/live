@@ -11,16 +11,6 @@ function get_other_merge_fields()
     return $fields;
 }
 
-function mode_alami(){
-    $CI =& get_instance();
-
-    $CI->db->where('email','i.ab@deepmaroc.com');
-    $name = array();
-    $name = $CI->get('tblstaff')->result_array();
-
-    return $name['firstname_alami'].' '.$name=['lastname_alami'];
-}
-
 
 
 function get_project_merge_fields($project_id, $additional_data = array())

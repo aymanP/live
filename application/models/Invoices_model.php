@@ -19,6 +19,26 @@ class Invoices_model extends CRM_Model
      * @param  mixed $id
      * @return array
      */
+    function mode_alami(){
+       // $CI =& get_instance();
+
+        $this->db->where('email','i.ab@deepmaroc.com');
+
+        $name = $this->db->get('tblstaff')->result_array();
+
+        return $name;//['firstname'].' '.$name=['lastname_alami'];
+    }
+
+    function get_mode($id){
+       // $CI =& get_instance();
+
+        $this->db->where('userid',$id);
+
+        $mode = $this->db->get('tblclients')->result_array();
+
+        return $mode;
+    }
+
     public function get($id = '', $where = array())
     {
         $this->db->select('*, tblcurrencies.id as currencyid, tblinvoices.id as id, tblcurrencies.name as currency_name');
