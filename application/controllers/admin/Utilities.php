@@ -57,7 +57,8 @@ class Utilities extends Admin_controller
             $id = $this->input->post('id');
             $this->utilities_model->set_param_image($id, $eff, $pos, $active);
             //dump(generate_slider($dur));
-            redirect('http://localhost/CRM/live/admin/utilities/home_slider');
+            $this->load->view('admin/utilities/home_slider');
+            //redirect('http://localhost/CRM/live/admin/utilities/home_slider');
         }
     }
     /* All perfex activity log */

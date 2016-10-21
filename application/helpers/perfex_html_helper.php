@@ -334,6 +334,8 @@ function render_textarea($name, $label = '', $value = '', $textarea_attrs = arra
     $textarea .= '</div>';
     return $textarea;
 }
+//render_select('clientid',$customers,array('userid',array('company')),'project_customer',$selected,array(),array(),'',$auto_toggle_class)
+//render_select('contactid[]',$contacts, array('id',array('firstname', 'lastname')),'Contact',$selected,array( 'multiple'=>true))
 function render_select($name, $options, $option_attrs = array(), $label = '', $selected = '', $select_attrs = array(), $form_group_attr = array(), $form_group_class = '', $select_class = '', $include_blank = true)
 {
 

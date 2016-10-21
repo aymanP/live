@@ -443,6 +443,8 @@ class Projects_model extends CRM_Model
     }
     public function add($data)
     {
+
+
         if (isset($data['settings'])) {
             $project_settings = $data['settings'];
             unset($data['settings']);
@@ -459,6 +461,7 @@ class Projects_model extends CRM_Model
         $data['deadline']        = to_sql_date($data['deadline']);
         $data['start_date']      = to_sql_date($data['start_date']);
         $data['project_created'] = date('Y-m-d');
+       // $data['contactid']  = 2;
         if (isset($data['project_members'])) {
             $project_members = $data['project_members'];
             unset($data['project_members']);
