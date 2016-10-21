@@ -2,34 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f32612de-95c0-4bb9-a91e-36d0fe40841e" name="Default" comment="">
-<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/sliders/1.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/sliders/2.jpg" afterPath="" />
-=======
-<<<<<<< HEAD
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/Projects.php" afterPath="$PROJECT_DIR$/application/controllers/admin/Projects.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/Utilities.php" afterPath="$PROJECT_DIR$/application/controllers/admin/Utilities.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/perfex_html_helper.php" afterPath="$PROJECT_DIR$/application/helpers/perfex_html_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/logs/log-2016-10-20.php" afterPath="$PROJECT_DIR$/application/logs/log-2016-10-20.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Projects_model.php" afterPath="$PROJECT_DIR$/application/models/Projects_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/projects/project.php" afterPath="$PROJECT_DIR$/application/views/admin/projects/project.php" />
-=======
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/Utilities.php" afterPath="$PROJECT_DIR$/application/controllers/admin/Utilities.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" afterPath="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/utilities/home_slider.php" afterPath="$PROJECT_DIR$/application/views/admin/utilities/home_slider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/themes/perfex/views/invoicehtml.php" afterPath="$PROJECT_DIR$/application/views/themes/perfex/views/invoicehtml.php" />
-<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/themes/perfex/views/invoicepdf.php" afterPath="$PROJECT_DIR$/application/views/themes/perfex/views/invoicepdf.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/themes/perfex/views/login.php" afterPath="$PROJECT_DIR$/application/views/themes/perfex/views/login.php" />
-=======
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
     </list>
     <ignored path="live.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,80 +31,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      <file leaf-file-name="Projects.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/admin/Projects.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
-=======
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="project.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/admin/projects/project.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="762">
-              <caret line="143" column="198" selection-start-line="143" selection-start-column="198" selection-end-line="143" selection-end-column="198" />
-=======
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="perfex_html_helper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/helpers/perfex_html_helper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="339" column="1" selection-start-line="339" selection-start-column="1" selection-end-line="339" selection-end-column="1" />
-              <folding>
-                <marker date="1477043781121" expanded="true" signature="3382:3575" ph="..." />
-                <marker date="1477043781121" expanded="true" signature="3426:3564" ph="..." />
-                <marker date="1477043781121" expanded="true" signature="3466:3549" ph="..." />
-                <marker date="1477043781121" expanded="true" signature="3507:3530" ph="..." />
-                <marker date="1477043781121" expanded="true" signature="7395:7551" ph="..." />
-                <marker date="1477043781121" expanded="true" signature="8901:8957" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Projects_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/Projects_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="463" column="34" selection-start-line="463" selection-start-column="34" selection-end-line="463" selection-end-column="34" />
-=======
-      <file leaf-file-name="index_auth.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/index_auth.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
       <file leaf-file-name="Clients.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Clients.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -277,11 +184,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/application/models/Authentication_model.php" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/application/controllers/Clients.php" />
-=======
         <option value="$PROJECT_DIR$/application/helpers/perfex_html_helper.php" />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
         <option value="$PROJECT_DIR$/application/views/authentication/includes/head.php" />
         <option value="$PROJECT_DIR$/application/libraries/Perfex_base.php" />
         <option value="$PROJECT_DIR$/application/language/english/english_lang.php" />
@@ -298,8 +201,11 @@
         <option value="$PROJECT_DIR$/application/views/admin/clients/manage.php" />
         <option value="$PROJECT_DIR$/application/language/french/french_lang.php" />
         <option value="$PROJECT_DIR$/assets/css/bs-overides.css" />
+        <option value="$PROJECT_DIR$/application/views/admin/projects/project.php" />
+        <option value="$PROJECT_DIR$/application/models/Projects_model.php" />
         <option value="$PROJECT_DIR$/application/helpers/perfex_general_helper.php" />
         <option value="$PROJECT_DIR$/application/views/admin/projects/view.php" />
+        <option value="$PROJECT_DIR$/application/controllers/admin/Projects.php" />
         <option value="$PROJECT_DIR$/assets/js/main.js" />
         <option value="$PROJECT_DIR$/application/views/admin/tables/clients.php" />
         <option value="$PROJECT_DIR$/application/views/admin/projects/project_files.php" />
@@ -307,16 +213,6 @@
         <option value="$PROJECT_DIR$/application/views/admin/invoices/invoice_send_to_client.php" />
         <option value="$PROJECT_DIR$/application/views/admin/clients/modals/send_file_modal.php" />
         <option value="$PROJECT_DIR$/application/models/Utilities_model.php" />
-<<<<<<< HEAD
-=======
-        <option value="$PROJECT_DIR$/application/controllers/admin/Utilities.php" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/application/controllers/admin/Projects.php" />
-        <option value="$PROJECT_DIR$/application/models/Projects_model.php" />
-        <option value="$PROJECT_DIR$/application/helpers/perfex_html_helper.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/projects/project.php" />
-=======
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
         <option value="$PROJECT_DIR$/application/controllers/admin/Invoices.php" />
         <option value="$PROJECT_DIR$/application/views/admin/invoices/list_template.php" />
         <option value="$PROJECT_DIR$/application/views/admin/includes/modals/sales_attach_file.php" />
@@ -328,12 +224,8 @@
         <option value="$PROJECT_DIR$/application/views/themes/perfex/views/login.php" />
         <option value="$PROJECT_DIR$/application/views/admin/utilities/home_slider.php" />
         <option value="$PROJECT_DIR$/application/views/themes/perfex/views/invoicehtml.php" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" />
         <option value="$PROJECT_DIR$/application/views/themes/perfex/views/invoicepdf.php" />
-=======
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
       </list>
     </option>
   </component>
@@ -490,15 +382,10 @@
               <option name="myItemId" value="application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-<<<<<<< HEAD
             <PATH_ELEMENT>
               <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
@@ -511,10 +398,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-=======
-=======
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -530,15 +413,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-=======
               <option name="myItemId" value="models" />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -580,10 +455,6 @@
           </PATH>
         </subPane>
       </pane>
-<<<<<<< HEAD
-      <pane id="Scratches" />
-=======
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
       <pane id="Scope" />
     </panes>
   </component>
@@ -659,44 +530,19 @@
       <workItem from="1476779708633" duration="20342000" />
       <workItem from="1476871034825" duration="4281000" />
       <workItem from="1476882434990" duration="3165000" />
-<<<<<<< HEAD
-      <workItem from="1476968934665" duration="10042000" />
-      <workItem from="1477039278233" duration="6176000" />
-=======
       <workItem from="1476971794364" duration="11276000" />
-<<<<<<< HEAD
       <workItem from="1477040190858" duration="16970000" />
-=======
-      <workItem from="1477040190858" duration="4520000" />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
     <option name="totallyTimeSpent" value="72577000" />
-=======
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="60549000" />
-=======
-    <option name="totallyTimeSpent" value="60127000" />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-<<<<<<< HEAD
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20606695" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -749,93 +595,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_misc_helper.php">
-=======
-    <entry file="file://$PROJECT_DIR$/system/helpers/form_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="154" column="13" selection-start-line="154" selection-start-column="13" selection-end-line="154" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/projects/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="58" column="82" selection-start-line="58" selection-start-column="80" selection-end-line="58" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/projects/project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="142" column="24" selection-start-line="142" selection-start-column="24" selection-end-line="142" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="978" column="9" selection-start-line="978" selection-start-column="9" selection-end-line="978" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2408">
-          <caret line="708" column="93" selection-start-line="708" selection-start-column="93" selection-end-line="708" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_func_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/clients/manage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="842">
-          <caret line="204" column="14" selection-start-line="204" selection-start-column="14" selection-end-line="204" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/themes/perfex/js/clients.js">
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="334" column="9" selection-start-line="334" selection-start-column="9" selection-end-line="334" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/tables/clients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="153" column="19" selection-start-line="153" selection-start-column="19" selection-end-line="153" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="4230" column="1" selection-start-line="4230" selection-start-column="1" selection-end-line="4230" selection-end-column="1" />
-=======
-    <entry file="file://$PROJECT_DIR$/application/models/Projects_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
     <entry file="file://$PROJECT_DIR$/application/controllers/admin/Projects.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -849,7 +608,6 @@
         <state relative-caret-position="17">
           <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
           <folding />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
         </state>
       </provider>
     </entry>
@@ -861,12 +619,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/assets/css/bs-overides.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="160" column="1" selection-start-line="160" selection-start-column="1" selection-end-line="160" selection-end-column="1" />
-=======
     <entry file="file://$PROJECT_DIR$/application/views/admin/projects/project_files.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -878,20 +630,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Utilities_model.php">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="-85">
-          <caret line="285" column="50" selection-start-line="285" selection-start-column="50" selection-end-line="285" selection-end-column="50" />
-=======
         <state relative-caret-position="476">
           <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
         </state>
       </provider>
     </entry>
@@ -915,6 +661,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -980,9 +727,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_db_helper.php">
-=======
     <entry file="file://$PROJECT_DIR$/application/views/admin/invoices/filter_params.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1000,7 +744,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/invoices/invoice_payments_table.php">
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1015,9 +758,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
-=======
     <entry file="file://$PROJECT_DIR$/application/views/admin/invoices/invoice_send_to_client.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1026,7 +766,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/controllers/admin/Clients.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1060,10 +799,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/core/Clients_controller.php">
-=======
-    <entry file="file://$PROJECT_DIR$/application/controllers/Authentication.php">
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="43" column="18" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="18" />
@@ -1156,14 +891,7 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/index_auth.php">
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/application/views/admin/invoices/invoice_preview_template.php">
-=======
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/index.php">
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1187,7 +915,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/controllers/Authentication.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1204,10 +931,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/footer.php">
-=======
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/index_auth.php">
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1217,17 +940,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/index.php">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="187">
           <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="17">
-          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
-=======
-        <state relative-caret-position="340">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
           <folding />
         </state>
       </provider>
@@ -1237,7 +951,6 @@
         <state relative-caret-position="842">
           <caret line="69" column="119" selection-start-line="69" selection-start-column="119" selection-end-line="69" selection-end-column="119" />
           <folding />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
         </state>
       </provider>
     </entry>
@@ -1348,7 +1061,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/views/invoicehtml.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1356,191 +1068,14 @@
           <folding>
             <marker date="1477057489513" expanded="true" signature="7658:7720" ph="..." />
           </folding>
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Utilities_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="318" column="0" selection-start-line="318" selection-start-column="0" selection-end-line="318" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_db_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="178" column="37" selection-start-line="178" selection-start-column="37" selection-end-line="178" selection-end-column="37" />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
-          <folding />
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/helpers/perfex_db_helper.php">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="490">
           <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
           <folding />
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="447">
-          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/utilities/home_slider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="91" column="116" selection-start-line="91" selection-start-column="116" selection-end-line="91" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/projects/project_milestones.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_constants_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_custom_fields_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/projects/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="58" column="82" selection-start-line="58" selection-start-column="80" selection-end-line="58" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/language/french/french_num_words_lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/language/french/french_lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="3089" column="16" selection-start-line="3089" selection-start-column="13" selection-end-line="3089" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/projects/copy_settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/projects/invoice_project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/projects/manage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="78" column="30" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/projects/milestone.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="74" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Clients_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="251" column="23" selection-start-line="251" selection-start-column="20" selection-end-line="251" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/admin/Projects.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Projects_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="463" column="34" selection-start-line="463" selection-start-column="34" selection-end-line="463" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_html_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="339" column="1" selection-start-line="339" selection-start-column="1" selection-end-line="339" selection-end-column="1" />
-          <folding>
-            <marker date="1477043781121" expanded="true" signature="3382:3575" ph="..." />
-            <marker date="1477043781121" expanded="true" signature="3426:3564" ph="..." />
-            <marker date="1477043781121" expanded="true" signature="3466:3549" ph="..." />
-            <marker date="1477043781121" expanded="true" signature="3507:3530" ph="..." />
-            <marker date="1477043781121" expanded="true" signature="7395:7551" ph="..." />
-            <marker date="1477043781121" expanded="true" signature="8901:8957" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/projects/project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="762">
-          <caret line="143" column="198" selection-start-line="143" selection-start-column="198" selection-end-line="143" selection-end-column="198" />
-          <folding />
-=======
-        <state relative-caret-position="51">
-          <caret line="24" column="48" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="48" />
-          <folding>
-            <element signature="n#get#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#get_invoice_items#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#unmark_as_cancelled#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#get_invoice_recuring_invoices#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#add#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#update_total_tax#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#check_for_merge_invoice#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#copy#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#get_attachments#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#delete_attachment#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#set_invoice_sent#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#send_invoice_overdue_notice#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#sent_invoice_to_client#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#get_invoice_activity#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#log_invoice_activity#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <marker date="1477044614382" expanded="true" signature="514:594" ph="SELECT DISTI... tblinvoices" />
-            <marker date="1477044614382" expanded="true" signature="62348:62413" ph="SELECT DISTI... " />
-          </folding>
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
         </state>
       </provider>
     </entry>
@@ -1574,7 +1109,6 @@
             <marker date="1477063261574" expanded="true" signature="14622:15052" ph="..." />
             <marker date="1477063261574" expanded="true" signature="15167:15412" ph="..." />
           </folding>
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
         </state>
       </provider>
     </entry>

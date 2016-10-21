@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f32612de-95c0-4bb9-a91e-36d0fe40841e" name="Default" comment="">
 <<<<<<< HEAD
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/sliders/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/sliders/2.jpg" afterPath="" />
-=======
-<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/Projects.php" afterPath="$PROJECT_DIR$/application/controllers/admin/Projects.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/Utilities.php" afterPath="$PROJECT_DIR$/application/controllers/admin/Utilities.php" />
@@ -18,18 +14,16 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/Utilities.php" afterPath="$PROJECT_DIR$/application/controllers/admin/Utilities.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Clients.php" afterPath="$PROJECT_DIR$/application/controllers/Clients.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/Invoices.php" afterPath="$PROJECT_DIR$/application/controllers/admin/Invoices.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" afterPath="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/utilities/home_slider.php" afterPath="$PROJECT_DIR$/application/views/admin/utilities/home_slider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/perfex_merge_fields_helper.php" afterPath="$PROJECT_DIR$/application/helpers/perfex_merge_fields_helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/logs/log-2016-10-20.php" afterPath="$PROJECT_DIR$/application/logs/log-2016-10-20.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Invoices_model.php" afterPath="$PROJECT_DIR$/application/models/Invoices_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/invoices/invoice_preview_template.php" afterPath="$PROJECT_DIR$/application/views/admin/invoices/invoice_preview_template.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/themes/perfex/views/invoicehtml.php" afterPath="$PROJECT_DIR$/application/views/themes/perfex/views/invoicehtml.php" />
-<<<<<<< HEAD
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/themes/perfex/views/invoicepdf.php" afterPath="$PROJECT_DIR$/application/views/themes/perfex/views/invoicepdf.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/themes/perfex/views/login.php" afterPath="$PROJECT_DIR$/application/views/themes/perfex/views/login.php" />
-=======
 >>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
     </list>
     <ignored path="live.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,8 +44,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
-=======
 <<<<<<< HEAD
       <file leaf-file-name="Projects.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/admin/Projects.php">
@@ -123,12 +115,11 @@
           </provider>
         </entry>
       </file>
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
       <file leaf-file-name="Clients.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Clients.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="451" column="51" selection-start-line="451" selection-start-column="51" selection-end-line="451" selection-end-column="51" />
+            <state relative-caret-position="-1460">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding>
                 <element signature="n#index#0;n#Clients#0;n#!!top" expanded="false" />
                 <element signature="n#announcements#0;n#Clients#0;n#!!top" expanded="false" />
@@ -145,7 +136,6 @@
                 <element signature="n#ticket#0;n#Clients#0;n#!!top" expanded="false" />
                 <element signature="n#contracts#0;n#Clients#0;n#!!top" expanded="false" />
                 <element signature="n#contract_pdf#0;n#Clients#0;n#!!top" expanded="false" />
-                <element signature="n#invoices#0;n#Clients#0;n#!!top" expanded="false" />
                 <element signature="n#viewestimate#0;n#Clients#0;n#!!top" expanded="false" />
                 <element signature="n#estimates#0;n#Clients#0;n#!!top" expanded="false" />
                 <element signature="n#survey#0;n#Clients#0;n#!!top" expanded="false" />
@@ -157,7 +147,6 @@
                 <element signature="n#reset_password#0;n#Clients#0;n#!!top" expanded="false" />
                 <element signature="n#dismiss_announcement#0;n#Clients#0;n#!!top" expanded="false" />
                 <element signature="n#knowledge_base#0;n#Clients#0;n#!!top" expanded="false" />
-                <element signature="n#login#0;n#Clients#0;n#!!top" expanded="false" />
                 <element signature="e#39970#40393#0#PHP" expanded="false" />
                 <element signature="n#logout#0;n#Clients#0;n#!!top" expanded="false" />
                 <element signature="n#contact_email_exists#0;n#Clients#0;n#!!top" expanded="false" />
@@ -169,68 +158,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invoicepdf.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/views/invoicepdf.php">
+      <file leaf-file-name="Clients_controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/core/Clients_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="160" column="36" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="36" />
-              <folding>
-                <marker date="1477063261574" expanded="false" signature="1506:1571" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="1572:1796" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="1584:1783" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="1597:1770" ph="..." />
-                <marker date="1477063261574" expanded="false" signature="1666:1714" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="2073:2105" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="2189:2202" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="7990:8419" ph="..." />
-                <marker date="1477063261574" expanded="false" signature="8071:8124" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="8125:8419" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="9018:9028" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="11388:11561" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="11630:11885" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="12301:12501" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="12566:12743" ph="..." />
-                <marker date="1477063261574" expanded="false" signature="12775:12800" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="12801:12969" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="13029:13360" ph="..." />
-                <marker date="1477063261574" expanded="false" signature="13377:13402" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="13403:13630" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="14554:15052" ph="..." />
-                <marker date="1477063261574" expanded="false" signature="14588:14621" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="14622:15052" ph="..." />
-                <marker date="1477063261574" expanded="true" signature="15167:15412" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoicehtml.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/views/invoicehtml.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="112" column="38" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="38" />
-              <folding>
-                <marker date="1477057489513" expanded="true" signature="7658:7720" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="perfex_merge_fields_helper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/helpers/perfex_merge_fields_helper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="14" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="perfex_db_helper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/helpers/perfex_db_helper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
+            <state relative-caret-position="799">
+              <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -239,15 +171,13 @@
       <file leaf-file-name="Invoices_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Invoices_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="24" column="48" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="48" />
               <folding>
+                <element signature="n#get#0;n#Invoices_model#0;n#!!top" expanded="false" />
                 <element signature="n#get_invoice_items#0;n#Invoices_model#0;n#!!top" expanded="false" />
-                <element signature="n#get_invoice_item#0;n#Invoices_model#0;n#!!top" expanded="false" />
-                <element signature="n#mark_as_cancelled#0;n#Invoices_model#0;n#!!top" expanded="false" />
                 <element signature="n#unmark_as_cancelled#0;n#Invoices_model#0;n#!!top" expanded="false" />
                 <element signature="n#get_invoice_recuring_invoices#0;n#Invoices_model#0;n#!!top" expanded="false" />
-                <element signature="n#get_invoices_total#0;n#Invoices_model#0;n#!!top" expanded="false" />
                 <element signature="n#add#0;n#Invoices_model#0;n#!!top" expanded="false" />
                 <element signature="n#update_total_tax#0;n#Invoices_model#0;n#!!top" expanded="false" />
                 <element signature="n#check_for_merge_invoice#0;n#Invoices_model#0;n#!!top" expanded="false" />
@@ -263,6 +193,84 @@
                 <element signature="n#log_invoice_activity#0;n#Invoices_model#0;n#!!top" expanded="false" />
                 <marker date="1477044614382" expanded="true" signature="514:594" ph="SELECT DISTI... tblinvoices" />
                 <marker date="1477044614382" expanded="true" signature="62348:62413" ph="SELECT DISTI... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/head.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1476703992239" expanded="true" signature="2817:2894" ph="..." />
+                <marker date="1476703992239" expanded="true" signature="2848:2881" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="perfex_db_helper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/helpers/perfex_db_helper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="178" column="37" selection-start-line="178" selection-start-column="37" selection-end-line="178" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invoicehtml.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/views/invoicehtml.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="109" column="66" selection-start-line="109" selection-start-column="66" selection-end-line="109" selection-end-column="66" />
+              <folding>
+                <marker date="1477044733939" expanded="true" signature="7754:7816" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="8102:8452" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="8142:8452" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="8193:8452" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="8245:8452" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="8281:8452" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="8318:8452" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="9699:9785" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="14057:14259" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="14110:14259" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="14142:14259" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="14189:14259" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="14381:14520" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="14661:14768" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="14698:14768" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="14956:15004" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="16129:16236" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="16166:16236" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="16362:16503" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="16609:16679" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="16795:16931" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="17062:17119" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="17193:17269" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="17490:17572" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="17646:17826" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="18108:18170" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="18519:18604" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="18931:19023" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="19390:19428" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="19642:19707" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="19877:20103" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="20194:20310" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="20226:20310" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="20259:20310" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="20754:20983" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="20865:20983" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="20902:20983" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="22212:22663" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="22250:22663" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="22603:22663" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="23263:23340" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="23672:23722" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="23935:23988" ph="..." />
+                <marker date="1477044733939" expanded="true" signature="26041:26091" ph="..." />
               </folding>
             </state>
           </provider>
@@ -306,9 +314,8 @@
         <option value="$PROJECT_DIR$/application/models/Clients_model.php" />
         <option value="$PROJECT_DIR$/application/views/admin/invoices/invoice_send_to_client.php" />
         <option value="$PROJECT_DIR$/application/views/admin/clients/modals/send_file_modal.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/utilities/home_slider.php" />
         <option value="$PROJECT_DIR$/application/models/Utilities_model.php" />
-<<<<<<< HEAD
-=======
         <option value="$PROJECT_DIR$/application/controllers/admin/Utilities.php" />
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/application/controllers/admin/Projects.php" />
@@ -316,24 +323,16 @@
         <option value="$PROJECT_DIR$/application/helpers/perfex_html_helper.php" />
         <option value="$PROJECT_DIR$/application/views/admin/projects/project.php" />
 =======
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
         <option value="$PROJECT_DIR$/application/controllers/admin/Invoices.php" />
         <option value="$PROJECT_DIR$/application/views/admin/invoices/list_template.php" />
         <option value="$PROJECT_DIR$/application/views/admin/includes/modals/sales_attach_file.php" />
         <option value="$PROJECT_DIR$/application/views/admin/invoices/invoice_preview_template.php" />
         <option value="$PROJECT_DIR$/application/helpers/perfex_merge_fields_helper.php" />
+        <option value="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" />
         <option value="$PROJECT_DIR$/application/controllers/Clients.php" />
         <option value="$PROJECT_DIR$/application/models/Invoices_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/admin/Utilities.php" />
-        <option value="$PROJECT_DIR$/application/views/themes/perfex/views/login.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/utilities/home_slider.php" />
         <option value="$PROJECT_DIR$/application/views/themes/perfex/views/invoicehtml.php" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" />
-        <option value="$PROJECT_DIR$/application/views/themes/perfex/views/invoicepdf.php" />
-=======
 >>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
       </list>
     </option>
   </component>
@@ -348,10 +347,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="width" value="972" />
+    <option name="height" value="1160" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -407,73 +404,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="perfex" />
+              <option name="myItemId" value="system" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,30 +422,12 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-<<<<<<< HEAD
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="perfex" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-=======
 =======
 >>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -542,42 +455,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
 <<<<<<< HEAD
@@ -592,7 +469,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="invoicepdf&#9;null&#9;null&#10;viewinvoice&#9;null&#9;null&#10;get_custom_fields&#9;null&#9;null&#10;id=&quot;invoice-preview&#9;null&#9;null&#10;base_url&#9;null&#9;null&#10;customer&#9;FILE&#9;file://C:/wamp64/www/live/application/views/admin/tables/customers_groups.php&#10;login_as_client&#9;null&#9;null&#10;perfex_base&#9;null&#9;null&#10;$this-&gt;load-&gt;view('clients&#9;null&#9;null&#10;init_head&#9;null&#9;null&#10;aside&#9;FILE&#9;file://C:/wamp64/www/live/application/views/admin/includes/aside.php&#10;dashboard_user&#9;null&#9;null&#10;lang&#9;null&#9;null&#10;fullcalendar/lang-all&#9;FILE&#9;file://C:/wamp64/www/live/assets/plugins/fullcalendar/lang-all.js&#10;Please login or register&#9;null&#9;null&#10;generate_slider&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="viewinvoice&#9;null&#9;null&#10;get_custom_fields&#9;null&#9;null&#10;id=&quot;invoice-preview&#9;null&#9;null&#10;base_url&#9;null&#9;null&#10;customer&#9;FILE&#9;file://C:/wamp64/www/live/application/views/admin/tables/customers_groups.php&#10;login_as_client&#9;null&#9;null&#10;perfex_base&#9;null&#9;null&#10;$this-&gt;load-&gt;view('clients&#9;null&#9;null&#10;init_head&#9;null&#9;null&#10;aside&#9;FILE&#9;file://C:/wamp64/www/live/application/views/admin/includes/aside.php&#10;dashboard_user&#9;null&#9;null&#10;lang&#9;null&#9;null&#10;fullcalendar/lang-all&#9;FILE&#9;file://C:/wamp64/www/live/assets/plugins/fullcalendar/lang-all.js&#10;Please login or register&#9;null&#9;null&#10;generate_slider&#9;null&#9;null" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -664,39 +541,27 @@
       <workItem from="1477039278233" duration="6176000" />
 =======
       <workItem from="1476971794364" duration="11276000" />
-<<<<<<< HEAD
-      <workItem from="1477040190858" duration="16970000" />
-=======
       <workItem from="1477040190858" duration="4520000" />
 >>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
-    <option name="totallyTimeSpent" value="72577000" />
-=======
-<<<<<<< HEAD
     <option name="totallyTimeSpent" value="60549000" />
 =======
     <option name="totallyTimeSpent" value="60127000" />
 >>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="0" y="0" width="972" height="1160" extended-state="0" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
 <<<<<<< HEAD
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20606695" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -738,19 +603,12 @@
           <line>506</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/application/models/Invoices_model.php</url>
-          <line>31</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-=======
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/helpers/perfex_misc_helper.php">
 =======
@@ -835,7 +693,6 @@
         </state>
       </provider>
     </entry>
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
     <entry file="file://$PROJECT_DIR$/application/controllers/admin/Projects.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -882,6 +739,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/utilities/home_slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3400">
+          <caret line="200" column="101" selection-start-line="200" selection-start-column="101" selection-end-line="200" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Utilities_model.php">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -899,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,6 +770,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3672">
           <caret line="216" column="53" selection-start-line="216" selection-start-column="53" selection-end-line="216" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/Utilities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -942,16 +813,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_custom_fields_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="86" column="34" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_html_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="495" column="24" selection-start-line="495" selection-start-column="24" selection-end-line="495" selection-end-column="24" />
+          <folding>
+            <marker date="1476703957784" expanded="true" signature="3382:3575" ph="..." />
+            <marker date="1476703957784" expanded="true" signature="3426:3564" ph="..." />
+            <marker date="1476703957784" expanded="true" signature="3466:3549" ph="..." />
+            <marker date="1476703957784" expanded="true" signature="3507:3530" ph="..." />
+            <marker date="1476703957784" expanded="true" signature="7395:7551" ph="..." />
+            <marker date="1476703957784" expanded="true" signature="8901:8957" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/includes/modals/sales_attach_file.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding>
-            <marker date="1476975045116" expanded="true" signature="463:597" ph="..." />
-            <marker date="1476975045116" expanded="true" signature="497:597" ph="..." />
-            <marker date="1476975045116" expanded="true" signature="541:597" ph="..." />
-            <marker date="1476975045116" expanded="true" signature="882:913" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,7 +914,30 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/application/controllers/Authentication.php">
+>>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+          <folding>
+            <element signature="n#admin#0;n#Authentication#0;n#!!top" expanded="false" />
+            <element signature="n#recaptcha#0;n#Authentication#0;n#!!top" expanded="false" />
+            <element signature="n#forgot_password#0;n#Authentication#0;n#!!top" expanded="false" />
+            <element signature="n#reset_password#0;n#Authentication#0;n#!!top" expanded="false" />
+            <element signature="n#set_password#0;n#Authentication#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#Authentication#0;n#!!top" expanded="false" />
+            <element signature="n#email_exists#0;n#Authentication#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/clients/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="67" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/admin/Clients.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1039,15 +950,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="39" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1476703992239" expanded="true" signature="2817:2894" ph="..." />
+            <marker date="1476703992239" expanded="true" signature="2848:2881" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/application/views/admin/invoices/invoice_preview_template.php">
+=======
+    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/index_auth.php">
+>>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="17">
+          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+=======
         <state relative-caret-position="340">
           <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_merge_fields_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4726">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+>>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
         </state>
       </provider>
     </entry>
@@ -1060,255 +1022,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/core/Clients_controller.php">
-=======
-    <entry file="file://$PROJECT_DIR$/application/controllers/Authentication.php">
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="43" column="18" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="18" />
+        <state relative-caret-position="799">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/admin/Utilities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_html_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="843" column="9" selection-start-line="843" selection-start-column="9" selection-end-line="843" selection-end-column="9" />
-          <folding>
-            <marker date="1476703957784" expanded="true" signature="3382:3575" ph="..." />
-            <marker date="1476703957784" expanded="true" signature="3426:3564" ph="..." />
-            <marker date="1476703957784" expanded="true" signature="3466:3549" ph="..." />
-            <marker date="1476703957784" expanded="true" signature="3507:3530" ph="..." />
-            <marker date="1476703957784" expanded="true" signature="7395:7551" ph="..." />
-            <marker date="1476703957784" expanded="true" signature="8901:8957" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/clients/client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3935">
-          <caret line="18" column="67" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/includes/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1476703983782" expanded="true" signature="3947:4050" ph="..." />
-            <marker date="1476703983782" expanded="true" signature="3984:4031" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/includes/aside.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-722">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/scripts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/views/authentication/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-892">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-535">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1476703992239" expanded="true" signature="2817:2894" ph="..." />
-            <marker date="1476703992239" expanded="true" signature="2848:2881" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/index_auth.php">
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/application/views/admin/invoices/invoice_preview_template.php">
-=======
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/index.php">
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/authentication/includes/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/authentication/login_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/application/controllers/Authentication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <element signature="n#recaptcha#0;n#Authentication#0;n#!!top" expanded="false" />
-            <element signature="n#forgot_password#0;n#Authentication#0;n#!!top" expanded="false" />
-            <element signature="n#reset_password#0;n#Authentication#0;n#!!top" expanded="false" />
-            <element signature="n#set_password#0;n#Authentication#0;n#!!top" expanded="false" />
-            <element signature="n#logout#0;n#Authentication#0;n#!!top" expanded="false" />
-            <element signature="n#email_exists#0;n#Authentication#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/footer.php">
-=======
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/index_auth.php">
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="187">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="17">
-          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
-=======
-        <state relative-caret-position="340">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="842">
-          <caret line="69" column="119" selection-start-line="69" selection-start-column="119" selection-end-line="69" selection-end-column="119" />
-          <folding />
->>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/utilities/home_slider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="65" column="91" selection-start-line="65" selection-start-column="91" selection-end-line="65" selection-end-column="91" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_sales_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2080">
-          <caret line="722" column="9" selection-start-line="722" selection-start-column="9" selection-end-line="722" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_custom_fields_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="86" column="34" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_merge_fields_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Invoices_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="n#get_invoice_items#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#get_invoice_item#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#mark_as_cancelled#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#unmark_as_cancelled#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#get_invoice_recuring_invoices#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#get_invoices_total#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#add#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#update_total_tax#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#check_for_merge_invoice#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#copy#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#get_attachments#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#delete_attachment#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#set_invoice_sent#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#send_invoice_overdue_notice#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#sent_invoice_to_client#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#get_invoice_activity#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <element signature="n#log_invoice_activity#0;n#Invoices_model#0;n#!!top" expanded="false" />
-            <marker date="1477044614382" expanded="true" signature="514:594" ph="SELECT DISTI... tblinvoices" />
-            <marker date="1477044614382" expanded="true" signature="62348:62413" ph="SELECT DISTI... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Clients.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="451" column="51" selection-start-line="451" selection-start-column="51" selection-end-line="451" selection-end-column="51" />
+        <state relative-caret-position="-1460">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding>
             <element signature="n#index#0;n#Clients#0;n#!!top" expanded="false" />
             <element signature="n#announcements#0;n#Clients#0;n#!!top" expanded="false" />
@@ -1325,7 +1049,6 @@
             <element signature="n#ticket#0;n#Clients#0;n#!!top" expanded="false" />
             <element signature="n#contracts#0;n#Clients#0;n#!!top" expanded="false" />
             <element signature="n#contract_pdf#0;n#Clients#0;n#!!top" expanded="false" />
-            <element signature="n#invoices#0;n#Clients#0;n#!!top" expanded="false" />
             <element signature="n#viewestimate#0;n#Clients#0;n#!!top" expanded="false" />
             <element signature="n#estimates#0;n#Clients#0;n#!!top" expanded="false" />
             <element signature="n#survey#0;n#Clients#0;n#!!top" expanded="false" />
@@ -1337,7 +1060,6 @@
             <element signature="n#reset_password#0;n#Clients#0;n#!!top" expanded="false" />
             <element signature="n#dismiss_announcement#0;n#Clients#0;n#!!top" expanded="false" />
             <element signature="n#knowledge_base#0;n#Clients#0;n#!!top" expanded="false" />
-            <element signature="n#login#0;n#Clients#0;n#!!top" expanded="false" />
             <element signature="e#39970#40393#0#PHP" expanded="false" />
             <element signature="n#logout#0;n#Clients#0;n#!!top" expanded="false" />
             <element signature="n#contact_email_exists#0;n#Clients#0;n#!!top" expanded="false" />
@@ -1348,15 +1070,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/views/invoicehtml.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="112" column="38" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="38" />
-          <folding>
-            <marker date="1477057489513" expanded="true" signature="7658:7720" ph="..." />
-          </folding>
-=======
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1376,17 +1089,11 @@
           <caret line="178" column="37" selection-start-line="178" selection-start-column="37" selection-end-line="178" selection-end-column="37" />
 >>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
           <folding />
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_db_helper.php">
+    <entry file="file://$PROJECT_DIR$/application/models/Invoices_model.php">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="490">
-          <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
-          <folding />
-=======
 <<<<<<< HEAD
         <state relative-caret-position="447">
           <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
@@ -1540,39 +1247,58 @@
             <marker date="1477044614382" expanded="true" signature="514:594" ph="SELECT DISTI... tblinvoices" />
             <marker date="1477044614382" expanded="true" signature="62348:62413" ph="SELECT DISTI... " />
           </folding>
->>>>>>> 9d10f36cc85e8f4d84966ba85d7ab31499403786
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/views/invoicepdf.php">
+    <entry file="file://$PROJECT_DIR$/application/views/themes/perfex/views/invoicehtml.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="160" column="36" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="36" />
+        <state relative-caret-position="419">
+          <caret line="109" column="66" selection-start-line="109" selection-start-column="66" selection-end-line="109" selection-end-column="66" />
           <folding>
-            <marker date="1477063261574" expanded="false" signature="1506:1571" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="1572:1796" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="1584:1783" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="1597:1770" ph="..." />
-            <marker date="1477063261574" expanded="false" signature="1666:1714" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="2073:2105" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="2189:2202" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="7990:8419" ph="..." />
-            <marker date="1477063261574" expanded="false" signature="8071:8124" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="8125:8419" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="9018:9028" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="11388:11561" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="11630:11885" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="12301:12501" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="12566:12743" ph="..." />
-            <marker date="1477063261574" expanded="false" signature="12775:12800" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="12801:12969" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="13029:13360" ph="..." />
-            <marker date="1477063261574" expanded="false" signature="13377:13402" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="13403:13630" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="14554:15052" ph="..." />
-            <marker date="1477063261574" expanded="false" signature="14588:14621" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="14622:15052" ph="..." />
-            <marker date="1477063261574" expanded="true" signature="15167:15412" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="7754:7816" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="8102:8452" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="8142:8452" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="8193:8452" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="8245:8452" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="8281:8452" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="8318:8452" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="9699:9785" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="14057:14259" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="14110:14259" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="14142:14259" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="14189:14259" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="14381:14520" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="14661:14768" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="14698:14768" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="14956:15004" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="16129:16236" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="16166:16236" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="16362:16503" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="16609:16679" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="16795:16931" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="17062:17119" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="17193:17269" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="17490:17572" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="17646:17826" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="18108:18170" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="18519:18604" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="18931:19023" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="19390:19428" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="19642:19707" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="19877:20103" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="20194:20310" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="20226:20310" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="20259:20310" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="20754:20983" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="20865:20983" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="20902:20983" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="22212:22663" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="22250:22663" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="22603:22663" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="23263:23340" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="23672:23722" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="23935:23988" ph="..." />
+            <marker date="1477044733939" expanded="true" signature="26041:26091" ph="..." />
           </folding>
 >>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
         </state>

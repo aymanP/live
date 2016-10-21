@@ -60,7 +60,8 @@ class Projects extends Admin_controller
             access_denied('Projects');
         }
 
-        if ($this->input->post()) {
+        if ($this->input->post())
+        {
             $contact_ids = $this->input->post('contactid[]');
 
             if ($id == '') {

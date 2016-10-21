@@ -334,6 +334,7 @@ function render_textarea($name, $label = '', $value = '', $textarea_attrs = arra
     $textarea .= '</div>';
     return $textarea;
 }
+//render_select('clientid',$customers,array('userid',array('company')),'project_customer',$selected,array(),array(),'',$auto_toggle_class)
 function render_select($name, $options, $option_attrs = array(), $label = '', $selected = '', $select_attrs = array(), $form_group_attr = array(), $form_group_class = '', $select_class = '', $include_blank = true)
 {
 
@@ -610,9 +611,9 @@ function client_profile_image($id = false, $classes = array('client-profile-imag
         $_attributes .= $key . '=' . '"' . $val . '" ';
     }
     if ($result && $result->profile_image !== null) {
-        $profile_image = '<img ' . $_attributes . ' src="' . site_url('uploads/client_profile_images/' . $id . '/' . $type . '_' . $result->profile_image) . '" class="' . implode(' ', $classes) . '" alt="' . $result->company . ' ' . $result->city . '" />';
+        $profile_image = '<img width="38px !important" height="38px !important"' . $_attributes . ' src="' . site_url('uploads/client_profile_images/' . $id . '/' . $type . '_' . $result->profile_image) .  '" alt="' . $result->company . ' ' . $result->city . '" />';
     } else {
-        $profile_image = '<img src="' . site_url('assets/images/user-placeholder.jpg') . '" ' . $_attributes . ' class="' . implode(' ', $classes) . '" alt="' . $result->firstname . ' ' . $result->lastname . '" />';
+        $profile_image = '<img width="38px" height="38px" src="' . site_url('assets/images/user-placeholder.jpg') . '" ' . $_attributes  . '" alt="' . $result->firstname . ' ' . $result->lastname . '" />';
     }
     return $profile_image;
 }

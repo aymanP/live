@@ -30,16 +30,17 @@
                         <?php $auto_toggle_class = (isset($project) || isset($do_not_auto_toggle) ? '' : 'auto-toggle'); ?>
                         <?php echo render_select('clientid',$customers,array('userid',array('company')),'project_customer',$selected,array(),array(),'',$auto_toggle_class); ?>
 
-                        <?php $selected = (isset($project) ? $project->contactid : ''); ?>
+                        <?php //$selected = (isset($project) ? $project->contactid : ''); ?>
                         <?php
                         $selected = array();
                         if(isset($project_contacts)){
-                            foreach($project_contacts as $contact){
-                                array_push($selected,$contact);
+                            foreach($project_contacts as $contact)
+                            {
+                                array_push($selected,$contact['contactid']);
                             }
                         }
 
-                        echo render_select('contactid[]',$contacts, array('id',array('firstname', 'lastname')),'Contact',$selected,array( 'multiple'=>true)); ?>
+                        echo render_select('contactid',$contacts, array('id',array('firstname', 'lastname')),'Contact',$selected,array( )); ?>
 
 
 
@@ -123,6 +124,7 @@
                             }
 
                         echo render_select('project_members[]',$staff,array('staffid',array('firstname','lastname')),'project_members',$selected,array('multiple'=>true));
+
                             ?>
                         <div class="row">
                             <div class="col-md-6">
@@ -139,7 +141,7 @@
                         <p class="bold"><?php echo _l('project_description'); ?></p>
                         <?php $contents = ''; if(isset($project)){$contents = $project->description;} ?>
                         <?php echo render_textarea('description','',$contents,array(),array(),'','tinymce'); ?>
-                        <button type="submit" data-form="#project_form" class="btn btn-info pull-right" autocomplete="off" data-loading-text="<?php echo _l('wait_text'); ?>"><?php echo _l('submit');echo $project_contacts; ?></button>
+                        <button type="submit" data-form="#project_form" class="btn btn-info pull-right" autocomplete="off" data-loading-text="<?php echo _l('wait_text'); ?>"><?php echo _l('submit'); ?></button>
                     </div>
                 </div>
             </div>
@@ -180,7 +182,8 @@
 </div>
 <?php init_tail(); ?>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function()
+    {
         $('select[name="billing_type"]').on('change',function(){
             var type = $(this).val();
             if(type == 1){
@@ -194,7 +197,7 @@
                 $('#project_rate_per_hour').addClass('hide');
             }
         });
-        _validate_form($('form'),{name:'required',clientid:'required',start_date:'required',deadline:'required',billing_type:'required'});
+        _validate_form($('form'),{name:'required',clientid:'required',contactid:'required',start_date:'required',deadline:'required',billing_type:'required'});
 
         $('select[name="status"]').on('change',function(){
             var status = $(this).val();
@@ -227,15 +230,17 @@
             $('.project_progress_slider').slider({disabled:_checked});
         });
 
-        $('select[name="clientid"]').on('change',function(){
+        $('select[name="clientid"]').on('change',function()
+        {
             var client_id = $(this).val();
 
-            $.get(admin_url + 'projects/get_contacts_by_client/' + client_id, function(response) {
-                $('select[name="contactid[]"]').find("option").remove();
-                $('select[name="contactid[]"]').append($('<option value=""></option>'));
+            $.get(admin_url + 'projects/get_contacts_by_client/' + client_id, function(response)
+            {
+                $('select[name="contactid"]').find("option").remove();
+                $('select[name="contactid"]').append($('<option value=""></option>'));
 
                 $.each(response, function(key, value) {
-                    $('select[name="contactid[]"]').append($('<option>', { value: value.id }).text(value.firstname+ ' '+value.lastname));
+                    $('select[name="contactid"]').append($('<option>', { value: value.id }).text(value.firstname+ ' '+value.lastname));
                 });
                 $('.selectpicker').selectpicker('refresh');
             }, 'json');

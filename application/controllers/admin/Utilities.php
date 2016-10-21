@@ -56,6 +56,10 @@ class Utilities extends Admin_controller
             $id = $this->input->post('id');
             $this->utilities_model->set_param_image($id, $eff, $pos, $active);
             //dump(generate_slider($dur));
+
+            $this->load->view('admin/utilities/home_slider');
+            //redirect('http://localhost/CRM/live/admin/utilities/home_slider');
+
             redirect(admin_url('utilities/home_slider'));
         }
     }
