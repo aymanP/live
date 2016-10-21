@@ -26,8 +26,7 @@ class Utilities extends Admin_controller
                 $id = $this->input->post('id');
                 $this->utilities_model->right_user($id, $right_user);
             }
-            redirect('http://localhost/CRM/live/admin/utilities/home_slider');
-        }
+            redirect(admin_url('utilities/home_slider'));        }
     }
 
 
@@ -57,8 +56,12 @@ class Utilities extends Admin_controller
             $id = $this->input->post('id');
             $this->utilities_model->set_param_image($id, $eff, $pos, $active);
             //dump(generate_slider($dur));
+<<<<<<< HEAD
             $this->load->view('admin/utilities/home_slider');
             //redirect('http://localhost/CRM/live/admin/utilities/home_slider');
+=======
+            redirect(admin_url('utilities/home_slider'));
+>>>>>>> 948ea472c513de38765b135b73cc0f1a5b9039b1
         }
     }
     /* All perfex activity log */

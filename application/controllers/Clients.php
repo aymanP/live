@@ -450,6 +450,7 @@ class Clients extends Clients_controller
     {
         check_invoice_restrictions($id, $hash);
         $invoice = $this->invoices_model->get($id);
+
         if (!is_client_logged_in()) {
             load_client_language($invoice->clientid);
         }
@@ -487,12 +488,16 @@ class Clients extends Clients_controller
         $this->load->library('numberword',array('clientid'=>$invoice->clientid));
         $this->load->model('payment_modes_model');
         $this->load->model('payments_model');
+        $data['mode']=$this->invoices_model->get_mode($invoice->clientid);
+        $data['alami'] = $this->invoices_model->mode_alami();
+
         $data['payments']      = $this->payments_model->get_invoice_payments($id);
         $data['payment_modes'] = $this->payment_modes_model->get();
         $data['title']         = format_invoice_number($invoice->id);
         $this->use_navigation  = false;
         $data['hash']          = $hash;
         $data['invoice']       = $invoice;
+
         $data['bodyclass']     = 'viewinvoice';
         $this->data            = $data;
         $this->view            = 'invoicehtml';

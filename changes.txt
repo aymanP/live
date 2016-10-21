@@ -1,0 +1,12 @@
+/////// Ayman /////
+
+
+invoices_model.php 
+->ajout de deux fonction get_mode() et mode_alami()
+
+clients.php (controller) 
+modification dans la methode viewinvoices
+
+invoicehtml.php (view) 
+
+/////////////

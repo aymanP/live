@@ -95,13 +95,31 @@
                             if(get_option('show_sale_agent_on_invoices') == 1){ ?>
                         <br /><span class="mtop20">
                         <span class="bold"><?php echo _l('sale_agent_string'); ?>:</span>
-                        <?php echo get_staff_full_name($invoice->sale_agent); ?>
+                        <?php
+                        if($mode != null)
+                        {
+                            foreach ($mode as $mod){
+                                $mode_alami = (int)$mod['mode_alami'];
+                            }
+                        }
+                        if($alami != null){
+                            foreach($alami as $alam ){
+                                if ($alam['firstname'] != null)
+                                    $username = $alam['firstname_alami'].' '.$alam['lastname_alami'];
+                                    $firstname = $alam['firstname'];
+                                    $lastname = $alam['lastname'];
+                            }
+                        }
+                        if($mode_alami == 1 && get_staff_full_name($invoice->sale_agent) == $firstname.' '.$lastname) {
+                            echo $username;
+                        }
+                         else {echo  get_staff_full_name($invoice->sale_agent);} //get_mode($invoice->clientid) == 1 && get_staff_full_name($invoice->sale_agent)== mode_alami(?>
                         </span>
+
                         <?php }
                             }
                             ?>
                         <?php
-                            // check for invoice custom fields which is checked show on pdf
                             $pdf_custom_fields = get_custom_fields('invoice',array('show_on_pdf'=>1));
                             foreach($pdf_custom_fields as $field){
                             $value = get_custom_field_value($invoice->id,$field['id'],'invoice');
@@ -405,3 +423,4 @@
         </div>
     </div>
 </div>
+

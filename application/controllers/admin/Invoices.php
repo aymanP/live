@@ -47,6 +47,9 @@ class Invoices extends Admin_controller
         $data['invoices_statuses']       = $this->invoices_model->get_statuses();
         $this->load->view('admin/invoices/manage', $data);
     }
+
+
+
     public function client_change_data($customer_id, $current_invoice = 'undefined')
     {
         if ($this->input->is_ajax_request()) {
