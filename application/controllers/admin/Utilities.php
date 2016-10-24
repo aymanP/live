@@ -48,11 +48,9 @@ class Utilities extends Admin_controller
             $dur = $this->input->post('duree');
             $eff = $this->input->post('effect');
             $pos = $this->input->post('position');
-            if(($this->input->post('active'))) {
-                $active = 1;
-            }
-            else
-                $active = 0;
+            $active = $this->input->post('active');
+
+
             $id = $this->input->post('id');
             $this->utilities_model->set_param_image($id, $eff, $pos, $active);
             //dump(generate_slider($dur));

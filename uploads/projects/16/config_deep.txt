@@ -1,0 +1,5 @@
+user = deepmaro_usrdev
+base = deepmaro_livedev
+pass = 123Deep-
+
+url = livedev.deepmaroc.com

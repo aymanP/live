@@ -7,7 +7,9 @@
      <div class="panel-body">
       <div class="row mbot15">
         <div class="col-md-12">
-          <h3 class="text-success"><?php echo _l('projects_summary'); ?></h3>
+          <h3 class="text-success"><?php echo _l('projects_summary'); $id =get_contact_user_id(); echo $id; //print_r($projects);
+              //foreach($projects as $p)
+                  //echo $p['name'];?></h3>
           <?php
             $where = array('clientid'=>get_client_user_id());
 

@@ -42,7 +42,7 @@
 														<tr data-id="<?php echo $value['id']; ?>">
 														<td>
 															<i class="<?php echo get_mime_class($value['filetype']); ?>"></i>
-															<a data-toggle="tooltip" data-title="<?php echo _l('customer_file_from',ucfirst($type)); ?>" href="<?php echo $url . $value[$download_indicator]; ?>"><?php echo $value['name'].$value['id']; ?></a>
+															<a data-toggle="tooltip" data-title="<?php echo _l('customer_file_from',ucfirst($type)); ?>" href="<?php echo $url . $value[$download_indicator]; ?>"><?php echo $value['name']; ?></a>
 															<br />
 															<small class="text-muted"> <?php echo $value['image']; ?></small>
 														</td>
@@ -70,7 +70,7 @@
 																		<form action="" id="rename_form" method="post" accept-charset="utf-8" novalidate="novalidate">
 																			<div class="modal-header">
 																				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-																				<h4 class="modal-title" id="myModalLabel">Modifier l'image <?php echo $value['name'].$value['id']; ?> </h4>
+																				<h4 class="modal-title" id="myModalLabel">Modifier l'image <?php echo $value['name']; ?> </h4>
 																			</div>
 																			<div class="modal-body">
 																				<div class="row">
@@ -142,14 +142,11 @@
 
 
 																						<div class="input-group">
-																							<label> Durée d'affichage </label> &nbsp;
-																							<select class="form-control" id="duree" name="duree">
-																								<option value="2"> 2 secondes</option>
-																								<option value="3"> 3 secondes</option>
-																								<option value="4"> 4 secondes</option>
-																								<option value="5"> 5 secondes</option>
-																								<option value="6"> 6 secondes</option>
-																								<option value="15"> 15 secondes</option>
+																							<label> Active </label> &nbsp;
+																							<select class="form-control" id="duree" name="active">
+																								<option value="1"> OUI</option>
+																								<option value="0"> NON</option>
+
 
 																							</select>
 																							<!-- var index = document.getElementById('effect');
@@ -170,21 +167,7 @@
 																					</div>
 																				</div> </br>
 
-																				<div class="row">
-																					<div class="col-md-6">
 
-																						<div class="input-group">
-																							<input type="checkbox" id="cbox2" value="deuxieme_checkbox" name="active" > &nbsp;<label for="cbox2">  Active  </label>
-																							<?php
-																							if (isset($_POST['active']))
-																								$active = 1;
-																							else
-																								$active = 2;
-																							?>
-
-																						</div>
-																					</div>
-																				</div> </br>
 																			</div>
 																			<div class="modal-footer">
 																				<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>

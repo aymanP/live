@@ -71,7 +71,33 @@ class Clients_model extends CRM_Model
     public function get_project($id)
     {
         $this->db->where('id', $id);
+        $contact = $this->db->get('tblcontacts')->result_array();
+        foreach ($contact as $c)
+        {
+            if ($c['is_primary'] == 1)
+            {
+                $id = $c['userid'];
+                $this->db->where('clientid', $id);
+            } else
+                $this->db->where('contactid', $id);
+        }
         return $this->db->get('tblprojects')->result_array();
+
+    }
+    public function get_project1($id)
+{
+    $this->db->where('contacttid', $id);
+    return $this->db->get('tblprojects')->result_array();
+
+}
+    public function is_primary($id)
+    {
+        $this->db->where('userid', $id);
+        $contact = $this->db->get('tblcontacts')->result_array();
+        foreach ($contact as $c)
+        {
+            return $c['is_primary'];
+        }
 
     }
     public function get_contact_primary($id)

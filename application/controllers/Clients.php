@@ -62,8 +62,8 @@ class Clients extends Clients_controller
         if(is_numeric($status)){
             $where['status'] = $status;
         }
-
-        $data['projects'] = $this->projects_model->get_client_projects($contact_id, $where);
+        $this->load->model(Clients_model);
+        $data['projects'] = $this->Clients_model->get_project($contact_id);
         $data['title']    = _l('clients_my_projects');
         $this->data       = $data;
         $this->view       = 'projects';
