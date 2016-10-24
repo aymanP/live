@@ -113,7 +113,7 @@
                         if($mode_alami == 1 && get_staff_full_name($invoice->sale_agent) == $firstname.' '.$lastname) {
                             echo $username;
                         }
-                         else {echo  get_staff_full_name($invoice->sale_agent);} //get_mode($invoice->clientid) == 1 && get_staff_full_name($invoice->sale_agent)== mode_alami(?>
+                         else echo  get_staff_full_name($invoice->sale_agent); ?>
                         </span>
 
                         <?php }
