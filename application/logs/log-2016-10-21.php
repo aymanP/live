@@ -669,3 +669,34 @@ ERROR - 2016-10-21 17:14:51 --> Severity: Warning --> Missing argument 1 for gen
 ERROR - 2016-10-21 15:14:51 --> 404 Page Not Found: Uploads/sliders
 ERROR - 2016-10-21 15:14:58 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-21 15:14:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 15:35:39 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 15:35:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 17:56:06 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-21 17:56:06 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-21 15:56:07 --> 404 Page Not Found: Uploads/sliders
+ERROR - 2016-10-21 15:56:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 15:56:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 15:56:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 15:56:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 15:56:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 15:56:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 15:56:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 15:56:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 15:56:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:06:37 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:06:38 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:06:38 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:06:38 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:06:38 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:06:38 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:09:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:09:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:09:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:09:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:09:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:09:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:09:11 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:09:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:09:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:09:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-21 16:09:35 --> 404 Page Not Found: Assets/plugins
