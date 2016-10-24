@@ -385,6 +385,9 @@ class Clients extends Clients_controller
         if ($data['ticket']->userid != get_client_user_id()) {
             redirect(site_url());
         }
+        $this->load->model('payments_model');
+        $data['mode']=$this->invoices_model->get_mode(get_client_user_id);
+        $data['alami'] = $this->invoices_model->mode_alami();
         $data['ticket_replies'] = $this->tickets_model->get_ticket_replies($id);
         $data['title']          = $data['ticket']->subject;
         $this->data             = $data;
@@ -544,6 +547,9 @@ class Clients extends Clients_controller
             die();
         }
         $this->load->library('numberword',array('clientid'=>$estimate->clientid));
+        $this->load->model('invoices_model');
+        $data['mode']=$this->invoices_model->get_mode($estimate->clientid);
+        $data['alami'] = $this->invoices_model->mode_alami();
         $data['title']        = format_estimate_number($estimate->id);
         $this->use_navigation = false;
         $data['hash']         = $hash;
