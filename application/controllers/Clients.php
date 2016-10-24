@@ -35,6 +35,10 @@ class Clients extends Clients_controller
         if (!is_client_logged_in()) {
             redirect(site_url('clients/login'));
         }
+        $this->load->model('invoices_model');
+        $data['mode'] = $this->invoices_model->get_mode(get_client_user_id());
+        $data['alami'] = $this->invoices_model->mode_alami();
+
         $data['announcement'] = $this->announcements_model->get($id);
         $data['title'] =$data['announcement']->name;
         $this->data = $data;
@@ -386,7 +390,7 @@ class Clients extends Clients_controller
             redirect(site_url());
         }
         $this->load->model('payments_model');
-        $data['mode']=$this->invoices_model->get_mode(get_client_user_id);
+        $data['mode']=$this->invoices_model->get_mode(get_client_user_id());
         $data['alami'] = $this->invoices_model->mode_alami();
         $data['ticket_replies'] = $this->tickets_model->get_ticket_replies($id);
         $data['title']          = $data['ticket']->subject;
