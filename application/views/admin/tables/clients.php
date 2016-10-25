@@ -7,7 +7,7 @@ $custom_fields = get_custom_fields('customers', array(
 
 $aColumns = array('tblclients.profile_image',
     'company',
-    'tblcontacts.id',
+    'tblcontacts.firstname ',
     'tblcontacts.email',
     'tblclients.phonenumber',
     '(SELECT GROUP_CONCAT(name) FROM tblcustomersgroups LEFT JOIN tblcustomergroups_in ON tblcustomergroups_in.groupid = tblcustomersgroups.id WHERE customer_id = tblclients.userid)',
@@ -160,9 +160,9 @@ foreach ($rResult as $aRow) {
 
         }
         else if ($aColumns[$i] == 'phonenumber') {
-            $_data = '<a href="tel:' . $_data . '">' . $_data . '</a>';
+            $_data =  $_data;
         } else if ($aColumns[$i] == $aColumns[2]) {
-            $_data = '<a href="mailto:' . $_data . '">' . $_data . '</a>';
+            $_data =  $aRow['firstname']. ' ' .$aRow['lastname'] ;
         } else if($i == 1){
             // primary contact add link
             $_data = '<a href="'.admin_url('clients/client/'.$aRow['userid'].'?contactid='.get_primary_contact_user_id($aRow['userid'])).'" target="_blank">'.$aRow['firstname']. ' ' .$aRow['lastname']. '</a>';

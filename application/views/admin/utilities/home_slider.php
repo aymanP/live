@@ -60,7 +60,7 @@
 															<button type="button" data-toggle="modal" data-file-name="<?php echo $value['file_name']; ?>" data-filetype="<?php echo $value['filetype']; ?>" data-path="<?php echo $path; ?>" data-target="<?php echo "#carac".$value['id'];?>" class="btn btn-info1 btn-icon" value="Caractéristiques">
 																<i class="fa fa-cog fa-lg" aria-hidden="true" name="Caractéristiques"></i> </button>
 
-															<a href="<?php echo base_url("live/uploads/sliders/".$value['image']); ?>" class="btn btn-primary btn-icon" download>
+															<a href="<?php echo base_url("uploads/sliders/".$value['image']); ?>" class="btn btn-primary btn-icon" download>
 																<i class="fa fa-download" title="download"></i>
 															</a>
 															<div class="modal fade in" id="<?php $val = $value['id'];echo "rename".$val;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="padding-left: 6px;">

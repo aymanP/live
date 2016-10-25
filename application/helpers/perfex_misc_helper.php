@@ -570,6 +570,26 @@ function get_announcements_for_user($staff = true)
     }
     return $announcements;
 }
+/*
+function mode_alami(){
+    $CI =& get_instance();
+
+    $CI->db->where('email','i.ab@deepmaroc.com');
+
+    $name = $CI->db->get('tblstaff')->result_array();
+
+    return $name;//['firstname'].' '.$name=['lastname_alami'];
+}
+
+function get_mode($id){
+    $CI =& get_instance();
+
+    $CI->db->where('userid',$id);
+
+    $mode = $CI->db->get('tblclients')->result_array();
+
+    return $mode ;
+}*/
 /**
  * Slug function
  * @param  string $str
