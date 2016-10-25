@@ -10,14 +10,31 @@
                     ?>
                     <?php echo staff_profile_image($activity['staff_id'],array('staff-profile-image-small','pull-left mright10')); ?>
                     <?php } else if($activity['contact_id'] != 0){
-                        $fullname = get_contact_full_name($activity['contact_id']) . ' - ';
+                    if($mode != null)
+                    {
+                        foreach ($mode as $mod){
+                            $mode_alami = (int)$mod['mode_alami'];
+                        }
+                    }
+                    if($alami != null){
+                        foreach($alami as $alam ){
+                            if ($alam['firstname'] != null)
+                                $username = $alam['firstname_alami'].' '.$alam['lastname_alami'];
+                            $firstname = $alam['firstname'];
+                            $lastname = $alam['lastname'];
+                        }
+                    }
+                    if($mode_alami == 1 && get_contact_full_name($activity['contact_id']) == $firstname.' '.$lastname) {
+                         $fullname = $username.' - ';
+                    }
+                       else  $fullname = get_contact_full_name($activity['contact_id']) . ' - ';
                         ?>
                         <img src="<?php echo contact_profile_image_url($activity['contact_id']); ?>" class="client-profile-image-small pull-left mright10">
                         <?php } else {$fullname = '[CRON] ';} ?>
                         <div class="media-body">
                             <div class="display-block">
                                 <h5 class="bold no-margin">
-                                    <?php echo $fullname . $activity['description']; ?>
+                                    <?php echo $fullname.$mode_alami.$username . $activity['description']; ?>
                                 </h5>
                                 <p class="text-muted"><?php echo $activity['additional_data']; ?></p>
                             </div>

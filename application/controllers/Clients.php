@@ -158,6 +158,7 @@ class Clients extends Clients_controller
         $data['gantt_data']  = $this->projects_model->get_gantt_data($id);
         $data['discussions'] = $this->projects_model->get_discussions($id);
         $data['files']       = $this->projects_model->get_files($id);
+
         $this->load->helper('date');
         $data['project_total_days']        = round((human_to_unix($data['project']->deadline . ' 00:00') - human_to_unix($data['project']->start_date . ' 00:00')) / 3600 / 24);
         $data['project_days_left']         = $data['project_total_days'];
@@ -186,7 +187,10 @@ class Clients extends Clients_controller
         ));
         $data['total_tasks']         = $total_tasks;
         @$data['tasks_not_completed_progress'] = $data['tasks_completed'] / $total_tasks * 100;
+        $this->load->model('invoices_model');
         $data['activity']   = $this->projects_model->get_activity($id);
+        $data['mode'] = $this->invoices_model->get_mode(get_client_user_id());
+        $data['alami'] = $this->invoices_model->mode_alami();
         $data['timesheets'] = $this->projects_model->get_timesheets($id);
         $data['tasks']      = $this->projects_model->get_tasks($id);
         if ($this->input->get('discussion_id')) {
