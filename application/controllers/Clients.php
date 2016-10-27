@@ -86,6 +86,7 @@ class Clients extends Clients_controller
             $action = $this->input->post('action');
             switch ($action) {
                 case 'discussion_comments':
+                 //   var_dump($this->projects_model->get_discussion_comments($this->input->post('discussion_id')));
                     echo json_encode($this->projects_model->get_discussion_comments($this->input->post('discussion_id')));
                     die;
                 case 'new_discussion_comment':

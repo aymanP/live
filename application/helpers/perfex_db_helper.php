@@ -144,6 +144,32 @@ function get_option($name)
     $CI->load->library('perfex_base');
     return $CI->perfex_base->get_option($name);
 }
+
+function apply_alami($staffName)
+{
+
+    $mode = get_mode(get_client_user_id());
+    $alami = mode_alami();
+
+    if ($mode != null) {
+        foreach ($mode as $mod) {
+            $mode_alami = (int)$mod['mode_alami'];
+        }
+    }
+    if ($alami != null) {
+        foreach ($alami as $alam) {
+            if ($alam['firstname'] != null)
+                $username = $alam['firstname_alami'] . ' ' . $alam['lastname_alami'];
+            $firstname = $alam['firstname'];
+            $lastname = $alam['lastname'];
+        }
+    }
+
+    if($mode_alami == 1 && $staffName == $firstname.' '.$lastname)
+        return $username;
+    else return $staffName;
+}
+
 /**
  * Get option value from database
  * @param  string $name Option name
@@ -194,7 +220,7 @@ function get_staff_full_name($userid = '')
     $CI->db->where('staffid', $_userid);
     $staff = $CI->db->select('firstname,lastname')->from('tblstaff')->get()->row();
     if($staff){
-        return $staff->firstname . ' ' . $staff->lastname;
+        return apply_alami($staff->firstname . ' ' . $staff->lastname);
     } else {
         return '';
     }

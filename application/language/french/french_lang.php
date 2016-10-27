@@ -2519,6 +2519,7 @@ $lang['project_total_cost']            = 'Coût total';
 $lang['project_members']            = 'Membres du projet';
 $lang['project_member_removed']     = 'Membre du projet retiré avec succès';
 $lang['project_overview']           = 'Synthèse du projet';
+$lang['project_estimates']          = 'Devis';
 $lang['project_gant']            = 'Diagramme de Gantt';
 $lang['project_milestones']            = 'Etapes';
 $lang['project_milestone_order']            = 'Ordre';

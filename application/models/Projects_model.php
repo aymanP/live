@@ -915,7 +915,7 @@ class Projects_model extends CRM_Model
                     $comments[$i]['created_by_admin'] = false;
                 }
                 $comments[$i]['profile_picture_url'] = staff_profile_image_url($comment['staff_id']);
-                $comments[$i]['fullname']            = get_staff_full_name($comment['staff_id']);
+                $comments[$i]['fullname']            = apply_alami(get_staff_full_name($comment['staff_id']));
             }
             if (!is_null($comment['file_name'])) {
                 $comments[$i]['file_url'] = site_url('uploads/discussions/' . $id . '/' . $comment['file_name']);

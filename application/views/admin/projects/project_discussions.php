@@ -17,7 +17,7 @@
     <?php if($discussion->staff_id == 0){
         echo _l('project_discussion_posted_by',get_contact_full_name($discussion->contact_id)) . ' <span class="label label-info inline-block">'._l('is_customer_indicator').'</span>';
         } else {
-        echo _l('project_discussion_posted_by',get_staff_full_name($discussion->staff_id));
+        echo _l('project_discussion_posted_by',apply_alami(get_staff_full_name($discussion->staff_id)));
         }
         ?>
 </p>

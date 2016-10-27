@@ -21,19 +21,17 @@
                 <div class="date"><?php echo time_ago($activity['dateadded']); ?></div>
                 <?php if($activity['staff_id'] != 0){
 
-                    if($mode_alami == 1 && get_staff_full_name($activity['staff_id']) == $firstname.' '.$lastname) {
+                   /* if($mode_alami == 1 && get_staff_full_name($activity['staff_id']) == $firstname.' '.$lastname) {
                         $fullname = $username.' - ';
                     } else
-                    {$fullname = get_staff_full_name($activity['staff_id']) . ' - ';}
+                    {*/
+                        $fullname = apply_alami(get_staff_full_name($activity['staff_id'])) . ' - ';
+                    //}
                     ?>
                     <?php echo staff_profile_image($activity['staff_id'],array('staff-profile-image-small','pull-left mright10')); ?>
                     <?php } else if($activity['contact_id'] != 0){
 
-                    if($mode_alami == 1 && get_contact_full_name($activity['contact_id']) == $firstname.' '.$lastname) {
-                         $fullname = $username.' - ';
-                    }
-
-                       else  $fullname = get_contact_full_name($activity['contact_id']) . ' - ';
+                     $fullname = apply_alami(get_contact_full_name($activity['contact_id'])) . ' - ';
                         ?>
                         <img src="<?php echo contact_profile_image_url($activity['contact_id']); ?>" class="client-profile-image-small pull-left mright10">
                         <?php } else {$fullname = '[CRON] ';} ?>
@@ -42,7 +40,12 @@
                                 <h5 class="bold no-margin">
                                     <?php echo $fullname. $activity['description']; ?>
                                 </h5>
-                                <p class="text-muted"><?php echo $activity['additional_data']; ?></p>
+                                <p class="text-muted"><?php ;
+                                    if (strpos($activity['additional_data'], 'Ilyess Abounaaim') !== false) {
+                                      echo str_replace('Ilyess Abounaaim',$username ,$activity['additional_data'] );
+                                    }else  echo $activity['additional_data'];
+
+                                    ?></p>
                             </div>
                         </div>
                         <hr />

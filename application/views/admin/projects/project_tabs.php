@@ -30,6 +30,11 @@
         <a data-group="project_invoices" href="<?php echo admin_url('projects/view/'.$project->id.'?group=project_invoices'); ?>" role="tab"><i class="fa fa-sun-o" aria-hidden="true"></i> <?php echo _l('project_invoices'); ?></a>
     </li>
     <?php } ?>
+    <?php if(has_permission('estimates','','view')){ ?>
+    <li>
+        <a data-group="project_estimates" href="<?php echo admin_url('projects/view/'.$project->id.'?group=project_estimates'); ?>" role="tab"><i class="fa fa-sun-o" aria-hidden="true"></i> <?php echo _l('project_estimates'); ?></a>
+    </li>
+    <?php } ?>
 
     <?php if(has_permission( 'expenses','','create') || has_permission('expenses','','view')){ ?>
     <li>

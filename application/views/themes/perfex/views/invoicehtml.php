@@ -111,7 +111,7 @@
                             }
                         }
                         if($mode_alami == 1 && get_staff_full_name($invoice->sale_agent) == $firstname.' '.$lastname) {
-                            echo $username.'here';
+                            echo $username;
                         }
                          else echo  get_staff_full_name($invoice->sale_agent); ?>
                         </span>
