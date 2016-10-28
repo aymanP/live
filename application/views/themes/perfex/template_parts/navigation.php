@@ -42,7 +42,7 @@
                 <?php } ?>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img src="<?php echo contact_profile_image_url($contact->id,'thumb'); ?>" class="client-profile-image-small mrigh5">
+                    <img class="client-profile-image-small mrigh5" src="<?php echo contact_profile_image_url($contact->id,'thumb'); ?>"
                     <?php echo $contact->firstname . ' ' .$contact->lastname; ?>
                     <span class="caret"></span></a>
                     <ul class="dropdown-menu animated fadeIn">

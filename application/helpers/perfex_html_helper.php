@@ -553,7 +553,22 @@ function staff_profile_image_url($staff_id, $type = 'small')
     }
     return $url;
 }
-function contact_profile_image_url($contact_id, $classes = array('staff-profile-image'),$type = 'small')
+function contact_profile_image_url($contact_id, $type = 'small')
+{
+    $url = site_url('assets/images/user-placeholder.jpg');
+    $CI =& get_instance();
+    $CI->db->select('profile_image');
+    $CI->db->from('tblcontacts');
+    $CI->db->where('id', $contact_id);
+    $contact = $CI->db->get()->row();
+    if ($contact) {
+        if (!is_null($contact->profile_image)) {
+            $url = site_url('uploads/client_profile_images/' . $contact_id . '/' . $type . '_' . $contact->profile_image);
+        }
+    }
+    return $url;
+}
+function contact_profile_image_url1($contact_id, $classes = array('staff-profile-image'),$type = 'small')
 {
     $url = site_url('assets/images/user-placeholder.jpg');
     $CI =& get_instance();
