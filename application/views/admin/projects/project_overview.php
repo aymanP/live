@@ -297,7 +297,7 @@
                 <div class="media">
                     <div class="media-left">
 
-                            <?php echo contact_profile_image_url($project->contactid,array('staff-profile-image-small')); ?>
+                            <?php echo contact_profile_image_url1($project->contactid,array('staff-profile-image-small')); ?>
 
                     </div>
                     <div class="media-body">
