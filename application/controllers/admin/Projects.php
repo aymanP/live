@@ -6,6 +6,7 @@ class Projects extends Admin_controller
     {
         parent::__construct();
         $this->load->model('projects_model');
+        $this->load->model('Clients_model');
         $this->load->model('tasks_model');
         $this->load->model('currencies_model');
         $this->load->helper('date');
@@ -168,6 +169,8 @@ class Projects extends Admin_controller
             $this->load->model('payment_modes_model');
             $data['payment_modes'] = $this->payment_modes_model->get('', true);
             $data['members']       = $this->projects_model->get_project_members($id);
+            $data['contacts']       = $this->projects_model->get_project_cont($data['project']->contactid);
+            $data['client_contacts']= $this->Clients_model->get_contacts($data['project']->clientid);
             $data['staff']         = $this->staff_model->get('', 1);
             $data['gantt_data']    = $this->projects_model->get_gantt_data($id);
             $data['title']         = $data['project']->name;
@@ -222,6 +225,13 @@ class Projects extends Admin_controller
     {
         if (has_permission('projects', '', 'edit') || has_permission('projects','','create')) {
             $this->projects_model->add_edit_members($this->input->post(), $project_id);
+            redirect($_SERVER['HTTP_REFERER']);
+        }
+    }
+    public function add_edit_contacts($project_id)
+    {
+        if (has_permission('projects', '', 'edit') || has_permission('projects','','create')) {
+            $this->projects_model->add_edit_contacts($this->input->post('contactid'),$project_id);//add_edit_members($this->input->post(), $project_id);
             redirect($_SERVER['HTTP_REFERER']);
         }
     }

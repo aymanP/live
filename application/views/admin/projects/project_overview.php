@@ -281,6 +281,39 @@
             <?php } ?>
         </div>
     </div>
+</div> </br>
+<div class="row">
+    <div class="col-md-6">
+
+    </div>
+    <div class="col-md-6 team-members">
+        <div class="panel-heading project-info-bg no-radius"><?php echo _l('project_contacts');/* echo $project->contactid;*/ //print_r ($client_contacts);?>
+            <?php if(has_permission('projects','','edit') || has_permission('projects','','create')){ ?>
+                <a href="#" class="btn btn-info pull-right btn-xs" data-toggle="modal" data-target="#add-edit-contacts"><?php echo _l('add_edit_contacts'); ?></a>
+            <?php } ?>
+        </div>
+        <div class="panel-body no-radius">
+
+                <div class="media">
+                    <div class="media-left">
+
+                            <?php echo contact_profile_image_url($project->contactid,array('staff-profile-image-small')); ?>
+
+                    </div>
+                    <div class="media-body">
+                        <h5 class="media-heading mtop5">
+                           <?php foreach($contacts as $contact)
+                            { ?>
+                             <?php echo $contact['firstname'].' '.$contact['lastname']; }?>
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+        </div>
+    </div>
 </div>
 <div class="modal fade" id="add-edit-members" tabindex="-1" role="dialog">
     <div class="modal-dialog">
@@ -298,6 +331,38 @@
                     }
                     echo render_select('project_members[]',$staff,array('staffid',array('firstname','lastname')),'project_members',$selected,array('multiple'=>true));
                     ?>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo _l('close'); ?></button>
+                <button type="submit" class="btn btn-info" autocomplete="off" data-loading-text="<?php echo _l('wait_text'); ?>"><?php echo _l('submit'); ?></button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+        <?php echo form_close(); ?>
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="add-edit-contacts" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <?php echo form_open(admin_url('projects/add_edit_contacts/'.$project->id)); ?>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><?php echo _l('project_members'); ?></h4>
+            </div>
+            <div class="modal-body">
+                <?php
+                $selected = array();
+                if(isset($client_contacts)){
+                    foreach($client_contacts as $c)
+                    {
+                        array_push($selected,$c['id']);
+                    }
+                }
+
+                echo render_select('contactid',$client_contacts, array('id',array('firstname', 'lastname')),'Contact',$selected,array( ));
+                ?>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo _l('close'); ?></button>

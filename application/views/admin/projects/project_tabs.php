@@ -9,6 +9,9 @@
         <a data-group="project_files" href="<?php echo admin_url('projects/view/'.$project->id.'?group=project_files'); ?>" role="tab"><i class="fa fa-files-o" aria-hidden="true"></i> <?php echo _l('project_files'); ?></a>
     </li>
     <li>
+        <a data-group="project_files" href="<?php echo admin_url('projects/view/'.$project->id.'?group=project_files'); ?>" role="tab"><i class="fa fa-files-o" aria-hidden="true"></i> <?php echo _l('project_files'); ?></a>
+    </li>
+    <li>
         <a data-group="project_gantt" href="<?php echo admin_url('projects/view/'.$project->id.'?group=project_gantt'); ?>" role="tab"><i class="fa fa-line-chart" aria-hidden="true"></i> <?php echo _l('project_gant'); ?></a>
     </li>
     <li>

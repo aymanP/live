@@ -553,20 +553,23 @@ function staff_profile_image_url($staff_id, $type = 'small')
     }
     return $url;
 }
-function contact_profile_image_url($contact_id, $type = 'small')
+function contact_profile_image_url($contact_id, $classes = array('staff-profile-image'),$type = 'small')
 {
     $url = site_url('assets/images/user-placeholder.jpg');
     $CI =& get_instance();
-    $CI->db->select('profile_image');
-    $CI->db->from('tblcontacts');
+    $CI->db->select('profile_image,firstname,lastname');
     $CI->db->where('id', $contact_id);
-    $contact = $CI->db->get()->row();
-    if ($contact) {
-        if (!is_null($contact->profile_image)) {
-            $url = site_url('uploads/client_profile_images/' . $contact_id . '/' . $type . '_' . $contact->profile_image);
-        }
+    $contact = $CI->db->get(tblcontacts)->row();
+    //$profile_image= $contact->firstname;
+    if ($contact && $contact->profile_image !== null)
+    {
+           // $url = site_url('uploads/client_profile_images/' . $contact_id . '/' . $type . '_' . $contact->profile_image);
+            $profile_image = '<img  src="' . site_url('uploads/client_profile_images/' . $contact_id . '/' . $type . '_' . $contact->profile_image) . '"  alt="' . $contact->firstname . ' ' . $contact->lastname . '" />';
+    }else{
+        $profile_image = '<img src="' . site_url('assets/images/user-placeholder.jpg') . '"  class="' . implode(' ', $classes) . '" alt="' . $contact->firstname . ' ' . $contact->lastname . '" />';
+
     }
-    return $url;
+    return $profile_image;
 }
 /**
  * Get staff profile image

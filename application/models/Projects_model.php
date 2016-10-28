@@ -244,6 +244,13 @@ class Projects_model extends CRM_Model
             'visible_to_customer' => $visible
         ));
     }
+    public function add_edit_contacts($data,$id)
+    {
+        $this->db->where('id', $id);
+        $this->db->update('tblprojects', array(
+            'contactid' => $data
+        ));
+    }
     public function remove_file($id)
     {
         $this->db->where('id', $id);
@@ -772,6 +779,12 @@ class Projects_model extends CRM_Model
         $this->db->where('project_id', $project_id);
         return $this->db->get('tblprojectsettings')->result_array();
     }
+    public function get_project_cont($id)
+    {
+        $this->db->where('id', $id);
+        return $this->db->get('tblcontacts')->result_array();
+    }
+
     public function get_project_members($id)
     {   $this->db->select('email,project_id,staff_id');
         $this->db->join('tblstaff','tblstaff.staffid=tblprojectmembers.staff_id');
@@ -1249,7 +1262,7 @@ class Projects_model extends CRM_Model
             } else {
                 // milestones not set
                 if (count($added_tasks)) {
-                    foreach ($added_task as $task) {
+                    foreach ($added_tasks as $task) {
                         $this->db->where('id', $task['id']);
                         $this->db->update('tblstafftasks', array(
                             'milestone' => 0
