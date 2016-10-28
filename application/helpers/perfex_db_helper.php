@@ -145,6 +145,42 @@ function get_option($name)
     return $CI->perfex_base->get_option($name);
 }
 
+function email_alami($project_id){
+
+    $CI =& get_instance();
+    $CI->db->where('id',$project_id);
+    $data  = $CI->db->get('tblprojects')->result_array();
+
+    foreach($data as $d){
+        $clientid = $d['clientid'];
+    }
+
+    $CI->db->where('userid',$clientid);
+    $data_ = $CI->db->get('tblclients')->result_array();
+
+    foreach($data_ as $d_){
+        $mode_a = $d_['mode_alami'];
+    }
+
+    return $mode_a;
+
+}
+
+function get_a($project_id,$string){
+
+    $alami = mode_alami();
+    foreach ($alami as $alam) {
+        if ($alam['firstname'] != null)
+            $username = $alam['firstname_alami'] . ' ' . $alam['lastname_alami'];
+        $firstname = $alam['firstname'];
+        $lastname = $alam['lastname'];
+    }
+    if(email_alami($project_id) == 1 && $string = $firstname.' '.$lastname) return $username;
+    else return $string;
+}
+
+
+
 function apply_alami($staffName)
 {
 

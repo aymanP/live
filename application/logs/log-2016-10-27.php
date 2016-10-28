@@ -246,3 +246,221 @@ ERROR - 2016-10-27 13:57:09 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-27 13:57:09 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-27 13:57:13 --> 404 Page Not Found: Assets/plugins
 ERROR - 2016-10-27 13:57:13 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 14:51:00 --> Severity: Parsing Error --> syntax error, unexpected '=' C:\wamp64\www\CRM\live\application\helpers\perfex_upload_helper.php 107
+ERROR - 2016-10-27 16:54:09 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:54:09 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:54:20 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:54:20 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:55:22 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:55:22 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:55:24 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:55:24 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:55:27 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:55:27 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:55:35 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:55:35 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:55:44 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 16:55:44 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 15:04:49 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:04:50 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:04:50 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:04:51 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:09:13 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 17:09:13 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 17:09:14 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 17:09:14 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 17:09:16 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 17:09:16 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 17:09:24 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 17:09:31 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 17:09:35 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 17:09:42 --> Severity: Warning --> include_once(C:\wamp64\www\CRM\live\application\views/admin/etimates/estimates_top_stats.php): failed to open stream: No such file or directory C:\wamp64\www\CRM\live\application\views\admin\projects\project_estimates.php 10
+ERROR - 2016-10-27 17:09:42 --> Severity: Warning --> include_once(): Failed opening 'C:\wamp64\www\CRM\live\application\views/admin/etimates/estimates_top_stats.php' for inclusion (include_path='.;C:\php\pear') C:\wamp64\www\CRM\live\application\views\admin\projects\project_estimates.php 10
+ERROR - 2016-10-27 17:09:42 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\estimates_top_stats.php 10
+ERROR - 2016-10-27 17:09:42 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\estimates_top_stats.php 25
+ERROR - 2016-10-27 17:09:42 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\list_template.php 33
+ERROR - 2016-10-27 17:09:42 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 17:09:43 --> Severity: Warning --> include_once(C:\wamp64\www\CRM\live\application\views/admin/etimates/estimates_top_stats.php): failed to open stream: No such file or directory C:\wamp64\www\CRM\live\application\views\admin\projects\project_estimates.php 10
+ERROR - 2016-10-27 17:09:43 --> Severity: Warning --> include_once(): Failed opening 'C:\wamp64\www\CRM\live\application\views/admin/etimates/estimates_top_stats.php' for inclusion (include_path='.;C:\php\pear') C:\wamp64\www\CRM\live\application\views\admin\projects\project_estimates.php 10
+ERROR - 2016-10-27 17:09:43 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\estimates_top_stats.php 10
+ERROR - 2016-10-27 17:09:43 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\estimates_top_stats.php 25
+ERROR - 2016-10-27 17:09:43 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\list_template.php 33
+ERROR - 2016-10-27 17:09:43 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 17:09:44 --> Severity: Warning --> include_once(C:\wamp64\www\CRM\live\application\views/admin/etimates/estimates_top_stats.php): failed to open stream: No such file or directory C:\wamp64\www\CRM\live\application\views\admin\projects\project_estimates.php 10
+ERROR - 2016-10-27 17:09:44 --> Severity: Warning --> include_once(): Failed opening 'C:\wamp64\www\CRM\live\application\views/admin/etimates/estimates_top_stats.php' for inclusion (include_path='.;C:\php\pear') C:\wamp64\www\CRM\live\application\views\admin\projects\project_estimates.php 10
+ERROR - 2016-10-27 17:09:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\estimates_top_stats.php 10
+ERROR - 2016-10-27 17:09:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\estimates_top_stats.php 25
+ERROR - 2016-10-27 17:09:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\list_template.php 33
+ERROR - 2016-10-27 17:09:44 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 17:09:50 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 17:10:11 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:10:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:10:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:10:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:10:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:40:30 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:40:32 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:40:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:40:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:40:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:40:43 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:40:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:40:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:40:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:40:44 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:41:47 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:41:47 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:41:48 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:41:48 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:41:48 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:42:53 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:42:55 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:42:55 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:42:55 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:42:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:43:07 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 17:43:07 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 845
+ERROR - 2016-10-27 17:43:19 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:43:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:43:28 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:43:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:43:35 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:43:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:37 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:43:39 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:43:39 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:43:41 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:43:41 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:42 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:42 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:42 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:43:56 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:43:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:43:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:45:03 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:45:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:45:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:45:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:45:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:45:15 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:45:16 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:45:16 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:45:16 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:45:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:46:17 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:46:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:46:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:46:18 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:46:18 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:46:28 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:46:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:46:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:46:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:46:29 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:47:21 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:47:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:47:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:47:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:47:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 17:47:33 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 15:47:34 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:47:34 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:47:34 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 15:47:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 18:15:49 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 16:15:51 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:15:51 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:15:51 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:15:52 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 18:16:23 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 16:16:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:16:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:16:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:16:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 18:17:14 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 16:17:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:17:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:17:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:17:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 18:17:17 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 16:17:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:17:18 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:17:18 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:17:18 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:21:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:21:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:22:00 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:22:44 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:22:45 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:22:45 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:22:47 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:22:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:22:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:22:59 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:03 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:03 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:03 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:03 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:09 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:50 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:50 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:53 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:53 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:23:53 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 18:25:30 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 16:25:30 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:25:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:25:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:25:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 18:25:46 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 18:25:52 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 16:26:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:29 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:33 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:34 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:34 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:41 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:41 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:26:41 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 16:27:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-10-27 18:33:17 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 18:33:26 --> Could not find the language line "Home slider"
+ERROR - 2016-10-27 18:33:31 --> Could not find the language line "Home slider"

@@ -39,7 +39,7 @@ function get_project_merge_fields($project_id, $additional_data = array())
         $fields['{discussion_creator}'] = $cf;
         $fields['{comment_creator}'] = $cf;
     } else {
-        $sf = get_staff_full_name(get_staff_user_id());
+        $sf = get_a($project_id,get_staff_full_name(get_staff_user_id()));
         $fields['{file_creator}'] = $sf;
         $fields['{discussion_creator}'] = $sf;
         $fields['{comment_creator}'] = $sf;
