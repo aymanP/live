@@ -53,6 +53,7 @@ class Estimates extends Admin_controller
             $data['estimates_years'] = $this->estimates_model->get_estimates_years();
             $data['estimates_sale_agents'] = $this->estimates_model->get_sale_agents();
             $this->load->view('admin/estimates/manage', $data);
+            $this->load->view('admin/estimates/list_template',$data);
         }
     }
     /* Add new estimate or update existing */
@@ -203,10 +204,15 @@ class Estimates extends Admin_controller
                     $multiple_currencies = call_user_func('is_client_using_multiple_currencies',$this->input->post('customer_id'),'tblestimates');
                 }
 
+                if($this->input->post('project_id')){
+                    $_data['project_id'] = $this->input->post('project_id');
+                }
+
                 if ($multiple_currencies) {
                     $data['currencies'] = $this->currencies_model->get();
                 }
 
+                $data['total_result'] = $this->estimates_model->get_estimates_total($_data);
                 $data['_currency'] = $data['totals']['currencyid'];
                 unset($data['totals']['currencyid']);
                 $this->load->view('admin/estimates/estimates_total_template', $data);

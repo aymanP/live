@@ -12,7 +12,7 @@
         <tbody>
             <?php foreach($timesheets as $timesheet){ ?>
             <tr>
-                <td><?php echo staff_profile_image($timesheet['staff_id'],array('staff-profile-image-small')) .' ' .  $timesheet['staff_name']; ?></td>
+                <td><?php echo staff_profile_image($timesheet['staff_id'],array('staff-profile-image-small')) .' ' .  apply_alami($timesheet['staff_name']); ?></td>
                 <td><a href="<?php echo site_url('clients/project/'.$project->id.'?group=project_tasks&taskid='.$timesheet['task_data']->id); ?>"><?php echo $timesheet['task_data']->name; ?></a></td>
                 <td data-order="<?php echo strftime('%Y-%m-%d %H:%M:%S', $timesheet['start_time']); ?>"><?php echo strftime(get_current_date_format().' %H:%M', $timesheet['start_time']); ?></td>
                 <td data-order="<?php if(!is_null($timesheet['end_time'])){echo strftime('%Y-%m-%d %H:%M:%S', $timesheet['end_time']);} ?>"><?php if(!is_null($timesheet['end_time'])){echo strftime(get_current_date_format().' %H:%M', $timesheet['end_time']);} ?></td>

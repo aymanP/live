@@ -38,6 +38,12 @@
         <a data-group="project_invoices" href="<?php echo site_url('clients/project/'.$project->id.'?group=project_invoices'); ?>" role="tab"><i class="fa fa-sun-o" aria-hidden="true"></i> <?php echo _l('project_invoices'); ?></a>
     </li>
     <?php } ?>
+
+    <?php if(has_contact_permission('estimates')){ ?>
+    <li role="presentation">
+        <a data-group="project_estimates" href="<?php echo site_url('clients/project/'.$project->id.'?group=project_estimates'); ?>" role="tab"><i class="fa fa-sun-o" aria-hidden="true"></i> <?php echo _l('project_estimates'); ?></a>
+    </li>
+    <?php } ?>
      <?php if($project->settings->view_activity_log == 1){ ?>
       <li role="presentation">
         <a data-group="project_activity" href="<?php echo site_url('clients/project/'.$project->id.'?group=project_activity'); ?>" role="tab"><i class="fa fa-exclamation" aria-hidden="true"></i> <?php echo _l('project_activity'); ?></a>

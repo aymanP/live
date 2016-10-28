@@ -108,27 +108,10 @@
                                 <div class="row">
                                     <div class="col-md-3 border-right">
                                         <?php if($ticket->admin == NULL || $ticket->admin == 0){ ?>
-                                            <p><?php if($mode != null)
-                                                {
-                                                    foreach ($mode as $mod){
-                                                        $mode_alami = (int)$mod['mode_alami'];
-                                                    }
-                                                }
-                                                if($alami != null){
-                                                    foreach($alami as $alam ){
-                                                        if ($alam['firstname'] != null)
-                                                            $username = $alam['firstname_alami'].' '.$alam['lastname_alami'];
-                                                        $firstname = $alam['firstname'];
-                                                        $lastname = $alam['lastname'];
-                                                    }
-                                                }
-                                                if($mode_alami == 1 && get_staff_full_name($estimate->sale_agent) == $firstname.' '.$lastname) {
-                                                    echo $username;
-                                                }
-                                                else
-                                                    echo $ticket->submitter; ?></p>
+                                            <p><?php
+                                                    echo apply_alami($ticket->submitter); ?></p>
                                             <?php } else { ?>
-                                                <p><?php echo $ticket->opened_by; ?></p>
+                                                <p><?php echo apply_alami($ticket->opened_by); ?></p>
                                                 <p class="text-muted">
                                                     <?php echo _l('ticket_staff_string'); ?>
                                                 </p>
@@ -152,7 +135,7 @@
                                             <div class="panel-body <?php if($reply['admin'] == NULL){echo 'client-reply';} ?>">
                                                 <div class="row">
                                                     <div class="col-md-3 border-right">
-                                                        <p><?php echo $reply['submitter']; ?></p>
+                                                        <p><?php echo apply_alami($reply['submitter']); ?></p>
                                                         <p class="text-muted">
                                                             <?php if($reply['admin'] !== NULL){
                                                                 echo _l('ticket_staff_string');

@@ -45,7 +45,7 @@
                 $_assignees = '';
                 foreach ($view_task->assignees as $assignee) {
                  $_assignees .= '
-                 <div data-toggle="tooltip" class="pull-left mleft5 task-user" data-title="'.get_staff_full_name($assignee['assigneeid']).'">'
+                 <div data-toggle="tooltip" class="pull-left mleft5 task-user" data-title="'.apply_alami(get_staff_full_name($assignee['assigneeid'])).'">'
                    .staff_profile_image($assignee['assigneeid'], array(
                      'staff-profile-image-small'
                      )) .'</div>';
@@ -105,10 +105,10 @@
                     <span class="pull-right mright10">
                         <?php
                         if($attachment['staffid'] != 0){
-                            echo get_staff_full_name($attachment['staffid']);
+                            echo apply_alami(get_staff_full_name($attachment['staffid']));
                         } else {
                             if($attachment['contact_id'] != get_contact_user_id()){
-                                echo get_contact_full_name($attachment['contact_id']);
+                                echo apply_alami(get_contact_full_name($attachment['contact_id']));
                             }
                         }
                         ?>
@@ -141,7 +141,7 @@
         <?php } ?>
         <div class="media-body">
             <?php if($comment['staffid'] != 0){ ?>
-            <span class="bold"><?php echo get_staff_full_name($comment['staffid']); ?></span><br />
+            <span class="bold"><?php echo apply_alami(get_staff_full_name($comment['staffid'])); ?></span><br />
             <?php } else { ?>
             <span class="pull-left bold">
             <?php echo get_contact_full_name($comment['contact_id']); ?></span>

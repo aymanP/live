@@ -2513,6 +2513,7 @@ $lang['project_total_cost']            = 'Total Rate';
 $lang['project_members']            = 'Project Members';
 $lang['project_member_removed']     = 'Project member removed successfully';
 $lang['project_overview']           = 'Project Overview';
+$lang['project_estimates']                  = 'Estimates';
 $lang['project_gant']            = 'Gantt View';
 $lang['project_milestones']            = 'Milestones';
 $lang['project_milestone_order']            = 'Order';

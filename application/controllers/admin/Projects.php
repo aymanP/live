@@ -126,13 +126,25 @@ class Projects extends Admin_controller
                 blank_page('Project not found');
             }
             $this->load->model('invoices_model');
-              $data['invoices_years'] = $this->invoices_model->get_invoices_years();
-        $data['invoices_sale_agents'] = $this->invoices_model->get_sale_agents();
-        $data['invoices_statuses']       = $this->invoices_model->get_statuses();
-        $data['chosen_invoice_status']        = '';
-        $data['chosen_ticket_status']        = '';
+            $data['invoices_years'] = $this->invoices_model->get_invoices_years();
+            $data['invoices_sale_agents'] = $this->invoices_model->get_sale_agents();
+            $data['invoices_statuses']       = $this->invoices_model->get_statuses();
+            $data['chosen_invoice_status']        = '';
+            $data['chosen_ticket_status']        = '';
+
+            $this->load->model('estimates_model');
+            $data['estimates_years'] = $this->estimates_model->get_estimates_years();
+            $data['estimates_sale_agents'] = $this->estimates_model->get_sale_agents();
+            $data['estimates_statuses']       = $this->estimates_model->get_statuses();
+            $data['chosen_estimate_status']        = '';
+            $data['chosen_ticket_status']        = '';
+
+
+
             $data['project'] = $project;
-            if (!$this->input->get('group') || ($this->input->get('group') == 'project_invoices' && !has_permission('invoices', '', 'view')) || $this->input->get('group') == 'project_expenses' && (!has_permission('expenses','','view') && !has_permission('expenses','','create'))) {
+
+
+            if (!$this->input->get('group') || ($this->input->get('group') == 'project_invoices' && !has_permission('invoices', '', 'view')) || $this->input->get('group') == 'project_expenses' && (!has_permission('expenses','','view') && !has_permission('expenses','','create')) || $this->input->get('group') == 'project_estimates' && (!has_permission('estimates','','view') && !has_permission('estimates','','create'))) {
                 $view = 'project_overview';
             } else {
                 $view = $this->input->get('group');

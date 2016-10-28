@@ -239,7 +239,7 @@
                <?php echo staff_profile_image($member['staff_id'],array('staff-profile-image-small','media-object')); ?>
             </div>
             <div class="media-body">
-               <h5 class="media-heading mtop5"><?php echo get_staff_full_name($member['staff_id']); ?></h5>
+               <h5 class="media-heading mtop5"><?php echo apply_alami(get_staff_full_name($member['staff_id'])); ?></h5>
             </div>
          </div>
          <?php } ?>

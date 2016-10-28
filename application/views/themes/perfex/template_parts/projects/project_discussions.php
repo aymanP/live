@@ -77,12 +77,18 @@
     <?php if($discussion->staff_id == 0){
         echo _l('project_discussion_posted_by',get_contact_full_name($discussion->contact_id));
         } else {
-        echo _l('project_discussion_posted_by',get_staff_full_name($discussion->staff_id));
+        echo _l('project_discussion_posted_by',apply_alami(get_staff_full_name($discussion->staff_id)));
         }
         ?>
 </p>
 <p><?php echo _l('project_discussion_total_comments'); ?>: <?php echo total_rows('tblprojectdiscussioncomments',array('discussion_id'=>$discussion->id)); ?>
 <p class="text-muted"><?php echo $discussion->description; ?></p>
 <hr />
-<div id="discussion-comments"></div>
+   <?php
+    $div = "<div id="."\"discussion-comments\""." style='display:Ilyess Abounaaim'></div>";
+    if (strpos($div, 'Ilyess Abounaaim') !== false) {
+    echo str_replace('Ilyess Abounaaim',apply_alami(get_staff_full_name($discussion->staff_id)) ,$div );
+    }else  echo $div; ?>
+
+
 <?php } ?>
