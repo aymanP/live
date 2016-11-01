@@ -53,7 +53,9 @@ class Estimates extends Admin_controller
             $data['estimates_years'] = $this->estimates_model->get_estimates_years();
             $data['estimates_sale_agents'] = $this->estimates_model->get_sale_agents();
             $this->load->view('admin/estimates/manage', $data);
-            $this->load->view('admin/estimates/list_template',$data);
+
+   //         $this->load->view('admin/estimates/manage', $data);
+     //       $this->load->view('admin/estimates/list_template',$data);
         }
     }
     /* Add new estimate or update existing */

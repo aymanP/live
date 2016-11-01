@@ -201,6 +201,10 @@ class Clients extends Clients_controller
         }
 
         $data['tickets'] = $this->tickets_model->get('',array('tbltickets.userid'=>get_client_user_id(),'project_id'=>$id));
+        $data['estimates'] = $this->estimates_model->get('', array(
+            'clientid' => get_client_user_id(),
+            'project_id' => $id
+        ));
         $data['project_tasks'] = $this->projects_model->get_tasks($id);
         $this->data            = $data;
         $this->view            = 'project';

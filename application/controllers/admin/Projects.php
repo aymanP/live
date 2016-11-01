@@ -133,11 +133,8 @@ class Projects extends Admin_controller
             $data['chosen_ticket_status']        = '';
 
             $this->load->model('estimates_model');
-            $data['estimates_years'] = $this->estimates_model->get_estimates_years();
-            $data['estimates_sale_agents'] = $this->estimates_model->get_sale_agents();
-            $data['estimates_statuses']       = $this->estimates_model->get_statuses();
-            $data['chosen_estimate_status']        = '';
-            $data['chosen_ticket_status']        = '';
+
+
 
 
 
@@ -176,6 +173,14 @@ class Projects extends Admin_controller
                 'rel_id' => $id,
                 'rel_type' => 'project'
             ));
+            $data['estimates_years'] = $this->estimates_model->get_estimates_years();
+            $data['estimates_sale_agents'] = $this->estimates_model->get_sale_agents();
+            $data['estimate_statuses']       = $this->estimates_model->get_statuses();
+            $data['chosen_estimate_status']        = '';
+            $data['chosen_ticket_status']        = '';
+            $data['estimates'] = $this->estimates_model->get('', array(
+                'project_id' => $id
+            ));
             $data['total_tasks']         = $total_tasks;
             @$data['tasks_not_completed_progress'] = $data['tasks_completed'] / $total_tasks * 100;
             $data['tasks'] = $this->projects_model->get_tasks($id);
@@ -188,6 +193,7 @@ class Projects extends Admin_controller
             $data['gantt_data']    = $this->projects_model->get_gantt_data($id);
             $data['title']         = $data['project']->name;
             $data['invoiceid']     = '';
+//            $data['estimateid']     = '';
             $data['status']        = '';
             $data['custom_view']   = '';
             $data['files']         = $this->projects_model->get_files($id);

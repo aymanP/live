@@ -3079,3 +3079,5 @@ $lang['task_single_log_user'] = $lang['project_timesheet_user'];
 
 
 $lang['login_as_admin'] = 'Login as admin ' ;
+
+$lang['admin_home_slider_title']             = 'Sliders';
