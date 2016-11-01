@@ -160,6 +160,7 @@ class Projects extends Admin_controller
             if (human_to_unix($data['project']->deadline . ' 00:00') < time()) {
                 $data['project_days_left']         = 0;
                 $data['project_time_left_percent'] = 0;
+
             }
             $total_tasks                 = total_rows('tblstafftasks', array(
                 'rel_id' => $id,
@@ -202,7 +203,8 @@ class Projects extends Admin_controller
             $data['currencies'] = $this->currencies_model->get();
 
             // Discussions
-            if ($this->input->get('discussion_id')) {
+            if ($this->input->get('discussion_id'))
+            {
                 $data['discussion_user_profile_image_url'] = staff_profile_image_url(get_staff_user_id());
                 $data['discussion']                        = $this->projects_model->get_discussion($this->input->get('discussion_id'), $id);
                 $data['current_user_is_admin']             = is_admin();
@@ -220,7 +222,8 @@ class Projects extends Admin_controller
             $data['circle_progress_asset'] = true;
 
             $this->load->view('admin/projects/view', $data);
-        } else {
+        } else
+            {
             access_denied('Project View');
         }
     }

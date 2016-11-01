@@ -2502,6 +2502,7 @@ $lang['project_settings']      = 'Paramètres du projet';
 $lang['project_invoiced_successfuly']             = 'Projet facturé avec succès';
 $lang['new_project']             = 'Créer un projet';
 $lang['project_files']            = 'Fichiers';
+$lang['project_purchase'] = 'Bons de commande';
 $lang['project_activity']            = 'Activité';
 $lang['project_name']            = 'Nom du projet';
 $lang['project_description']            = 'Description du projet';
