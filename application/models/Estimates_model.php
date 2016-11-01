@@ -18,9 +18,10 @@ class Estimates_model extends CRM_Model
      */
     public function get($id = '', $where = array())
     {
-        $this->db->select('*,tblcurrencies.id as currencyid, tblestimates.id as id, tblcurrencies.name as currency_name');
+        $this->db->select('*,tblclients.company,tblcurrencies.id as currencyid, tblestimates.id as id, tblcurrencies.name as currency_name');
         $this->db->from('tblestimates');
         $this->db->join('tblcurrencies', 'tblcurrencies.id = tblestimates.currency', 'left');
+        $this->db->join('tblclients','tblclients.userid = tblestimates.clientid');
         $this->db->where($where);
         if (is_numeric($id)) {
             $this->db->where('tblestimates.id', $id);

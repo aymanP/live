@@ -7,9 +7,6 @@
             foreach($estimates_sale_agents as $agent){
                 echo form_hidden('sale_agent_'.$agent['sale_agent']);
             }
-
-
-
             foreach($estimate_statuses as $_status){
                 $val = '';
                 if($_status == $status){
@@ -29,7 +26,7 @@
               $percent_data = get_estimates_percent_by_status($status);
                ?>
                <div class="col-md-5ths col-xs-12">
-                <div class="row"  style="<?php if($estimate_statuses == null) echo 'estimate null';?>">
+                <div class="row">
                     <div class="col-md-9">
                         <a href="#" data-cview="estimates_<?php echo $status; ?>" onclick="dt_custom_view('estimates_<?php echo $status; ?>','.table-estimates','estimates_<?php echo $status; ?>',true); return false;">
                             <h5 class="bold"><?php echo format_estimate_status($status,'',false); ?></h5>

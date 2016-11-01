@@ -11,7 +11,7 @@
     foreach($estimates_sale_agents as $agent){
         echo form_hidden('sale_agent_'.$agent['sale_agent']);
     }
-    foreach($estimates_statuses as $_status){
+    foreach($estimate_statuses as $_status){
         $val = '';
         if($_status == $chosen_estimate_status){
             $val = $_status;
