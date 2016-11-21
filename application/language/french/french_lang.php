@@ -49,6 +49,12 @@ $lang['invoice_payments_table_mode_heading']   = 'Mode de règlement';
 $lang['invoice_payments_table_date_heading']   = 'Date de facture';
 $lang['invoice_payments_table_amount_heading'] = 'Montant';
 
+#purchase
+ $lang['reference_no'] = 'Référence';
+ $lang['purchase_title']='Titre';
+ $lang['purchase_tva']= 'TVA';
+ $lang['purchase_amount'] = 'Montant';
+
 
 # Annonces
 $lang['announcement']                 = 'Annonce';

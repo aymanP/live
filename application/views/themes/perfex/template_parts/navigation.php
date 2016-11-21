@@ -42,11 +42,8 @@
                 <?php } ?>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-<<<<<<< HEAD
-                    <img class="client-profile-image-small mrigh5" src="<?php echo contact_profile_image_url($contact->id,'thumb'); ?>">
-=======
+
                     <img class="client-profile-image-small mrigh5" src="<?php echo contact_profile_image_url($contact->id,'thumb'); ?>"/>
->>>>>>> d6ed238a2cb59f294c9a023c9881de55e749953a
                     <?php echo $contact->firstname . ' ' .$contact->lastname; ?>
                     <span class="caret"></span></a>
                     <ul class="dropdown-menu animated fadeIn">

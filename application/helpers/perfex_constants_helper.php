@@ -21,6 +21,7 @@ define('INVOICE_ATTACHMENTS_FOLDER',FCPATH . 'uploads/invoices' . '/');
 define('ESTIMATE_ATTACHMENTS_FOLDER',FCPATH . 'uploads/estimates' . '/');
 define('PROPOSAL_ATTACHMENTS_FOLDER',FCPATH . 'uploads/proposals' . '/');
 define('EXPENSE_ATTACHMENTS_FOLDER',FCPATH . 'uploads/expenses' . '/');
+define('PURCHASE_ATTACHMENTS_FOLDER',FCPATH . 'uploads/purchases' . '/');
 define('LEAD_ATTACHMENTS_FOLDER',FCPATH . 'uploads/leads' . '/');
 define('PROJECT_ATTACHMENTS_FOLDER',FCPATH . 'uploads/projects' . '/');
 define('PROJECT_DISCUSSION_ATTACHMENT_FOLDER',FCPATH . 'uploads/discussions' . '/');

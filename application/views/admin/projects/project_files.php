@@ -1,3 +1,4 @@
+
 <?php echo form_open_multipart(admin_url('projects/upload_file/'.$project->id),array('class'=>'dropzone','id'=>'project-files-upload')); ?>
 <input type="file" name="file" multiple />
 <?php echo form_close(); ?>

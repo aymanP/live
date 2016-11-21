@@ -1,0 +1,10 @@
+Travail en groupe avec git
+==> pour voir s'il y'a des changements:  $git status
+==> si j'ai fais des changements: 
+	$git add -A
+	$git commit -m "message"
+	$git push -u origin master
+==> si quelqu'un autre a fait des changements:
+	on verifie avec $git status
+	et apres on utilise la commande:
+	$git pull

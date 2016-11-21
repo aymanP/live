@@ -3,7 +3,7 @@
         <a data-group="project_overview" href="<?php echo admin_url('projects/view/'.$project->id.'?group=project_overview'); ?>" role="tab"><i class="fa fa-th" aria-hidden="true"></i> <?php echo _l('project_overview'); ?></a>
     </li>
     <li>
-        <a data-group="project_purchase" href="<?php echo admin_url('projects/view/'.$project->id.'?group=project_purchase'); ?>" role="tab"><i class="fa fa-files-o" aria-hidden="true"></i> <?php echo _l('project_purchase'); ?></a>
+        <a data-group="project_purchases" href="<?php echo admin_url('projects/view/'.$project->id.'?group=project_purchases'); ?>" role="tab"><i class="fa fa-files-o" aria-hidden="true"></i> <?php echo _l('project_purchase'); ?></a>
     </li>
     <li>
         <a data-group="project_tasks" href="<?php echo admin_url('projects/view/'.$project->id.'?group=project_tasks'); ?>" role="tab"><i class="fa fa-check-circle" aria-hidden="true"></i> <?php echo _l('tasks'); ?></a>

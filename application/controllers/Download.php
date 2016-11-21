@@ -109,7 +109,20 @@ class Download extends CI_Controller
             $expense = $this->db->get('tblexpenses')->row();
             $path    = EXPENSE_ATTACHMENTS_FOLDER . $expense->id . '/' . $expense->attachment;
             $name    = $expense->attachment;
-        } else if ($folder_indicator == 'lead_attachment') {
+        }
+
+        else if ($folder_indicator == 'purchase') {
+            if (!is_staff_logged_in()) {
+                die();
+            }
+            $this->db->where('id', $attachmentid);
+            $purchase_file = $this->db->get('tblpurchase_file')->row();
+            $path    = PURCHASE_ATTACHMENTS_FOLDER . $purchase_file->id . '/' . $purchase_file->attachment;
+            $name    = $purchase_file->attachment;
+        }
+
+
+        else if ($folder_indicator == 'lead_attachment') {
             if (!is_staff_logged_in()) {
                 die();
             }

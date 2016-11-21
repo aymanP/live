@@ -81,6 +81,8 @@ class Projects_model extends CRM_Model
     }
 
 
+
+
     public function get_currency($id)
     {
         $project = $this->get($id);
