@@ -9,9 +9,16 @@ class Projects extends Admin_controller
         $this->load->model('Clients_model');
         $this->load->model('tasks_model');
         $this->load->model('currencies_model');
+        $this->load->model('purchase_model');
+
         $this->load->helper('date');
     }
+<<<<<<< HEAD
     public function index($clientid = '',$is_client = 1)
+=======
+
+    public function index($clientid = '')
+>>>>>>> dabfdf1117f6c1e2e751dab0c2e71a3937477043
     {
         if ($this->input->is_ajax_request()) {
                 $this->perfex_base->get_table_data('projects', array(
@@ -30,7 +37,8 @@ class Projects extends Admin_controller
             $this->perfex_base->get_table_data('staff_projects');
         }
     }
-    public function expenses($id){
+    public function expenses($id)
+    {
         if ($this->input->is_ajax_request()) {
             $this->load->model('expenses_model');
             $this->perfex_base->get_table_data('project_expenses', array(
@@ -38,7 +46,8 @@ class Projects extends Admin_controller
             ));
         }
     }
-    public function add_expense(){
+    public function add_expense()
+    {
       if ($this->input->post()) {
         $this->load->model('expenses_model');
                 $id = $this->expenses_model->add($this->input->post());
@@ -56,6 +65,67 @@ class Projects extends Admin_controller
                 die;
         }
     }
+    public function add_purchase()
+    {
+
+        if($this->input->post('reference') != null)
+            $data['reference'] = $this->input->post('reference');
+        else
+            $data['reference'] = 'ko';
+        if($this->input->post('titre') != null)
+            $data['titre'] = $this->input->post('titre');
+        else
+            $data['titre'] = 'ko';
+        if($this->input->post('TVA') != null)
+            $data['TVA'] = $this->input->post('TVA');
+        else
+            $data['TVA']= 0;
+        if($this->input->post('montant') != null)
+            $data['montant'] = $this->input->post('montant');
+        else
+            $data['montant'] = 0;
+
+        if($this->input->post('purchase_file') != null)
+        {
+            // le nom du fichier
+            $purchase_file = $this->input->post('purchase_file');
+
+        }
+
+
+        $data['id_project'] = $this->input->post('id');
+
+        //$dateadd = date('Y-m-d H:i:s');
+        // $staffid = $staffid;
+        // $contact_id = $contact_id;
+        $this->purchase_model->add($data);
+        //dump(generate_slider($dur));
+        //$this->load->view('admin/projects/view');
+        //redirect('http://localhost/CRM/live/admin/utilities/home_slider');*/
+
+        redirect(admin_url('projects/view/'.$data['id_project'].'?group=project_purchases'));
+        //$this->load->view('admin/projects/view/'.$data['id_project']);
+    }
+    public function add_purchase_file()
+    {
+        if ($this->input->post()) {
+            $this->load->model('purchase_model');
+            $id = $this->purchase_model->add($this->input->post());
+            if ($id) {
+                set_alert('success', _l('added_successfuly', _l('expense')));
+                echo json_encode(array(
+                    'url' => admin_url('projects/view/'.$this->input->post('id').'/?group=project_purchases'),
+
+                ));
+                die;
+            }
+            echo json_encode(array(
+                'url' => admin_url('projects/view/'.$this->input->post('id').'/?group=project_purchases'),
+            ));
+            die;
+        }
+    }
+
     public function project($id = '')
     {
         if (!has_permission('projects', '', 'edit') && !has_permission('projects', '', 'create')) {
@@ -142,7 +212,7 @@ class Projects extends Admin_controller
             $data['project'] = $project;
 
 
-            if (!$this->input->get('group') || ($this->input->get('group') == 'project_invoices' && !has_permission('invoices', '', 'view')) || $this->input->get('group') == 'project_expenses' && (!has_permission('expenses','','view') && !has_permission('expenses','','create')) || $this->input->get('group') == 'project_estimates' && (!has_permission('estimates','','view') && !has_permission('estimates','','create'))) {
+            if (!$this->input->get('group') || ($this->input->get('group') == 'project_invoices' && !has_permission('invoices', '', 'view')) || $this->input->get('group') == 'project_expenses' && (!has_permission('expenses','','view') && !has_permission('expenses','','create')) || $this->input->get('group') == 'project_estimates' && (!has_permission('estimates','','view') && !has_permission('estimates','','create'))|| $this->input->get('group') == 'project_purchases' && (!has_permission('purchase','','view') && !has_permission('purchase','','create'))) {
                 $view = 'project_overview';
             } else {
                 $view = $this->input->get('group');
@@ -158,6 +228,7 @@ class Projects extends Admin_controller
             if (human_to_unix($data['project']->deadline . ' 00:00') < time()) {
                 $data['project_days_left']         = 0;
                 $data['project_time_left_percent'] = 0;
+
             }
             $total_tasks                 = total_rows('tblstafftasks', array(
                 'rel_id' => $id,
@@ -181,6 +252,14 @@ class Projects extends Admin_controller
             $data['estimates'] = $this->estimates_model->get('', array(
                 'project_id' => $id
             ));
+            $data['purchase'] = $this->purchase_model->get($id);
+            //$id_purch= ;
+            foreach($data['purchase'] as $pur)
+            {
+                $data['purchase_file'] = $this->purchase_model->get_file($pur['id_purchase']);
+            }
+            $data['purchase_files'] = $this->purchase_model->get_purchase_files();
+
             $data['total_tasks']         = $total_tasks;
             @$data['tasks_not_completed_progress'] = $data['tasks_completed'] / $total_tasks * 100;
             $data['tasks'] = $this->projects_model->get_tasks($id);
@@ -209,7 +288,8 @@ class Projects extends Admin_controller
             $data['currencies'] = $this->currencies_model->get();
 
             // Discussions
-            if ($this->input->get('discussion_id')) {
+            if ($this->input->get('discussion_id'))
+            {
                 $data['discussion_user_profile_image_url'] = staff_profile_image_url(get_staff_user_id());
                 $data['discussion']                        = $this->projects_model->get_discussion($this->input->get('discussion_id'), $id);
                 $data['current_user_is_admin']             = is_admin();
@@ -227,7 +307,8 @@ class Projects extends Admin_controller
             $data['circle_progress_asset'] = true;
 
             $this->load->view('admin/projects/view', $data);
-        } else {
+        } else
+            {
             access_denied('Project View');
         }
     }
@@ -337,6 +418,14 @@ class Projects extends Admin_controller
     {
         handle_project_file_uploads($project_id);
     }
+
+    public function purchase_upload_file($project_id)
+    {
+        handle_purchase_file_uploads($project_id);
+        redirect(admin_url('projects/view/'.$project_id.'?group=project_purchases'));
+    }
+
+
     public function change_file_visibility($id, $visible)
     {
         if ($this->input->is_ajax_request()) {

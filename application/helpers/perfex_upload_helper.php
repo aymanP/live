@@ -79,13 +79,15 @@ function handle_project_file_uploads($project_id)
         echo _perfex_upload_error($_FILES['file']['error']);
         die;
     }
-    if (isset($_FILES['file']['name']) && $_FILES['file']['name'] != '') {
+    if (isset($_FILES['file']['name']) && $_FILES['file']['name'] != '')
+    {
         do_action('before_upload_project_attachment',$project_id);
         $path        = PROJECT_ATTACHMENTS_FOLDER . $project_id . '/';
         // Get the temp file path
         $tmpFilePath = $_FILES['file']['tmp_name'];
         // Make sure we have a filepath
-        if (!empty($tmpFilePath) && $tmpFilePath != '') {
+        if (!empty($tmpFilePath) && $tmpFilePath != '')
+        {
             // Setup our new file path
 
             if (!file_exists($path)) {
@@ -159,6 +161,120 @@ function handle_project_file_uploads($project_id)
             }
         }
     }
+    return false;
+}
+function handle_purchase_file_uploads($project_id)
+{
+    $CI =& get_instance();
+    $data['Reference'] = $CI->input->post('reference');
+    $data['Titre'] = $CI->input->post('titre');
+    $data['TVA'] = $CI->input->post('TVA');
+    $data['montant'] = $CI->input->post('montant');
+    if(isset($_FILES['file']) && _perfex_upload_error($_FILES['file']['error']))
+    {
+        header('HTTP/1.0 400 Bad error');
+        echo _perfex_upload_error($_FILES['file']['error']);
+        die;
+    }
+    if (isset($_FILES['file']['name']) && $_FILES['file']['name'] != '')
+    {
+        do_action('before_upload_project_attachment',$project_id);
+        $path        = PURCHASE_ATTACHMENTS_FOLDER . $project_id . '/';
+        // Get the temp file path
+        $tmpFilePath = $_FILES['file']['tmp_name'];
+        // Make sure we have a filepath
+        if (!empty($tmpFilePath) && $tmpFilePath != '')
+        {
+            // Setup our new file path
+
+            if (!file_exists($path)) {
+                mkdir($path);
+                fopen($path . 'index.html', 'w');
+            }
+            $filename    = unique_filename($path, $_FILES["file"]["name"]);
+            $newFilePath = $path . $filename;
+            // Upload the file into the company uploads dir
+            if (move_uploaded_file($tmpFilePath, $newFilePath))
+            {
+
+                $CI->load->model('purchase_model');
+                if (is_client_logged_in()) {
+                    $contact_id = get_contact_user_id();
+                    $staffid = 0;
+                } else {
+                    $staffid = get_staff_user_id();
+                    $contact_id = 0;//$CI->Projects_model->get_project_cont($project->contactid);
+                    //;
+                }
+                $data['Reference'] = $CI->input->post('reference');
+                $data['Titre'] = $CI->input->post('titre');
+                $data['TVA'] = $CI->input->post('TVA');
+                $data['montant'] = $CI->input->post('montant');
+                $data['id_project'] = $project_id;
+                $CI->db->insert('tblpurchase', $data);
+                $purchaseid = $CI->db->insert_id();
+                $file = array(
+                    'id_purchase' => $purchaseid,
+                    'attachment' => $filename,
+                    'filetype' => $_FILES["file"]["type"],
+                    'dateadd' => date('Y-m-d H:i:s'),
+                    'staffid' => $staffid,
+                    'contact_id' => $contact_id,
+                );
+                /*
+                if(is_client_logged_in())
+                {
+                    $data['visible_to_customer'] = 1;
+                } else {
+                    $data['visible_to_customer'] = ($CI->input->post('visible_to_customer') == 'true' ? 1 : 0);
+                }*/
+                $CI->db->insert('tblpurchase_file', $file);
+                $insert_id = $CI->db->insert_id();
+                /*$CI->load->model('projects_model');
+                $project = $CI->projects_model->get($project_id);*/
+
+                $additional_data = '';
+                $additional_data .= $filename . '<br />'.$_FILES["file"]["type"];
+                $CI->projects_model->log_activity($project_id,'project_activity_uploaded_file',$additional_data,$data['visible_to_customer']);
+                /* Notification
+                if($insert_id)
+                {
+                    $members = $CI->projects_model->get_project_members($project_id);
+                    $notification_data = array(
+                        'description'=>'not_project_file_uploaded',
+                        'link'=>'projects/view/'.$project_id.'?group=project_files'
+                    );
+                    if(is_client_logged_in()){
+                        $notification_data['fromclientid'] = get_contact_user_id();
+                    } else {
+                        $notification_data['fromuserid'] = get_staff_user_id();
+                    }
+                    foreach($members as $member){
+                        if($member['staff_id'] == get_staff_user_id() && !is_client_logged_in()){continue;}
+                        $notification_data['touserid'] = $member['staff_id'];
+                        add_notification($notification_data);
+                    }
+                    $CI->projects_model->send_project_email_template(
+                        $project_id,
+                        'new-project-file-uploaded-to-staff',
+                        'new-project-file-uploaded-to-customer',
+                        $data['visible_to_customer'] == 1,
+                        array(
+                            'customers'=>array('customer_template'=>true)
+                        )
+                    );
+                } else {
+                    unlink($newFilePath);
+                    return false;
+                }*/
+                return true;
+            }
+        }
+    }
+    $CI->db->insert('tblpurchase', $data);
+    $purchaseid = $CI->db->insert_id();
+    if($purchaseid != 0)
+        return true;
     return false;
 }
 /**

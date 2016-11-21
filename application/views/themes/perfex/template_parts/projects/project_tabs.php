@@ -2,6 +2,9 @@
     <li role="presentation" class="active">
         <a data-group="project_overview" href="<?php echo site_url('clients/project/'.$project->id.'?group=project_overview'); ?>" role="tab"><i class="fa fa-th" aria-hidden="true"></i> <?php echo _l('project_overview'); ?></a>
     </li>
+    <li>
+        <a data-group="project_purchases" href="<?php echo site_url('clients/project/'.$project->id.'?group=project_purchases'); ?>" role="tab"><i class="fa fa-files-o" aria-hidden="true"></i> <?php echo _l('project_purchase'); ?></a>
+    </li>
     <?php if($project->settings->view_tasks == 1){ ?>
     <li role="presentation">
         <a data-group="project_tasks" href="<?php echo site_url('clients/project/'.$project->id.'?group=project_tasks'); ?>" role="tab"><i class="fa fa-check-circle" aria-hidden="true"></i> <?php echo _l('tasks'); ?></a>

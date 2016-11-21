@@ -6,6 +6,7 @@ class Clients extends Clients_controller
     {
         parent::__construct();
         $this->form_validation->set_error_delimiters('<div class="text-danger alert-validation">', '</div>');
+        $this->load->model('purchase_model');
     }
     public function index()
     {
@@ -205,6 +206,12 @@ class Clients extends Clients_controller
             'clientid' => get_client_user_id(),
             'project_id' => $id
         ));
+        $data['purchase'] = $this->purchase_model->get($id);
+        //$id_purch= ;
+        foreach($data['purchase'] as $pur)
+        {
+            $data['purchase_file'] = $this->purchase_model->get_file($pur['id_purchase']);
+        }
         $data['project_tasks'] = $this->projects_model->get_tasks($id);
         $this->data            = $data;
         $this->view            = 'project';
