@@ -8,7 +8,7 @@ $sTable = 'tblprojects';
 $additionalSelect = array('company','tblprojects.id');
 $join = array(
     'JOIN tblclients ON tblclients.userid = tblprojects.clientid',
-    );
+);
 
 $where = array();
 $filter = array();
@@ -18,13 +18,13 @@ if((!has_permission('projects','','view') && !is_numeric($clientid)) || $this->_
 }
 $_statuses = array();
 foreach($this->_instance->projects_model->get_project_statuses() as $status){
-  if($this->_instance->input->post('project_status_'.$status)){
-      array_push($_statuses,$status);
-}
+    if($this->_instance->input->post('project_status_'.$status)){
+        array_push($_statuses,$status);
+    }
 }
 
 if(count($_statuses) > 0){
-  array_push($filter, 'OR status IN (' . implode(', ',$_statuses) . ')');
+    array_push($filter, 'OR status IN (' . implode(', ',$_statuses) . ')');
 }
 if(count($filter) > 0){
     array_push($where,'AND ('.prepare_dt_filter($filter).')');
@@ -68,26 +68,26 @@ foreach ( $rResult as $aRow )
             $_data = '<a href="'.admin_url('projects/view/'.$aRow['id']).'">'.$_data.'</a>';
         } else if($aColumns[$i] == 'billing_type'){
             if($aRow['billing_type'] == 1){
-              $type_name = 'project_billing_type_fixed_cost';
-          } else if($aRow['billing_type'] == 2){
-              $type_name = 'project_billing_type_project_hours';
-          } else {
-              $type_name = 'project_billing_type_project_task_hours';
-          }
-          $_data = _l($type_name);
-      } else if($aColumns[$i] == 'status'){
-          if($_data == 1){
-            $label = 'default';
-          } else if($_data == 2){
-            $label = 'info';
-          } else if($_data == 3){
-             $label = 'warning';
-          } else {
-             $label = 'success';
-          }
-          $status = '<span class="label label-'.$label.' inline-block">'._l('project_status_'.$_data).'</span>';
-          $_data = $status;
-      }
+                $type_name = 'project_billing_type_fixed_cost';
+            } else if($aRow['billing_type'] == 2){
+                $type_name = 'project_billing_type_project_hours';
+            } else {
+                $type_name = 'project_billing_type_project_task_hours';
+            }
+            $_data = _l($type_name);
+        } else if($aColumns[$i] == 'status'){
+            if($_data == 1){
+                $label = 'default';
+            } else if($_data == 2){
+                $label = 'info';
+            } else if($_data == 3){
+                $label = 'warning';
+            } else {
+                $label = 'success';
+            }
+            $status = '<span class="label label-'.$label.' inline-block">'._l('project_status_'.$_data).'</span>';
+            $_data = $status;
+        }
 
         $row[] = $_data;
     }
@@ -95,9 +95,9 @@ foreach ( $rResult as $aRow )
     if(has_permission('projects','','edit')){
         $options .= icon_btn('projects/project/'.$aRow['id'],'pencil-square-o');
     }
-     if(has_permission('projects','','delete')){
+    if(has_permission('projects','','delete')){
         $options .= icon_btn('projects/delete/'.$aRow['id'],'remove','btn-danger _delete');
-      }
+    }
 
     $row[] = $options;
     $output['aaData'][] = $row;

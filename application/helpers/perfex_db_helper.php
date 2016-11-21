@@ -11,8 +11,22 @@ function client_have_transactions($id){
     }
     return false;
 }
+function supplier_have_transactions($id){
+    $total_transactions = 0;
+    $total_transactions += total_rows('tblinvoices',array('supplierid'=>$id));
+    $total_transactions += total_rows('tblestimates',array('supplierid'=>$id));
+    $total_transactions += total_rows('tblexpenses',array('supplierid'=>$id,'billable'=>1));
+    $total_transactions += total_rows('tblproposals',array('rel_id'=>$id,'rel_type'=>'supplier'));
 
+    if($total_transactions > 0){
+        return true;
+    }
+    return false;
+}
 
+ function is_supplier(){
+return 1;
+}
 
 /**
  * Check if field is used in table
@@ -113,11 +127,49 @@ function get_primary_contact_user_id($userid){
     return false;
 }
 
+function get_supplier_primary_contact_user_id($userid){
+
+    $CI =& get_instance();
+    $CI->db->where('supplierid', $userid);
+    $CI->db->where('is_primary', 1);
+    $row = $CI->db->get('tblsuppliercontacts')->row();
+
+    if($row){
+        return $row->id;
+    }
+    return false;
+}
+
 /**
  * Get option value
  * @param  string $name Option name
  * @return mixed
  */
+
+function get_supplier_company($id){
+
+try {
+    $CI =& get_instance();
+    $CI->db->where('supplierid', $id);
+    $companies = $CI->db->get('tblsuppliers')->result_array();
+    return $companies;
+}catch(SQLiteException $e){
+    echo "ERROR".$e->getMessage().' '.$e->getTrace();
+}
+
+}
+
+function get_supplier($id){
+    $companies = get_supplier_company($id);
+
+        foreach ($companies as $key => $comp) {
+            $company = $comp['company'];
+        }
+
+            return $company;
+
+}
+
 function mode_alami(){
     $CI =& get_instance();
 
@@ -278,6 +330,23 @@ function get_contact_full_name($userid = '')
     $client = $CI->db->select('firstname,lastname')->from('tblcontacts')->get()->row();
     if(!empty($client->firstname) && !empty($client->lastname)){
         return $client->firstname . ' ' . $client->lastname;
+    } else {
+        return '';
+    }
+
+}
+
+function get_supplier_contact_full_name($userid = '')
+{
+    $_userid = get_contact_user_id();
+    if ($userid !== '') {
+        $_userid = $userid;
+    }
+    $CI =& get_instance();
+    $CI->db->where('id', $_userid);
+    $supplier = $CI->db->select('firstname,lastname')->from('tblsuppliercontacts')->get()->row();
+    if(!empty($supplier->firstname) && !empty($supplier->lastname)){
+        return $supplier->firstname . ' ' . $supplier->lastname;
     } else {
         return '';
     }
@@ -573,17 +642,27 @@ function total_rows($table, $where = array())
     if (is_array($where)) {
         if (sizeof($where) > 0) {
             $CI->db->where($where);
-            //$CI->db->join('tblcontactprojects','tblprojects.id = tblcontactprojects.project_id');
-            //$CI->db->where('contact_id', 3);
-
         }
     } else if (strlen($where) > 0) {
         $CI->db->where($where);
 
     }
+    return $CI->db->count_all_results($table);
+}
 
+function total_rows_p($table, $where = array())
+{
+    $CI =& get_instance();
+    if (is_array($where)) {
+        if (sizeof($where) > 0) {
+            $CI->db->where($where);
+            $CI->db->where_not_in('supplierd',array(0,'null'));
+        }
+    } else if (strlen($where) > 0) {
+        $CI->db->where($where);
+        $CI->db->where_not_in('supplierd',array(0,'null'));
 
-
+    }
     return $CI->db->count_all_results($table);
 }
 /**
@@ -807,11 +886,14 @@ function data_tables_init($aColumns, $sIndexColumn, $sTable, $join = array(), $w
         "iTotalDisplayRecords" => $iFilteredTotal,
         "aaData" => array()
         );
+
     return array(
         'rResult' => $rResult,
         'output' => $output
         );
 }
+
+
 /**
  * Prefix field name with table ex. table.column
  * @param  string $table
@@ -904,6 +986,24 @@ function get_relation_values($relation, $type)
             $name = format_invoice_number($id);
         }
         $link = admin_url('invoices/list_invoices/' . $id);
+    }else if ($type == 'supplier_invoice') {
+        if (is_array($relation)) {
+            $id   = $relation['id'];
+            $name = format_invoice_number($id);
+        } else {
+            $id   = $relation->id;
+            $name = format_invoice_number($id);
+        }
+        $link = admin_url('supplier_invoices/list_invoice/' . $id);
+    }else if ($type == 'supplier') {
+        if (is_array($relation)) {
+            $id   = $relation['supplierid'];
+            $name = $relation['supcompany'];
+        } else {
+            $id   = $relation->id;
+            $name = format_invoice_number($id);
+        }
+        $link = admin_url('suppliers/supplier/' . $id);
     } else if ($type == 'estimate') {
         if (is_array($relation)) {
             $id   = $relation['id'];

@@ -218,6 +218,24 @@ class Emails_model extends CRM_Model
             }
         }
 
+        $template_array_supp = array('new-supplier-created');
+        $this->db->where('email', $email);
+        $supplierc = $this->db->get('tblsuppliercontacts')->row();
+        if($supplierc){
+            if(!in_array($template, $template_array_supp) && $supplierc->email_cc == 1){
+                $this->db->where(array('supplierid' => $supplierc->supplierid, 'email_cc' => 1 ));
+                $contact_emails_cc = $this->db->get('tblsuppliercontacts')->result_array();
+                $cc = '';
+                foreach($contact_emails_cc as $contact_email_cc){
+                    if($contact_email_cc['email'] != $email){
+                        $cc .= $contact_email_cc['email'].',';
+                    }
+                }
+                $cc = rtrim($cc, ',');
+                $this->email->cc($cc);
+            }
+        }          ////////////////
+
         if ($this->email->send()) {
             logActivity('Email Send To [Email:' . $email . ', Template:' . $template->name . ']');
             return true;

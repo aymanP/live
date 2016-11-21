@@ -568,13 +568,29 @@ function contact_profile_image_url($contact_id, $type = 'small')
     }
     return $url;
 }
+
+function supplier_contact_profile_image_url($contact_id, $type = 'small')
+{
+    $url = site_url('assets/images/user-placeholder.jpg');
+    $CI =& get_instance();
+    $CI->db->select('profile_image');
+    $CI->db->from('tblsuppliercontacts');
+    $CI->db->where('id', $contact_id);
+    $contact = $CI->db->get()->row();
+    if ($contact) {
+        if (!is_null($contact->profile_image)) {
+            $url = site_url('uploads/supplier_profile_images/' . $contact_id . '/' . $type . '_' . $contact->profile_image);
+        }
+    }
+    return $url;
+}
 function contact_profile_image_url1($contact_id, $classes = array('staff-profile-image'),$type = 'small')
 {
     $url = site_url('assets/images/user-placeholder.jpg');
     $CI =& get_instance();
     $CI->db->select('profile_image,firstname,lastname');
     $CI->db->where('id', $contact_id);
-    $contact = $CI->db->get(tblcontacts)->row();
+    $contact = $CI->db->get('tblcontacts')->row();
     //$profile_image= $contact->firstname;
     if ($contact && $contact->profile_image !== null)
     {
@@ -582,6 +598,25 @@ function contact_profile_image_url1($contact_id, $classes = array('staff-profile
             $profile_image = '<img  src="' . site_url('uploads/client_profile_images/' . $contact_id . '/' . $type . '_' . $contact->profile_image) . '"  alt="' . $contact->firstname . ' ' . $contact->lastname . '" />';
     }else{
         $profile_image = '<img src="' . site_url('assets/images/user-placeholder.jpg') . '"  class="' . implode(' ', $classes) . '" alt="' . $contact->firstname . ' ' . $contact->lastname . '" />';
+
+    }
+    return $profile_image;
+}
+
+function supplier_contact_profile_image_url1($contact_id, $classes = array('staff-profile-image'),$type = 'small')
+{
+    $url = site_url('assets/images/user-placeholder.jpg');
+    $CI =& get_instance();
+    $CI->db->select('profile_image,firstname,lastname');
+    $CI->db->where('id', $contact_id);
+    $contact = $CI->db->get('tblsuppliercontacts')->row();
+    //$profile_image= $contact->firstname;
+    if ($contact && $contact->profile_image !== null)
+    {
+           // $url = site_url('uploads/client_profile_images/' . $contact_id . '/' . $type . '_' . $contact->profile_image);
+            $profile_image = '<img  src="' . site_url('uploads/supplier_profile_images/' . $contact_id . '/' . $type . '_' . $contact->profile_image) . '"  alt="' . $contact->firstname . ' ' . $contact->lastname . '" />';
+    }else{
+        $profile_image = '<img src="' . $url . '"  class="' . implode(' ', $classes) . '" alt="' . $contact->firstname . ' ' . $contact->lastname . '" />';
 
     }
     return $profile_image;
@@ -630,6 +665,24 @@ function client_profile_image($id = false, $classes = array('client-profile-imag
     }
     if ($result && $result->profile_image !== null) {
         $profile_image = '<img width="38px !important" height="38px !important"' . $_attributes . ' src="' . site_url('uploads/client_profile_images/' . $id . '/' . $type . '_' . $result->profile_image) .  '" alt="' . $result->company . ' ' . $result->city . '" />';
+    } else {
+        $profile_image = '<img width="38px" height="38px" src="' . site_url('assets/images/user-placeholder.jpg') . '" ' . $_attributes  . '" alt="' . $result->firstname . ' ' . $result->lastname . '" />';
+    }
+    return $profile_image;
+}
+
+function supplier_profile_image($id = false, $classes = array('supplier-profile-image'), $type = 'small', $img_attrs = array())
+{
+    $CI =& get_instance();
+    $CI->db->select('profile_image,company,city');
+    $CI->db->where('supplierid', $id);
+    $result      = $CI->db->get('tblsuppliers')->row();
+    $_attributes = '';
+    foreach ($img_attrs as $key => $val) {
+        $_attributes .= $key . '=' . '"' . $val . '" ';
+    }
+    if ($result && $result->profile_image !== null) {
+        $profile_image = '<img width="38px !important" height="38px !important"' . $_attributes . ' src="' . site_url('uploads/supplier_profile_images/' . $id . '/' . $type . '_' . $result->profile_image) .  '" alt="' . $result->company . ' ' . $result->city . '" />';
     } else {
         $profile_image = '<img width="38px" height="38px" src="' . site_url('assets/images/user-placeholder.jpg') . '" ' . $_attributes  . '" alt="' . $result->firstname . ' ' . $result->lastname . '" />';
     }

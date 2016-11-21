@@ -338,6 +338,32 @@ function init_invoice(id) {
         }, 600);
     }
 }
+function init_supplier_invoice(id) {
+    var _invoiceid = $('input[name="invoiceid"]').val();
+    // Check if invoice passed from url, hash is prioritized becuase is last
+    if (_invoiceid != '' && !window.location.hash) {
+        id = _invoiceid;
+        // Clear the current invoice value in case user click on the left sidebar invoices
+        $('input[name="invoiceid"]').val('');
+    } else {
+        // check first if hash exists and not id is passed, becuase id is prioritized
+        if(window.location.hash && !id) {
+            id = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+        }
+    }
+    if (typeof(id) == 'undefined' || id == '') { return; }
+    if (!$('body').hasClass('small-table')) {
+        toggle_small_view('.table-supplier_invoices', '#supplier_invoice');
+    }
+    $('input[name="invoiceid"]').val(id);
+    do_hash_helper(id);
+    $('#supplier_invoice').load(admin_url + 'supplier_invoices/get_invoice_data_ajax/' + id);
+    if (is_mobile()) {
+        $('html, body').animate({
+            scrollTop: $('#supplier_invoice').offset().top + 150
+        }, 600);
+    }
+}
 // Init single Estimate
 function init_estimate(id) {
     var _estimateid = $('input[name="estimateid"]').val();
@@ -930,6 +956,57 @@ function init_invoices_total() {
         data.customer_id = customer_id;
     }
     $.post(admin_url + 'invoices/get_invoices_total', data).success(function(response) {
+        $('#invoices_total').html(response);
+    });
+}
+
+function init_supplier_invoices_total() {
+    if ($('#invoices_total').length == 0) {return;}
+
+    var _years = $('._filters._hidden_inputs').find('input[name^="year"]');
+    var years = [];
+    $.each(_years,function(){
+        var _y = $(this).val();
+        if(_y != ''){
+            years.push(_y);
+        }
+    });
+
+    var _agents = $('._filters._hidden_inputs').find('input[name^="sale_agent"]');
+    var agents = [];
+    $.each(_agents,function(){
+        var _a = $(this).val();
+        if(_a != ''){
+            agents.push(_a);
+        }
+    });
+
+    var _modes = $('._filters._hidden_inputs').find('input[name^="invoice_payments_by_"]');
+    var modes = [];
+    $.each(_modes,function(){
+        var _m = $(this).val();
+        if(_m != ''){
+            modes.push(_m);
+        }
+    });
+
+    var currency = $('body').find('select[name="total_currency"]').val();
+    var data = {
+        currency: currency,
+        years:years,
+        agents:agents,
+        payment_modes:modes,
+        init_total: true,
+    };
+
+    var project_id = $('input[name="project_id"]').val();
+    var supplier_id = $('.supplier_profile input[name="supplierid"]').val();
+    if (typeof(project_id) != 'undefined') {
+        data.project_id = project_id;
+    } else if (typeof(supplier_id) != 'undefined') {
+        data.supplier_id = supplier_id;
+    }
+    $.post(admin_url + 'supplier_invoices/get_invoices_total', data).success(function(response) {
         $('#invoices_total').html(response);
     });
 }

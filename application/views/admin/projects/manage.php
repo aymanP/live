@@ -63,7 +63,7 @@
                    if($status == 4){$value = '';} ?>
                    <?php echo form_hidden('project_status_'.$status,$value); ?>
                    <div class="col-md-2 col-xs-6 border-right">
-                    <?php $where = ($_where == '' ? '' : $_where.' AND ').'status = '.$status; ?>
+                    <?php $where = ($_where == '' ? '' : $_where.' AND ').'clientid != 0 AND status = '.$status; ?>
                     <a href="#" onclick="dt_custom_view('project_status_<?php echo $status; ?>','.table-projects','project_status_<?php echo $status; ?>',true); return false;">
                      <h3 class="bold"><?php echo total_rows('tblprojects',$where); ?></h3>
                      <span class="text-<?php echo get_project_label($status); ?> bold"><?php echo _l('project_status_'.$status); ?></span>
@@ -78,6 +78,7 @@
              $table_data = array(
               _l('project_name'),
               _l('project_customer'),
+//              _l('project_supplier'),
               _l('project_start_date'),
               _l('project_deadline'),
               _l('project_status'),
@@ -87,6 +88,7 @@
              $custom_fields = get_custom_fields('projects',array('show_on_table'=>1));
              foreach($custom_fields as $field){
               array_push($table_data,$field['name']);
+
             }
             array_push($table_data, _l('options'));
 

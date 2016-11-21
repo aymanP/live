@@ -68,7 +68,8 @@ class Perfex_Base
         if (file_exists(VIEWPATH . 'admin/tables/my_' . $table . '.php')) {
             include_once(VIEWPATH . 'admin/tables/my_' . $table . '.php');
         } else {
-            include_once(VIEWPATH . 'admin/tables/' . $table . '.php');
+            //if($supplier) include_once(VIEWPATH . 'admin/tables/sup_' . $table . '.php');
+             include_once(VIEWPATH . 'admin/tables/' . $table . '.php');
         }
        echo json_encode($output);
         die;
@@ -138,6 +139,47 @@ class Perfex_Base
         );
         return do_action('get_contact_permissions', $permissions);
     }
+
+
+    public function get_supplier_contact_permissions()
+    {
+        $permissions = array(
+            array(
+                'id' => 1,
+                'name' => _l('supplier_permission_invoice'),
+                'short_name' => 'invoices'
+            ),
+            array(
+                'id' => 2,
+                'name' => _l('supplier_permission_estimate'),
+                'short_name' => 'estimates'
+            ),
+            array(
+                'id' => 3,
+                'name' => _l('supplier_permission_contract'),
+                'short_name' => 'contracts'
+            ),
+            array(
+                'id' => 4,
+                'name' => _l('supplier_permission_proposal'),
+                'short_name' => 'proposals'
+            ),
+            array(
+                'id' => 5,
+                'name' => _l('supplier_permission_support'),
+                'short_name' => 'support'
+            ),
+            array(
+                'id'=>6,
+                'name'=>_l('supplier_permission_projects'),
+                'short_name'=>'projects'
+            ),
+        );
+        return do_action('get_supplier_contact_permissions', $permissions);
+    }
+
+
+
     public function set_setup_menu_visibility($total_setup_menu_items){
         if($total_setup_menu_items == 0){
             $this->show_setup_menu = false;

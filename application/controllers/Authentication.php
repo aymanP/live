@@ -36,6 +36,25 @@ class Authentication extends CI_Controller
                 redirect(site_url('admin'));
             }
         }
+        if (is_staff_logged_in()) {
+            redirect(site_url('admin'));
+        }
+        $this->form_validation->set_rules('email', _l('admin_auth_login_email'), 'required|valid_email|callback_email_exists');
+        if ($this->input->post()) {
+            if ($this->form_validation->run() !== false) {
+                $success = $this->Authentication_model->forgot_password($this->input->post('email'), true);
+                if (is_array($success) && isset($success['memberinactive'])) {
+                    set_alert('danger', _l('inactive_account'));
+                    redirect(site_url('authentication/forgot_password'));
+                } else if ($success == true) {
+                    set_alert('success', _l('check_email_for_reseting_password'));
+                    redirect(site_url('authentication/admin'));
+                } else {
+                    set_alert('danger', _l('error_setting_new_password_key'));
+                    redirect(site_url('authentication/admin'));
+                }
+            }
+        }
         $data['title'] = _l('admin_auth_login_heading');
         $this->load->view('authentication/login_admin', $data);
     }
@@ -64,7 +83,7 @@ class Authentication extends CI_Controller
                 }
             }
         }
-        $this->load->view('authentication/forgot_password');
+        $this->load->view('authentication/admin');
     }
     public function reset_password($staff, $userid, $new_pass_key)
     {

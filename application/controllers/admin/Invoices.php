@@ -13,7 +13,7 @@ class Invoices extends Admin_controller
         $this->list_invoices($id);
     }
     /* List all invoices datatables */
-    public function list_invoices($id = false, $clientid = false)
+    public function list_invoices($id = false, $clientorsupplierid = '')
     {
 
         if (!has_permission('invoices', '', 'view')) {
@@ -28,13 +28,35 @@ class Invoices extends Admin_controller
         } else if ($this->input->get('status')) {
             $_status = $this->input->get('status');
         }
-        if ($this->input->is_ajax_request()) {
-            $this->perfex_base->get_table_data('invoices', array(
-                'id' => $id,
-                'clientid' => $clientid,
-                'data' => $data
-            ));
-        }
+
+
+            if ($this->input->is_ajax_request()) {
+             //   log_message('ERROR_', 'Some variable did not contain a value.');
+
+                $this->perfex_base->get_table_data('invoices', array(
+                    'id' => $id,
+                    'clientid' => $clientorsupplierid,
+                    'data' => $data
+                ));
+             //   log_message('ERROR', 'Some variable did not contain a value.');
+
+
+
+            }else{
+            if ($this->input->is_ajax_request()) {
+                log_message('ERROR_', 'Some variable did not contain a value.');
+
+                $this->perfex_base->get_table_data('invoices', array(
+                    'id' => $id,
+                    'clientid' => $clientorsupplierid,
+                    'data' => $data
+                ));
+                log_message('ERROR', 'Some variable did not contain a value.');
+
+            }
+
+            }
+
         $data['invoiceid'] = '';
         if (is_numeric($id)) {
             $data['invoiceid'] = $id;

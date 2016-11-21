@@ -622,6 +622,7 @@ $lang['wd_sunday']    = 'Sunday';
 
 # Admin Left Sidebar
 $lang['als_dashboard'] = 'Dashboard';
+$lang['als_suppliers'] = 'Suppliers';
 $lang['als_clients']   = 'Customers';
 $lang['als_leads']     = 'Leads';
 
@@ -1950,6 +1951,7 @@ $lang['import_upload_failed']        = 'Upload Failed';
 $lang['import_total_imported']       = 'Total Imported: %s';
 $lang['import_leads']                = 'Import Leads';
 $lang['import_customers']            = 'Import Customers';
+$lang['import_suppliers']            = 'Import Suppliers';
 $lang['choose_csv_file']             = 'Choose CSV File';
 $lang['import']                      = 'Import';
 $lang['lead_import_status']          = 'Status';
@@ -2563,6 +2565,7 @@ $lang['invoice_project_timesheet_indivudualy_data']            = 'Timesheet star
 $lang['invoice_project_total_logged_time_data']            = 'Total logged time';
 
 $lang['project_allow_client_to'] = 'Allow customer to %s';
+$lang['project_allow_supplier_to'] = 'Allow supplier to %s';
 $lang['project_setting_view_task_attachments'] = 'view task attachments';
 $lang['project_setting_view_task_checklist_items'] = 'view task checklist items';
 $lang['project_setting_upload_files'] = 'upload files';
@@ -2766,6 +2769,7 @@ $lang['leads_merge_as_contact_field'] = 'Merge as contact field';
 $lang['lead_convert_to_client_phone'] = 'Phone';
 $lang['invoice_status_report_all'] = 'All';
 $lang['import_contact_field'] = 'Contact field';
+$lang['import_supplier_contact_field'] = 'Contact field';
 
 
 $lang['file_uploaded_success'] = 'There is no error, the file uploaded with success';
@@ -3081,3 +3085,71 @@ $lang['task_single_log_user'] = $lang['project_timesheet_user'];
 $lang['login_as_admin'] = 'Login as admin ' ;
 
 $lang['admin_home_slider_title']             = 'Sliders';
+
+
+$lang['suppliers'] = 'Suppliers';
+$lang['project_supplier'] = 'Supplier';
+$lang['suppliers_summary'] = 'Suppliers Summary';
+$lang['suppliers_summary_total'] = 'Total Suppliers';
+$lang['suppliers_list_phone'] = 'Phone';
+$lang['suppliers_list_company'] = 'Company';
+$lang['supplier']                                = 'Supplier';
+$lang['new_supplier']                            = 'New Supplier';
+$lang['supplier_lowercase']                      = 'supplier';
+$lang['supplier_delete_tooltip']                 = 'All suppliers data will be deleted. Contracts,tickets,notes. NOTE: If invoices found supplier wont be deleted. You need to assign this invoices to another supplier to keep the invoice number';
+$lang['supplier_delete_invoices_warning']      = 'This supplier have invoices on the account. You cant delete this supplier. Change all invoices to another supplier in a future then delete.';
+$lang['supplier_firstname']                      = 'First Name';
+$lang['supplier_lastname']                       = 'Last Name';
+$lang['supplier_email']                          = 'Email';
+$lang['supplier_company']                        = 'Company';
+$lang['supplier_vat_number']                     = 'VAT Number';
+$lang['supplier_address']                        = 'Address';
+$lang['supplier_city']                           = 'City';
+$lang['supplier_postal_code']                    = 'Postal Code';
+$lang['supplier_state']                          = 'State';
+$lang['supplier_password']                       = 'Password';
+$lang['supplier_password_change_populate_note']  = 'Note: if you populate this fields, password will be changed on this supplier.';
+$lang['supplier_password_last_changed']          = 'Password last changed:';
+$lang['login_as_supplier']                       = 'Login as supplier';
+$lang['supplier_invoices_tab']                   = 'Invoices';
+$lang['supplier_invoice_number_table_heading']   = 'Invoice #';
+$lang['supplier_invoice_date_table_heading']     = 'Date';
+$lang['supplier_invoice_due_date_table_heading'] = 'Due Date';
+$lang['supplier_string_table_heading']           = 'Supplier';
+$lang['supplier_amount_table_heading']           = 'Amount';
+$lang['supplier_status_table_heading']           = 'Status';
+
+$lang['supplier_string_contracts_table_heading']      = 'Supplier';
+$lang['supplier_start_date_contracts_table_heading']  = 'Start Date';
+$lang['supplier_end_date_contracts_table_heading']    = 'End Date';
+$lang['supplier_description_contracts_table_heading'] = 'Description';
+$lang['supplier_do_not_send_welcome_email']           = 'Do not send welcome email';
+
+$lang['supplier_have_projects_by'] = 'Contains projects by status %s';
+$lang['supplier_have_proposals_by'] = 'Contains proposals by status %s';
+$lang['supplier_admins'] = 'Supplier Admins';
+$lang['supplier_admin_date_assigned'] = 'Date Assigned';
+$lang['supplier_admin_login_as_supplier_message'] = 'Hello %s. You are added as admin to this supplier. To see all supplier data and adjust the portal login as supplier.';
+
+$lang['supplier_estimates_tab'] = 'Estimates';
+$lang['supplier_payments_tab']  = 'Payments';
+
+$lang['supplier_delete_invoices_warning']    = 'This supplier have invoices or estimates on the account. You cant delete this supplier. Change all invoices to another supplier in a future then delete.';
+$lang['supplier_expenses_tab']               = 'Expenses';
+
+$lang['supplier_attachments']                = 'Attachments';
+$lang['supplier_map'] = 'Map';
+$lang['supplier_add_edit_profile']                = 'Profile';
+$lang['supplier_profile_details'] = 'Supplier Details';
+$lang['supplier_contacts'] = 'Contacts';
+$lang['supplier_phonenumber'] = 'Phone';
+$lang['supplier_longitude']                                    = 'Longitude (Google Maps)';
+$lang['supplier_latitude']                                     = 'Latitude (Google Maps)';
+$lang['suppliers_country']                                      = 'Country';
+$lang['supplier_groups']                                       = 'Groups';
+$lang['supplier_profile_image']                                = 'Profile image';
+$lang['supplier_update_address_info_on_invoices_help']         = 'If you check this field shipping and billing info will be updated to all invoices and estimates. Note: Invoices with status paid wont be affected.';
+$lang['supplier_update_address_info_on_invoices']              = 'Update the shipping/billing info on all previous invoices/estimates';
+$lang['invoice_dt_table_heading_supplier']  = 'Supplier';
+$lang['list_suppliers'] = 'All suppliers';
+$lang['invoices_suppliers'] = 'Invoices';

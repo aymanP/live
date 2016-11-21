@@ -70,6 +70,12 @@
                   $item->permission = '';
                 }
               }
+            } else if($item->id == 'suppliers'){
+              if(!has_permission('suppliers','','view')){
+                if(have_assigned_suppliers()){
+                  $item->permission = '';
+                }
+              }
             }
             if(isset($item->permission) && !empty($item->permission)){
              if(!has_permission($item->permission,'','view')){

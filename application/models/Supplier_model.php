@@ -3,7 +3,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Supplier_model extends CRM_Model
 {
-    private $contact_data = array('firstname', 'lastname', 'email', 'phonenumber', 'title', 'password', 'send_set_password_email', 'donotsendwelcomeemail', 'permissions');
+    private $supplierContact_data = array('firstname', 'lastname', 'email', 'phonenumber', 'title', 'password', 'send_set_password_email', 'donotsendwelcomeemail', 'permissions');
     function __construct()
     {
         parent::__construct();
@@ -12,24 +12,7 @@ class Supplier_model extends CRM_Model
      * With this function staff can login as client in the clients area
      * @param  mixed $id client id
      */
-    public function login_as_client($id)
-    {
-        $this->db->where('userid', $id);
-        $this->db->where('is_primary', 1);
-        $primary = $this->db->get('tblcontacts')->row();
-        if (!$primary) {
-            set_alert('danger', _l('no_primary_contact'));
-            redirect($_SERVER['HTTP_REFERER']);
-        }
-        $supplier    = $this->get($id);
-        $user_data = array(
-            'supplier_user_id' => $supplier->userid,
-            'contact_user_id' => get_primary_contact_user_id($supplier->userid),
-            'supplier_logged_in' => true,
-            'logged_in_as_client' => true
-        );
-        $this->session->set_userdata($user_data);
-    }
+
 
     /**
      * @param  mixed $id supplier id (optional)
@@ -41,37 +24,55 @@ class Supplier_model extends CRM_Model
     {
         $this->db->join('tblcountries', 'tblcountries.country_id = tblsuppliers.country', 'left');
         if (is_numeric($id)) {
-            $this->db->where('userid', $id);
+            $this->db->where('supplierid', $id);
             $supplier = $this->db->get('tblsuppliers')->row();
             return $supplier;
         }
         $this->db->order_by('company', 'asc');
         return $this->db->get('tblsuppliers')->result_array();
     }
-    public function get_contacts($customer_id = '', $where = array('active' => 1))
+
+    public function get_contact_project($id)
+    {
+        $this->db->where('id', $id);
+        $proj= $this->db->get('tblprojects')->row();
+        $this->db->where('id', $proj->suppliercontactid);
+        return $this->db->get('tblsuppliercontacts')->result_array();
+    }
+
+    public function get_contact_primary($id)
+    {
+        $val =1;
+        $this->db->where('supplierid', $id);
+        $this->db->where('is_primary',$val );
+        $this->db->where('email_cc',$val );
+        return $this->db->get('tblsuppliercontacts')->result_array();
+    }
+
+    public function get_contacts($supplier_id = '', $where = array('active' => 1))
     {
         $this->db->where($where);
-        if ($customer_id != '') {
-            $this->db->where('userid', $customer_id);
+        if ($supplier_id != '') {
+            $this->db->where('supplierid', $supplier_id);
         }
         $this->db->order_by('is_primary', 'DESC');
-        return $this->db->get('tblcontacts')->result_array();
+        return $this->db->get('tblsuppliercontacts')->result_array();
     }
     public function get_contact($id)
     {
         $this->db->where('id', $id);
-        return $this->db->get('tblcontacts')->row();
+        return $this->db->get('tblsuppliercontacts')->row();
     }
     public function get_admins($id){
-        $this->db->where('customer_id',$id);
-        return $this->db->get('tblcustomeradmins')->result_array();
+        $this->db->where('supplier_id',$id);
+        return $this->db->get('tblsupplieradmins')->result_array();
     }
     public function assign_admins($data,$id){
         $affectedRows = 0;
 
         if(count($data) == 0){
-            $this->db->where('customer_id',$id);
-            $this->db->delete('tblcustomeradmins');
+            $this->db->where('supplier_id',$id);
+            $this->db->delete('tblsupplieradmins');
             if($this->db->affected_rows() > 0){
                 $affectedRows++;
             }
@@ -83,18 +84,18 @@ class Supplier_model extends CRM_Model
                 array_push($current_admins_ids,$c_admin['staff_id']);
             }
             foreach($current_admins_ids as $c_admin_id){
-                if(!in_array($c_admin_id, $data['customer_admins'])){
+                if(!in_array($c_admin_id, $data['supplier_admins'])){
                     $this->db->where('staff_id',$c_admin_id);
-                    $this->db->where('customer_id',$id);
-                    $this->db->delete('tblcustomeradmins');
+                    $this->db->where('supplier_id',$id);
+                    $this->db->delete('tblsupplieradmins');
                     if($this->db->affected_rows() > 0){
                         $affectedRows++;
                     }
                 }
             }
-            foreach($data['customer_admins'] as $n_admin_id){
-                if(total_rows('tblcustomeradmins',array('customer_id'=>$id,'staff_id'=>$n_admin_id)) == 0){
-                    $this->db->insert('tblcustomeradmins',array('customer_id'=>$id,'staff_id'=>$n_admin_id,'date_assigned'=>date('Y-m-d H:i:s')));
+            foreach($data['supplier_admins'] as $n_admin_id){
+                if(total_rows('tblsupplieradmins',array('supplier_id'=>$id,'staff_id'=>$n_admin_id)) == 0){
+                    $this->db->insert('tblsupplieradmins',array('supplier_id'=>$id,'staff_id'=>$n_admin_id,'date_assigned'=>date('Y-m-d H:i:s')));
                     if($this->db->affected_rows() > 0){
                         $affectedRows++;
                     }
@@ -107,11 +108,11 @@ class Supplier_model extends CRM_Model
 
         return false;
     }
-    public function update_contact($data, $id, $supplier_request = false)
+    public function update_supplier_contact($data, $id, $supplier_request = false)
     {
         $hook_data['data'] = $data;
         $hook_data['id'] = $id;
-        $hook_data = do_action('before_update_contact',$hook_data);
+        $hook_data = do_action('before_update_supplierContact',$hook_data);
         $data = $hook_data['data'];
         $id = $hook_data['id'];
 
@@ -133,7 +134,7 @@ class Supplier_model extends CRM_Model
             $send_set_password_email = true;
             unset($data['send_set_password_email']);
         }
-        $contact = $this->get_contact($id);
+        $supplierContact = $this->get_contact($id);
         if (isset($data['is_primary'])) {
             $data['is_primary'] = 1;
         } else {
@@ -165,25 +166,25 @@ class Supplier_model extends CRM_Model
             unset($data['custom_fields']);
         }
         $this->db->where('id', $id);
-        $this->db->update('tblcontacts', $data);
+        $this->db->update('tblsupplierContacts', $data);
         if ($this->db->affected_rows() > 0) {
             $affectedRows++;
             if (isset($data['is_primary']) && $data['is_primary'] == 1) {
-                $this->db->where('userid', $contact->userid);
+                $this->db->where('userid', $supplierContact->supplierid);
                 $this->db->where('id !=', $id);
-                $this->db->update('tblcontacts', array(
+                $this->db->update('tblsuppliercontacts', array(
                     'is_primary' => 0
                 ));
             }
         }
         if ($supplier_request == false) {
-            $customer_permissions = $this->roles_model->get_contact_permissions($id);
-            if (sizeof($customer_permissions) > 0) {
-                foreach ($customer_permissions as $customer_permission) {
-                    if (!in_array($customer_permission['permission_id'], $permissions)) {
+            $supplier_permissions = $this->roles_model->get_supplier_contact_permissions($id);
+            if (sizeof($supplier_permissions) > 0) {
+                foreach ($supplier_permissions as $supplier_permission) {
+                    if (!in_array($supplier_permission['permission_id'], $permissions)) {
                         $this->db->where('userid', $id);
-                        $this->db->where('permission_id', $customer_permission['permission_id']);
-                        $this->db->delete('tblcontactpermissions');
+                        $this->db->where('permission_id', $supplier_permission['permission_id']);
+                        $this->db->delete('tblsuppliercontactpermissions');
                         if ($this->db->affected_rows() > 0) {
                             $affectedRows++;
                         }
@@ -192,9 +193,9 @@ class Supplier_model extends CRM_Model
                 foreach ($permissions as $permission) {
                     $this->db->where('userid', $id);
                     $this->db->where('permission_id', $permission);
-                    $_exists = $this->db->get('tblcontactpermissions')->row();
+                    $_exists = $this->db->get('tblsuppliercontactpermissions')->row();
                     if (!$_exists) {
-                        $this->db->insert('tblcontactpermissions', array(
+                        $this->db->insert('tblsuppliercontactpermissions', array(
                             'userid' => $id,
                             'permission_id' => $permission
                         ));
@@ -205,7 +206,7 @@ class Supplier_model extends CRM_Model
                 }
             } else {
                 foreach ($permissions as $permission) {
-                    $this->db->insert('tblcontactpermissions', array(
+                    $this->db->insert('tblsuppliercontactpermissions', array(
                         'userid' => $id,
                         'permission_id' => $permission
                     ));
@@ -216,7 +217,7 @@ class Supplier_model extends CRM_Model
             }
         }
         if ($affectedRows > 0 && !isset($set_password_email_sent)) {
-            logActivity('Contact Updated [' . $data['firstname'] . ' ' . $data['lastname'] . ']');
+            logActivity('supplierContact Updated [' . $data['firstname'] . ' ' . $data['lastname'] . ']');
             return true;
         } else if ($affectedRows > 0 && isset($set_password_email_sent)) {
             return array(
@@ -229,12 +230,12 @@ class Supplier_model extends CRM_Model
         }
         return false;
     }
-    public function add_contact($data, $customer_id, $not_manual_request = false)
+    public function add_supplier_contact($data, $supplier_id, $not_manual_request = false)
     {
         // First check for all cases if the email exists.
         $this->db->where('email', $data['email']);
-        $this->db->where('userid', $customer_id);
-        $email = $this->db->get('tblcontacts')->row();
+        $this->db->where('supplierid', $supplier_id);
+        $email = $this->db->get('tblsuppliercontacts')->row();
         if ($email) {
             die('Email already exists');
         }
@@ -263,8 +264,8 @@ class Supplier_model extends CRM_Model
         }
         if (isset($data['is_primary'])) {
             $data['is_primary'] = 1;
-            $this->db->where('userid', $customer_id);
-            $this->db->update('tblcontacts', array(
+            $this->db->where('supplierid', $supplier_id);
+            $this->db->update('tblsuppliercontacts', array(
                 'is_primary' => 0
             ));
         } else {
@@ -276,7 +277,7 @@ class Supplier_model extends CRM_Model
         } else {
             $data['email_cc'] = 0;
         }
-        $data['userid'] = $customer_id;
+        $data['supplierid'] = $supplier_id;
         if (isset($data['password'])) {
             $this->load->helper('phpass');
             $hasher              = new PasswordHash(PHPASS_HASH_STRENGTH, PHPASS_HASH_PORTABLE);
@@ -288,23 +289,23 @@ class Supplier_model extends CRM_Model
             'not_manual_request'=>$not_manual_request,
         );
 
-        $_data = do_action('before_create_contact',$_data);
+        $_data = do_action('before_create_supplier_contact',$_data);
         $data = $_data['data'];
 
-        $this->db->insert('tblcontacts', $data);
-        $contact_id = $this->db->insert_id();
+        $this->db->insert('tblsuppliercontacts', $data);
+        $supplierContact_id = $this->db->insert_id();
 
-        if ($contact_id) {
+        if ($supplierContact_id) {
             if (isset($custom_fields)) {
-                handle_custom_fields_post($contact_id, $custom_fields);
+                handle_custom_fields_post($supplierContact_id, $custom_fields);
             }
             // request from admin area
             if (!isset($permissions) && $not_manual_request == false) {
                 $permissions = array();
             } else if ($not_manual_request == true) {
                 $permissions  = array();
-                $_permissions = $this->perfex_base->get_contact_permissions();
-                $default_permissions = @unserialize(get_option('default_contact_permissions'));
+                $_permissions = $this->perfex_base->get_supplier_contact_permissions();
+                $default_permissions = @unserialize(get_option('default_supplier_contact_permissions'));
                 foreach ($_permissions as $permission) {
                     if(is_array($default_permissions) && in_array($permission['id'],$default_permissions)){
                         array_push($permissions, $permission['id']);
@@ -312,8 +313,8 @@ class Supplier_model extends CRM_Model
                 }
             }
             foreach ($permissions as $permission) {
-                $this->db->insert('tblcontactpermissions', array(
-                    'userid' => $contact_id,
+                $this->db->insert('tblsuppliercontactpermissions', array(
+                    'supplierid' => $supplierContact_id,
                     'permission_id' => $permission
                 ));
             }
@@ -322,18 +323,18 @@ class Supplier_model extends CRM_Model
             $this->db->from('tblannouncements');
             $this->db->where('showtousers', 1);
             $announcements = $this->db->get()->result_array();
-            foreach ($announcements as $announcement) {
-                $this->db->insert('tbldismissedannouncements', array(
-                    'announcementid' => $announcement['announcementid'],
-                    'staff' => 0,
-                    'userid' => $contact_id
-                ));
-            }
+//            foreach ($announcements as $announcement) {
+//                $this->db->insert('tbldismissedannouncements', array(
+//                    'announcementid' => $announcement['announcementid'],
+//                    'staff' => 0,
+//                    'userid' => $supplierContact_id
+//                ));
+//            }
             if ($send_welcome_email == true) {
                 $this->load->model('emails_model');
                 $merge_fields = array();
-                $merge_fields = array_merge($merge_fields, get_client_contact_merge_fields($data['userid'], $contact_id));
-                $this->emails_model->send_email_template('new-client-created', $data['email'], $merge_fields);
+                $merge_fields = array_merge($merge_fields, get_supplier_contact_merge_fields($data['supplierid'], $supplierContact_id));
+                $this->emails_model->send_email_template('new-supplier-created', $data['email'], $merge_fields);
             }
             if (isset($send_set_password_email)) {
                 $this->authentication_model->set_password_email($data['email'], 0);
@@ -348,12 +349,12 @@ class Supplier_model extends CRM_Model
      * @return integer Insert ID
      * Add new client to database
      */
-    public function add($data, $client_or_lead_convert_request = false)
+    public function add($data, $supplier_or_lead_convert_request = false)
     {
-        $contact_data = array();
-        foreach ($this->contact_data as $field) {
+        $supplierContact_data = array();
+        foreach ($this->supplierContact_data as $field) {
             if (isset($data[$field])) {
-                $contact_data[$field] = $data[$field];
+                $supplierContact_data[$field] = $data[$field];
                 // Phonenumber is also used for the company profile
                 if ($field != 'phonenumber') {
                     unset($data[$field]);
@@ -361,9 +362,9 @@ class Supplier_model extends CRM_Model
             }
         }
         // From customer profile register
-        if (isset($data['contact_phonenumber'])) {
-            $contact_data['phonenumber'] = $data['contact_phonenumber'];
-            unset($data['contact_phonenumber']);
+        if (isset($data['supplier_contact_phonenumber'])) {
+            $supplierContact_data['phonenumber'] = $data['supplier_contact_phonenumber'];
+            unset($data['supplier_contact_phonenumber']);
         }
         if (isset($data['passwordr'])) {
             unset($data['passwordr']);
@@ -389,8 +390,8 @@ class Supplier_model extends CRM_Model
             $data['shipping_country'] = 0;
         }
         $data['datecreated'] = date('Y-m-d H:i:s');
-        $data                = do_action('before_client_added', $data);
-        $this->db->insert('tblclients', $data);
+        $data                = do_action('before_supplier_added', $data);
+        $this->db->insert('tblsuppliers', $data);
         $userid = $this->db->insert_id();
         if ($userid) {
             if (isset($custom_fields)) {
@@ -398,36 +399,36 @@ class Supplier_model extends CRM_Model
                 // Possible request from the register area with 2 types of custom fields for contact and for comapny/customer
                 if (count($custom_fields) == 2) {
                     unset($custom_fields);
-                    $custom_fields['customers']                = $_custom_fields['customers'];
-                    $contact_data['custom_fields']['contacts'] = $_custom_fields['contacts'];
+                    $custom_fields['suppliers']                = $_custom_fields['suppliers'];
+                    $contact_data['custom_fields']['supplier_contacts'] = $_custom_fields['supplier_contacts'];
                 } else if(count($custom_fields) == 1){
-                    if(isset($_custom_fields['contacts'])){
-                        $contact_data['custom_fields']['contacts'] = $_custom_fields['contacts'];
+                    if(isset($_custom_fields['supplier_contacts'])){
+                        $contact_data['custom_fields']['supplier_contacts'] = $_custom_fields['supplier_contacts'];
                         unset($custom_fields);
                     }
                 }
                 handle_custom_fields_post($userid, $custom_fields);
             }
             // If request from client area or lead convert to client add as contact too
-            if ($client_or_lead_convert_request == true) {
-                $this->add_contact($contact_data, $userid, $client_or_lead_convert_request);
+            if ($supplier_or_lead_convert_request == true) {
+                $this->add_supplier_contact($contact_data, $userid, $supplier_or_lead_convert_request);
             }
             if (isset($groups_in)) {
                 foreach ($groups_in as $group) {
-                    $this->db->insert('tblcustomergroups_in', array(
-                        'customer_id' => $userid,
+                    $this->db->insert('tblsuppliergroups_in', array(
+                        'supplier_id' => $userid,
                         'groupid' => $group
                     ));
                 }
             }
-            do_action('after_client_added', $userid);
-            $_new_client_log = $data['company'];
+            do_action('after_supplier_added', $userid);
+            $_new_supplier_log = $data['company'];
             $_is_staff       = NULL;
             if (is_staff_logged_in()) {
-                $_new_client_log .= ' From Staff: ' . get_staff_user_id();
+                $_new_supplier_log .= ' From Staff: ' . get_staff_user_id();
                 $_is_staff = get_staff_user_id();
             }
-            logActivity('New Client Created [' . $_new_client_log . ']', $_is_staff);
+            logActivity('New Client Created [' . $_new_supplier_log . ']', $_is_staff);
         }
         return $userid;
     }
@@ -469,21 +470,21 @@ class Supplier_model extends CRM_Model
         if (isset($data['shipping_country']) && $data['shipping_country'] == '' || !isset($data['shipping_country'])) {
             $data['shipping_country'] = 0;
         }
-        $_data = do_action('before_client_updated', array(
-            'userid' => $id,
+        $_data = do_action('before_supplier_updated', array(
+            'supplierid' => $id,
             'data' => $data
         ));
         $data  = $_data['data'];
-        $this->db->where('userid', $id);
-        $this->db->update('tblclients', $data);
+        $this->db->where('supplierid', $id);
+        $this->db->update('tblsuppliers', $data);
 
         if ($this->db->affected_rows() > 0) {
             $affectedRows++;
-            do_action('after_client_updated', $id);
+            do_action('after_supplier_updated', $id);
         }
         if (isset($update_all_other_transactions)) {
             // Update all unpaid invoices
-            $this->db->where('clientid', $id);
+            $this->db->where('supplierid', $id);
             $this->db->where('status !=', 2);
             $invoices = $this->db->get('tblinvoices')->result_array();
             foreach ($invoices as $invoice) {
@@ -505,7 +506,7 @@ class Supplier_model extends CRM_Model
                 }
             }
             // Update all estimates
-            $this->db->where('clientid', $id);
+            $this->db->where('supplierid', $id);
             $estimates = $this->db->get('tblestimates')->result_array();
             foreach ($estimates as $estimate) {
                 $this->db->where('id', $estimate['id']);
@@ -526,21 +527,21 @@ class Supplier_model extends CRM_Model
                 }
             }
         }
-        $customer_groups = $this->get_customer_groups($id);
+        $customer_groups = $this->get_supplier_groups($id);
         if (sizeof($customer_groups) > 0) {
             foreach ($customer_groups as $customer_group) {
                 if (isset($groups_in)) {
                     if (!in_array($customer_group['groupid'], $groups_in)) {
-                        $this->db->where('customer_id', $id);
+                        $this->db->where('supplier_id', $id);
                         $this->db->where('id', $customer_group['id']);
-                        $this->db->delete('tblcustomergroups_in');
+                        $this->db->delete('tblsuppliergroups_in');
                         if ($this->db->affected_rows() > 0) {
                             $affectedRows++;
                         }
                     }
                 } else {
-                    $this->db->where('customer_id', $id);
-                    $this->db->delete('tblcustomergroups_in');
+                    $this->db->where('supplier_id', $id);
+                    $this->db->delete('tblsuppliergroups_in');
                     if ($this->db->affected_rows() > 0) {
                         $affectedRows++;
                     }
@@ -548,15 +549,15 @@ class Supplier_model extends CRM_Model
             }
             if (isset($groups_in)) {
                 foreach ($groups_in as $group) {
-                    $this->db->where('customer_id', $id);
+                    $this->db->where('supplier_id', $id);
                     $this->db->where('groupid', $group);
-                    $_exists = $this->db->get('tblcustomergroups_in')->row();
+                    $_exists = $this->db->get('tblsuppliergroups_in')->row();
                     if (!$_exists) {
                         if (empty($group)) {
                             continue;
                         }
-                        $this->db->insert('tblcustomergroups_in', array(
-                            'customer_id' => $id,
+                        $this->db->insert('tblsuppliergroups_in', array(
+                            'supplier_id' => $id,
                             'groupid' => $group
                         ));
                         if ($this->db->affected_rows() > 0) {
@@ -571,7 +572,7 @@ class Supplier_model extends CRM_Model
                     if (empty($group)) {
                         continue;
                     }
-                    $this->db->insert('tblcustomergroups_in', array(
+                    $this->db->insert('tblsuppliergroups_in', array(
                         'customer_id' => $id,
                         'groupid' => $group
                     ));
@@ -582,7 +583,7 @@ class Supplier_model extends CRM_Model
             }
         }
         if ($affectedRows > 0) {
-            logActivity('Customer Info Updated [' . $data['company'] . ']');
+            logActivity('Supplier Info Updated [' . $data['company'] . ']');
             return true;
         }
         return false;
@@ -606,10 +607,10 @@ class Supplier_model extends CRM_Model
         if (isset($data['country']) && $data['country'] == '' || !isset($data['country'])) {
             $data['country'] = 0;
         }
-        $this->db->where('userid',$id);
-        $this->db->update('tblclients',$data);
+        $this->db->where('supplier',$id);
+        $this->db->update('tblsuppliers',$data);
         if($this->db->affected_rows() > 0){
-            logActivity('Customer Info Updated From Clients Area [' . $data['company'] . ']');
+            logActivity('Supplier Info Updated From Clients Area [' . $data['company'] . ']');
             return true;
         }
         return false;
@@ -623,104 +624,104 @@ class Supplier_model extends CRM_Model
     public function delete($id)
     {
         $affectedRows = 0;
-        do_action('before_client_deleted', $id);
-        if (is_reference_in_table('clientid', 'tblinvoices', $id) || is_reference_in_table('clientid', 'tblestimates', $id)) {
+        do_action('before_supplier_deleted', $id);
+        if (is_reference_in_table('supplierid', 'tblinvoices', $id) || is_reference_in_table('supplierid', 'tblestimates', $id)) {
             return array(
                 'referenced' => true
             );
         }
-        $this->db->where('userid', $id);
-        $this->db->delete('tblclients');
+        $this->db->where('supplierid', $id);
+        $this->db->delete('tblsuppliers');
         if ($this->db->affected_rows() > 0) {
             $affectedRows++;
-            $this->db->where('userid', $id);
+            $this->db->where('supplierid', $id);
             $this->db->where('staff', 0);
             $this->db->delete('tbldismissedannouncements');
             // Delete all tickets start here
-            $this->db->where('userid', $id);
+            $this->db->where('supplierid', $id);
             $tickets = $this->db->get('tbltickets')->result_array();
             $this->load->model('tickets_model');
             foreach ($tickets as $ticket) {
                 $this->tickets_model->delete($ticket['ticketid']);
             }
             // Delete autologin if found
-            $this->db->where('user_id', $id);
-            $this->db->where('staff', 0);
-            $this->db->delete('tbluserautologin');
+//            $this->db->where('user_id', $id);
+//            $this->db->where('staff', 0);
+//            $this->db->delete('tbluserautologin');
 
             $this->db->where('rel_id', $id);
-            $this->db->where('rel_type', 'customer');
+            $this->db->where('rel_type', 'supplier');
             $this->db->delete('tblnotes');
 
             // Delete all user contacts
-            $this->db->where('userid', $id);
-            $contacts = $this->db->get('tblcontacts')->result_array();
+            $this->db->where('supplierid', $id);
+            $contacts = $this->db->get('tblsuppliercontacts')->result_array();
             foreach ($contacts as $contact) {
-                $this->delete_contact($contact['id']);
+                $this->delete_supplier_contact($contact['id']);
             }
             // Get all client contracts
             $this->load->model('contracts_model');
-            $this->db->where('client', $id);
+            $this->db->where('supplier', $id);
             $contracts = $this->db->get('tblcontracts')->result_array();
             foreach ($contracts as $contract) {
                 $this->contracts_model->delete($contract['id']);
             }
             // Delete the custom field values
             $this->db->where('relid', $id);
-            $this->db->where('fieldto', 'customers');
+            $this->db->where('fieldto', 'suppliers');
             $this->db->delete('tblcustomfieldsvalues');
             // Get customer related tasks
             $this->load->model('tasks_model');
-            $this->db->where('rel_type', 'customer');
+            $this->db->where('rel_type', 'supplier');
             $this->db->where('rel_id', $id);
             $tasks = $this->db->get('tblstafftasks')->result_array();
             foreach ($tasks as $task) {
                 $this->tasks_model->delete_task($task['id']);
             }
-            $this->db->where('rel_type', 'customer');
+            $this->db->where('rel_type', 'supplier');
             $this->db->where('rel_id', $id);
             $this->db->delete('tblreminders');
             // Delete all projects
             $this->load->model('projects_model');
-            $this->db->where('clientid', $id);
+            $this->db->where('supplierid', $id);
             $projects = $this->db->get('tblprojects')->result_array();
             foreach ($projects as $project) {
                 $this->projects_model->delete($project['id']);
             }
             $this->load->model('proposals_model');
             $this->db->where('rel_id', $id);
-            $this->db->where('rel_type', 'customer');
+            $this->db->where('rel_type', 'supplier');
             $proposals = $this->db->get('tblproposals')->result_array();
             foreach ($proposals as $proposal) {
                 $this->proposals_model->delete($proposal['id']);
             }
-            $this->db->where('clientid', $id);
-            $attachments = $this->db->get('tblclientattachments')->result_array();
+            $this->db->where('supplierid', $id);
+            $attachments = $this->db->get('tblsupplierattachments')->result_array();
             foreach ($attachments as $attachment) {
                 $this->delete_attachment($attachment['id']);
             }
         }
         if ($affectedRows > 0) {
-            do_action('after_client_deleted');
-            logActivity('Client Deleted [' . $id . ']');
+            do_action('after_supplier_deleted');
+            logActivity('Supplier Deleted [' . $id . ']');
             return true;
         }
         return false;
     }
-    public function delete_contact($id)
+    public function delete_supplier_contact($id)
     {
-        do_action('before_delete_contact',$id);
+        do_action('before_delete_supplier_contact',$id);
         $this->db->where('id', $id);
-        $this->db->delete('tblcontacts');
+        $this->db->delete('tblsuppliercontacts');
         if ($this->db->affected_rows() > 0) {
-            if(is_dir(CLIENT_PROFILE_IMAGES_FOLDER.$id)){
-                delete_dir(CLIENT_PROFILE_IMAGES_FOLDER.$id);
+            if(is_dir(SUPPLIER_PROFILE_IMAGES_FOLDER.$id)){
+                delete_dir(SUPPLIER_PROFILE_IMAGES_FOLDER.$id);
             }
             $this->db->where('relid', $id);
             $this->db->where('fieldto', 'contacts');
             $this->db->delete('tblcustomfieldsvalues');
-            $this->db->where('userid', $id);
-            $this->db->delete('tblcontactpermissions');
+            $this->db->where('supplierid', $id);
+            $this->db->delete('tblsuppliercontactpermissions');
             return true;
         }
         return false;
@@ -730,10 +731,10 @@ class Supplier_model extends CRM_Model
      * @param  mixed $id customer id
      * @return mixed
      */
-    public function get_customer_default_currency($id)
+    public function get_supplier_default_currency($id)
     {
-        $this->db->where('userid', $id);
-        $result = $this->db->get('tblclients')->row();
+        $this->db->where('supplierid', $id);
+        $result = $this->db->get('tblsuppliers')->row();
         if($result){
             return $result->default_currency;
         }
@@ -745,11 +746,11 @@ class Supplier_model extends CRM_Model
      * @param   mixed $id   customer id
      * @return  array
      */
-    public function get_customer_billing_and_shipping_details($id)
+    public function get_supplier_billing_and_shipping_details($id)
     {
         $this->db->select('billing_street,billing_city,billing_state,billing_zip,billing_country,shipping_street,shipping_city,shipping_state,shipping_zip,shipping_country');
-        $this->db->from('tblclients');
-        $this->db->where('userid', $id);
+        $this->db->from('tblsuppliers');
+        $this->db->where('supplierid', $id);
         return $this->db->get()->result_array();
     }
     /**
@@ -757,7 +758,7 @@ class Supplier_model extends CRM_Model
      * @param   mixed $id   customer id
      * @return  array
      */
-    public function get_all_customer_attachments($id)
+    public function get_all_supplier_attachments($id)
     {
         $attachments              = array();
         $attachments['invoice']  = array();
@@ -768,10 +769,10 @@ class Supplier_model extends CRM_Model
         $attachments['leads']     = array();
         $attachments['tickets']   = array();
         $attachments['tasks']     = array();
-        $attachments['customer']  = array();
+        $attachments['supplier']  = array();
         // Invoices
-        $this->db->select('clientid,id');
-        $this->db->where('clientid', $id);
+        $this->db->select('supplierid,id');
+        $this->db->where('supplierid', $id);
         $this->db->from('tblinvoices');
         $invoices = $this->db->get()->result_array();
         foreach ($invoices as $invoice) {
@@ -785,8 +786,8 @@ class Supplier_model extends CRM_Model
             }
         }
         // Estimates
-        $this->db->select('clientid,id');
-        $this->db->where('clientid', $id);
+        $this->db->select('supplierid,id');
+        $this->db->where('supplierid', $id);
         $this->db->from('tblestimates');
         $estimates = $this->db->get()->result_array();
         foreach ($estimates as $estimate) {
@@ -803,7 +804,7 @@ class Supplier_model extends CRM_Model
         // Proposals
         $this->db->select('rel_id,id');
         $this->db->where('rel_id', $id);
-        $this->db->where('rel_type', 'customer');
+        $this->db->where('rel_type', 'supplier');
         $this->db->from('tblproposals');
         $proposals = $this->db->get()->result_array();
         foreach ($proposals as $proposal) {
@@ -817,8 +818,8 @@ class Supplier_model extends CRM_Model
             }
         }
         // Contracts
-        $this->db->select('client,id');
-        $this->db->where('client', $id);
+        $this->db->select('supplier,id');
+        $this->db->where('supplier', $id);
         $this->db->from('tblcontracts');
         $contracts = $this->db->get()->result_array();
         foreach ($contracts as $contract) {
@@ -840,8 +841,8 @@ class Supplier_model extends CRM_Model
                 }
             }
         }
-        $this->db->select('ticketid,userid');
-        $this->db->where('userid', $id);
+        $this->db->select('ticketid,supplierid');
+        $this->db->where('supplierid', $id);
         $this->db->from('tbltickets');
         $tickets = $this->db->get()->result_array();
         foreach ($tickets as $ticket) {
@@ -855,7 +856,7 @@ class Supplier_model extends CRM_Model
         }
         $this->db->select('rel_id,id');
         $this->db->where('rel_id', $id);
-        $this->db->where('rel_type', 'customer');
+        $this->db->where('rel_type', 'supplier');
         $this->db->from('tblstafftasks');
         $tasks = $this->db->get()->result_array();
         foreach ($tasks as $task) {
@@ -867,24 +868,24 @@ class Supplier_model extends CRM_Model
                 }
             }
         }
-        $this->db->where('clientid', $id);
-        $client_main_attachments = $this->db->get('tblclientattachments')->result_array();
-        $attachments['client']   = $client_main_attachments;
+        $this->db->where('supplierid', $id);
+        $supplier_main_attachments = $this->db->get('tblsupplierattachments')->result_array();
+        $attachments['supplier']   = $supplier_main_attachments;
         return $attachments;
     }
     public function delete_attachment($id)
     {
         $this->db->where('id', $id);
-        $attachment = $this->db->get('tblclientattachments')->row();
+        $attachment = $this->db->get('tblsupplierattachments')->row();
         if ($attachment) {
-            if (unlink(CLIENT_ATTACHMENTS_FOLDER . $attachment->clientid . '/' . $attachment->file_name)) {
+            if (unlink(SUPPLIER_ATTACHMENTS_FOLDER . $attachment->supplierid . '/' . $attachment->file_name)) {
                 $this->db->where('id', $id);
-                $this->db->delete('tblclientattachments');
+                $this->db->delete('tblsupplierattachments');
             }
             // Check if no attachments left, so we can delete the folder also
-            $other_attachments = list_files(CLIENT_ATTACHMENTS_FOLDER . $attachment->clientid);
+            $other_attachments = list_files(SUPPLIER_ATTACHMENTS_FOLDER . $attachment->supplierid);
             if (count($other_attachments) == 0) {
-                delete_dir(CLIENT_ATTACHMENTS_FOLDER . $attachment->clientid);
+                delete_dir(SUPPLIER_ATTACHMENTS_FOLDER . $attachment->supplierid);
             }
             return true;
         }
@@ -896,7 +897,7 @@ class Supplier_model extends CRM_Model
      * @return boolean
      * Update client status Active/Inactive
      */
-    public function change_contact_status($id, $status)
+    public function change_supplier_contact_status($id, $status)
     {
         $hook_data['id'] = $id;
         $hook_data['status'] = $status;
@@ -905,11 +906,11 @@ class Supplier_model extends CRM_Model
         $id = $hook_data['id'];
 
         $this->db->where('id', $id);
-        $this->db->update('tblcontacts', array(
+        $this->db->update('tblsuppliercontacts', array(
             'active' => $status
         ));
         if ($this->db->affected_rows() > 0) {
-            logActivity('Contact Status Changed [ContactID: ' . $id . ' Status(Active/Inactive): ' . $status . ']');
+            logActivity('Supplier contact Status Changed [ContactID: ' . $id . ' Status(Active/Inactive): ' . $status . ']');
             return true;
         }
         return false;
@@ -918,37 +919,39 @@ class Supplier_model extends CRM_Model
      * @param  mixed $_POST data
      * @return mixed
      * Change contact password, used from client area
-     */
-    public function change_contact_password($data)
-    {
-        $hook_data['data'] = $data;
-        $hook_data = do_action('before_contact_change_password',$hook_data);
-        $data = $hook_data['data'];
+//     */
+//    public function change_supplier_contact_password($data)
+//    {
+//        $hook_data['data'] = $data;
+//        $hook_data = do_action('before_supplier_contact_change_password',$hook_data);
+//        $data = $hook_data['data'];
+//
+//        // Get current password
+//        $this->db->where('id', get_contact_user_id());
+//        $client = $this->db->get('tblcontacts')->row();
+//        $this->load->helper('phpass');
+//        $hasher = new PasswordHash(PHPASS_HASH_STRENGTH, PHPASS_HASH_PORTABLE);
+//        if (!$hasher->CheckPassword($data['oldpassword'], $client->password)) {
+//            return array(
+//                'old_password_not_match' => true
+//            );
+//        }
+//        $update_data['password']             = $hasher->HashPassword($data['newpasswordr']);
+//        $update_data['last_password_change'] = date('Y-m-d H:i:s');
+//        $this->db->where('id', get_contact_user_id());
+//        $this->db->update('tblcontacts', $update_data);
+//        if ($this->db->affected_rows() > 0) {
+//            logActivity('Contact Password Changed [ContactID: ' . get_contact_user_id() . ']');
+//            return true;
+//        }
+//        return false;
+//    }
 
-        // Get current password
-        $this->db->where('id', get_contact_user_id());
-        $client = $this->db->get('tblcontacts')->row();
-        $this->load->helper('phpass');
-        $hasher = new PasswordHash(PHPASS_HASH_STRENGTH, PHPASS_HASH_PORTABLE);
-        if (!$hasher->CheckPassword($data['oldpassword'], $client->password)) {
-            return array(
-                'old_password_not_match' => true
-            );
-        }
-        $update_data['password']             = $hasher->HashPassword($data['newpasswordr']);
-        $update_data['last_password_change'] = date('Y-m-d H:i:s');
-        $this->db->where('id', get_contact_user_id());
-        $this->db->update('tblcontacts', $update_data);
-        if ($this->db->affected_rows() > 0) {
-            logActivity('Contact Password Changed [ContactID: ' . get_contact_user_id() . ']');
-            return true;
-        }
-        return false;
-    }
-    public function get_customer_groups($id)
+
+    public function get_supplier_groups($id)
     {
-        $this->db->where('customer_id', $id);
-        return $this->db->get('tblcustomergroups_in')->result_array();
+        $this->db->where('supplier_id', $id);
+        return $this->db->get('tblsuppliergroups_in')->result_array();
     }
     public function get_groups($id = '')
     {
@@ -964,7 +967,7 @@ class Supplier_model extends CRM_Model
         $this->db->delete('tblcustomersgroups');
         if ($this->db->affected_rows() > 0) {
             $this->db->where('groupid', $id);
-            $this->db->delete('tblcustomergroups_in');
+            $this->db->delete('tblsuppliergroups_in');
             logActivity('Customer Group Deleted [ID:' . $id . ']');
             return true;
         }
@@ -996,10 +999,10 @@ class Supplier_model extends CRM_Model
     /**
      * Change client status  / active / inactive
      */
-    public function change_clients_status($id, $status)
+    public function change_suppliers_status($id, $status)
     {
-        $this->db->where('userid', $id);
-        $this->db->update('tblclients', array(
+        $this->db->where('supplierid', $id);
+        $this->db->update('tblsuppliers', array(
             'actif' => $status
         ));
         logActivity('Custom Field Status Changed [FieldID: ' . $id . ' - Active: ' . $status . ']');
@@ -1008,14 +1011,14 @@ class Supplier_model extends CRM_Model
     /**
      * Change client mode alami  / active / inactive
      */
-    public function change_clients_mode_alami($id, $status)
-    {
-        $this->db->where('userid', $id);
-        $this->db->update('tblclients', array(
-            'mode_alami' => $status
-        ));
-        logActivity('Custom Field Mode alami Changed [FieldID: ' . $id . ' - Active: ' . $status . ']');
-    }
+//    public function change_clients_mode_alami($id, $status)
+//    {
+//        $this->db->where('userid', $id);
+//        $this->db->update('tblclients', array(
+//            'mode_alami' => $status
+//        ));
+//        logActivity('Custom Field Mode alami Changed [FieldID: ' . $id . ' - Active: ' . $status . ']');
+//    }
 
 
 

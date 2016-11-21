@@ -246,4 +246,10 @@ class Roles_model extends CRM_Model
         $this->db->where('userid', $id);
         return $this->db->get('tblcontactpermissions')->result_array();
     }
+
+    public function get_supplier_contact_permissions($id)
+    {
+        $this->db->where('userid', $id);
+        return $this->db->get('tblsuppliercontactpermissions')->result_array();
+    }
 }

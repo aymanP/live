@@ -818,7 +818,7 @@ class Clients extends Clients_controller
                 } else {
                     set_alert('danger', _l('error_setting_new_password_key'));
                 }
-                redirect(site_url('clients/forgot_password'));
+                redirect(site_url('clients/login'));
             }
         }
         $data['title'] = _l('customer_forgot_password');

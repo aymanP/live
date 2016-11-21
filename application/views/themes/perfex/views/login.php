@@ -2,7 +2,7 @@
 
 
 
-
+<div id="showFirst" class="animated fadeInLeft">
 
 		<?php $attributes = array('class' => 'form-signin animated fadeInLeft', 'role'=> 'form', 'id' => 'login',  'novalidate' => 'true'); ?>
 		<?=form_open($this->uri->uri_string(), $attributes)?>
@@ -52,10 +52,12 @@
 		</div>
 
 		<input type="submit" class="btn btn-primary fadeoutOnClick" value="<?php echo _l('clients_login_login_string'); ?>" style="pointer-events: all; cursor: pointer;">
-		<div class="forgotpassword"><a href="<?php echo site_url('clients/forgot_password'); ?>"><?php echo _l('customer_forgot_password'); ?></a></div>
+<!--		<div class="forgotpassword"><a href="--><?php //echo site_url('clients/forgot_password'); ?><!--">--><?php //echo _l('customer_forgot_password'); ?><!--</a></div>-->
+	<div class="forgotpassword"><a href="#"  onclick="switchVisible()"><?php echo _l('customer_forgot_password'); ?></a></div>
 
 
-		<?php if(get_option('allow_registration') == 1) { ?>
+
+	<?php if(get_option('allow_registration') == 1) { ?>
 			<div class="sub">
 				<div class="small">
 					<small>You don't have an account?</small>
@@ -71,3 +73,57 @@
 		<br clear="both">
 
 		<?php echo form_close(); ?>
+</div>
+
+								<!---------------- Forgot password Begins -------------->
+<div class ="animated fadeInLeft" id="showSecond">
+		<?php $attributes = array('class' => 'form-signin animated fadeInLeft', 'role'=> 'form', 'id' => 'login',  'novalidate' => 'true'); ?>
+		<?=form_open(site_url('clients/forgot_password'), $attributes)?>
+
+		<div class="logo"><?php echo get_company_logo(); ?></div>
+
+		<?php echo validation_errors('<div id="error" class="animated shake">', '</div>'); ?>
+		<?php if($this->session->flashdata('message-danger')){ ?>
+			<div class="alert alert-danger">
+				<?php echo $this->session->flashdata('message-danger'); ?>
+			</div>
+		<?php } ?>
+
+		<div class="forgotpass-info"><?php echo _l('customer_forgot_password_heading'); ?></h1></div>
+
+		<?php echo render_input('email','customer_forgot_password_email',set_value('email'),'email'); ?>
+
+		<button type="submit" class="btn btn-info btn-block"><?php echo _l('customer_forgot_password_submit'); ?></button>
+	<div class="forgotpassword"><a href="#"  onclick="switchVisible()">Go to login</a></div>
+		<?php echo form_close(); ?>
+</div>
+
+									<!---------------- Forgot password ENDs -------------->
+
+		<style>
+			#showSecond {
+				display: none;
+			}
+		</style>
+		<script>
+			function switchVisible() {
+				if (document.getElementById('showFirst')) {
+
+					if (document.getElementById('showFirst').style.display == 'none') {
+						document.getElementById('showFirst').style.display = 'block';
+						document.getElementById('showSecond').style.display = 'none';
+					}
+					else {
+						document.getElementById('showFirst').style.display = 'none';
+						document.getElementById('showSecond').style.display = 'block';
+					}
+				}
+			}
+		</script>
+		<script>
+			$(document).ready(function() {
+				$('#showSecond').click(function() {
+					$('.showLogin').slideToggle("slow");
+				});
+			});
+		</script>

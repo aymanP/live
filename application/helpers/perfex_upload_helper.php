@@ -418,6 +418,41 @@ function handle_client_attachments_upload($clientid)
     }
 }
 
+function handle_supplier_attachments_upload($supplierid)
+{
+
+    $path = SUPPLIER_ATTACHMENTS_FOLDER . $supplierid . '/';
+    $CI =& get_instance();
+    if (isset($_FILES['file']['name'])) {
+        do_action('before_upload_supplier_attachment',$supplierid);
+        // Get the temp file path
+        $tmpFilePath = $_FILES['file']['tmp_name'];
+        // Make sure we have a filepath
+        if (!empty($tmpFilePath) && $tmpFilePath != '') {
+            // Getting file extension
+            $type        = $_FILES["file"]["type"];
+            // Setup our new file path
+
+
+            if (!file_exists($path)) {
+                mkdir($path);
+                fopen($path . 'index.html', 'w');
+            }
+             $filename    = unique_filename($path, $_FILES['file']['name']);
+              $newFilePath = $path . $filename;
+            // Upload the file into the temp dir
+            if (move_uploaded_file($tmpFilePath, $newFilePath)) {
+                $CI->db->insert('tblsupplierattachments', array(
+                    'file_name' => $filename,
+                    'supplierid' => $supplierid,
+                    'filetype' => $type,
+                    'datecreated' => date('Y-m-d H:i:s')
+                ));
+            }
+        }
+    }
+}
+
 function handle_slider_upload($clientid)
 {
     $path = FRONTEND_SLIDER_FOLDER . $clientid . '/';
@@ -741,6 +776,74 @@ function handle_client_profile_image_upload($clientid)
                 $CI->image_lib->resize();
                 $CI->db->where('userid', $clientid);
                 $CI->db->update('tblclients', array(
+                    'profile_image' => $filename
+                ));
+                // Remove original image
+                unlink($newFilePath);
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+
+
+function handle_supplier_profile_image_upload($supplierid)
+{
+    if (isset($_FILES['profile_image']['name']) && $_FILES['profile_image']['name'] != '') {
+        do_action('before_upload_supplier_profile_image');
+        $path        = SUPPLIER_PROFILE_IMAGES_FOLDER . $supplierid ;
+
+        // Get the temp file path
+        $tmpFilePath = $_FILES['profile_image']['tmp_name'];
+
+        // Make sure we have a filepath
+        if (isset($tmpFilePath) && $tmpFilePath != '') {
+            // Getting file extension
+            $path_parts         = pathinfo($_FILES["profile_image"]["name"]);
+            $extension          = $path_parts['extension'];
+            $extension = strtolower($extension);
+            $allowed_extensions = array(
+                'jpg',
+                'jpeg',
+                'png'
+            );
+            if (!in_array($extension, $allowed_extensions)) {
+                set_alert('warning', _l('file_php_extension_blocked'));
+                return false;
+            }
+
+            if (!file_exists($path)) {
+                mkdir($path);
+                fopen($path . '/index.html', 'w');
+            }
+
+            $filename    = unique_filename($path, $_FILES["profile_image"]["name"]);
+            $newFilePath = $path . '/' . $filename;
+            // Upload the file into the company uploads dir
+            if (move_uploaded_file($tmpFilePath, $newFilePath)) {
+                $CI =& get_instance();
+                $config                   = array();
+                $config['image_library']  = 'gd2';
+                $config['source_image']   = $newFilePath;
+                $config['new_image']      = 'thumb_' . $filename;
+                $config['maintain_ratio'] = TRUE;
+                $config['width']          = 160;
+                $config['height']         = 160;
+                $CI->load->library('image_lib', $config);
+                $CI->image_lib->resize();
+                $CI->image_lib->clear();
+                $config['image_library']  = 'gd2';
+                $config['source_image']   = $newFilePath;
+                $config['new_image']      = 'small_' . $filename;
+                $config['maintain_ratio'] = TRUE;
+                $config['width']          = 32;
+                $config['height']         = 32;
+                $CI->image_lib->initialize($config);
+                $CI->image_lib->resize();
+                $CI->db->where('supplierid', $supplierid);
+                $CI->db->update('tblsuppliers', array(
                     'profile_image' => $filename
                 ));
                 // Remove original image

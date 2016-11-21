@@ -623,6 +623,7 @@ $lang['wd_sunday']    = 'Dimanche';
 
 # Admin Left Sidebar
 $lang['als_dashboard'] = 'Tableau de bord';
+$lang['als_suppliers'] = 'Fournisseurs';
 $lang['als_clients']   = 'Clients';
 $lang['als_leads']     = 'Prospects';
 
@@ -2570,6 +2571,7 @@ $lang['invoice_project_timesheet_indivudualy_data']            = 'Timesheet heur
 $lang['invoice_project_total_logged_time_data']            = 'Temps total de connexion';
 
 $lang['project_allow_client_to'] = 'Autoriser les clients à %s';
+$lang['project_allow_supplier_to'] = 'Autoriser les fournisseurs  à %s';
 $lang['project_setting_view_task_attachments'] = 'voir les pièces-jointes de la tâche';
 $lang['project_setting_view_task_checklist_items'] = 'voir les points de la checklist';
 $lang['project_setting_upload_files'] = 'télécharger des fichiers';
@@ -3098,3 +3100,94 @@ $lang['admin_home_slider_title']             = 'Sliders';
 $lang['utilities_save_slider_order']             = "Enregistrer l'ordre";
 
 $lang['login_as_admin'] = 'Afficher l\'espace admin' ;
+
+
+$lang['suppliers'] = 'Fournisseurs';
+$lang['project_supplier'] = 'Fournisseur';
+
+$lang['suppliers_summary'] = 'Synthèse des Frounisseurs';
+$lang['suppliers_summary_total'] = 'Nombre totale des Fournissseurs';
+$lang['suppliers_list_phone'] = 'Téléphone';
+$lang['suppliers_list_company'] = 'Société';
+$lang['supplier']                                = 'Fournisseur';
+$lang['new_supplier']                            = 'Nouveau Fournisseur';
+$lang['supplier_lowercase']                      = 'fournisseur';
+
+$lang['supplier_delete_tooltip']                 = 'Toutes les données fournisseurs seront  supprimées. Contrats, tickets, notes. Remarque : Si la facture est affiliée à un fournisseur elle ne pourra pas être supprimée. Vous devez attribuer cette facture à un autre fournisseur afin de conserver la chronologie des factures.';
+$lang['supplier_delete_invoices_warning']      = 'Ce fournisseur a des factures existantes. Vous ne pouvez pas supprimer ce fournisseur. Vous devez d’abord attribuer les factures à un autre fournisseur avant de le supprimer.';
+$lang['supplier_firstname']                      = 'Prénom';
+$lang['supplier_lastname']                       = 'Nom';
+$lang['supplier_email']                          = 'Email';
+$lang['supplier_company']                        = 'Société';
+$lang['supplier_vat_number']                     = 'Numéro de TVA';
+$lang['supplier_address']                        = 'Adresse';
+$lang['supplier_city']                           = 'Ville';
+$lang['supplier_postal_code']                    = 'Code Postal';
+$lang['supplier_state']                          = 'Région';
+$lang['supplier_password']                       = 'Mot de passe';
+$lang['supplier_password_change_populate_note']  = 'Remarque : si vous remplissez ce champ, le mot de passe de ce fourniseur sera modifié.';
+$lang['supplier_password_last_changed']          = 'Dernière modification du mot de passe :';
+$lang['login_as_supplier']                       = 'Afficher l\'espace fournisseur';
+$lang['supplier_invoices_tab']                   = 'Factures';
+$lang['supplier_invoice_number_table_heading']   = 'Numéro';
+$lang['supplier_invoice_date_table_heading']     = 'Date de facture';
+$lang['supplier_invoice_due_date_table_heading'] = 'Date d\'échéance';
+$lang['supplier_string_table_heading']           = 'Fournisseur';
+$lang['supplier_amount_table_heading']           = 'Montant';
+$lang['supplier_status_table_heading']           = 'Statut';
+$lang['note_description']                      = 'Description Note';
+
+$lang['supplier_string_contracts_table_heading']      = 'Fournisseur';
+$lang['supplier_start_date_contracts_table_heading']  = 'Date de début';
+$lang['supplier_end_date_contracts_table_heading']    = 'Date de fin';
+$lang['supplier_description_contracts_table_heading'] = 'Description';
+$lang['supplier_do_not_send_welcome_email']           = 'Ne pas envoyer un email de bienvenue';
+
+$lang['suppliers_notes_table_description_heading'] = 'Description';
+$lang['suppliers_notes_table_addedfrom_heading']   = 'Ajouté par';
+$lang['suppliers_notes_table_dateadded_heading']   = 'Ajouté le';
+
+$lang['suppliers_list_full_name']   = 'Fournisseurs';
+$lang['suppliers_list_last_login']  = 'Dernière connexion';
+
+
+$lang['supplier_have_projects_by'] = 'Contains projects by status %s';
+$lang['supplier_have_proposals_by'] = 'Contains proposals by status %s';
+$lang['supplier_admins'] = 'Supplier Admins';
+$lang['supplier_admin_date_assigned'] = 'Date Assigned';
+$lang['supplier_admin_login_as_supplier_message'] = 'Hello %s. You are added as admin to this supplier. To see all supplier data and adjust the portal login as supplier';
+
+
+$lang['supplier_estimates_tab'] = 'Devis';
+$lang['supplier_payments_tab']  = 'Règlements';
+
+$lang['supplier_delete_invoices_warning']    = 'Ce fournisseur a des factures ou devis existants. Vous ne pouvez pas supprimer ce fournisseur. Vous devez d’abord attribuer les factures ou devis à un autre fournisseur avant de le supprimer.';
+$lang['supplier_expenses_tab']               = 'Dépenses';
+
+$lang['supplier_attachments']                = 'Pièces jointes';
+$lang['supplier_map']                        = 'Map';
+$lang['supplier_add_edit_profile']                = 'Profil';
+$lang['supplier_profile_details'] = 'Informations Générales';
+$lang['supplier_contacts'] = 'Contacts';
+$lang['supplier_phonenumber'] = 'Téléphone';
+$lang['supplier_longitude']                                    = 'Longitude (Google Maps)';
+$lang['supplier_latitude']                                     = 'Latitude (Google Maps)';
+$lang['suppliers_country']                                      = 'Pays';
+$lang['supplier_groups']                                       = 'Catégorie de client';
+$lang['supplier_profile_image']                                = 'Image de profil';
+$lang['supplier_update_address_info_on_invoices_help']         = 'Si vous sélectionnez cette option les informations de facturation et d\'expédition seront mises à jour sur toutes les factures et tous les devis. Remarque : les factures avec le statut payée ne seront pas affectées.';
+$lang['supplier_update_address_info_on_invoices']              = 'Mettre à jour les informations de facturation et d\'expédition sur toutes les factures et tous les devis.';
+$lang['invoice_dt_table_heading_supplier']  = 'Fournisseur';
+$lang['list_suppliers'] = 'Liste des fournisseurs';
+$lang['invoices_suppliers'] = 'Factures';
+
+$lang['invoice_select_supplier']      = 'Frounisseur';
+$lang['invoice_add_edit_supplier_note'] = 'Note Fournisseur';
+$lang['supplier_have_invoices_by']       = 'Factures avec le statut %s';
+$lang['supplier_attachments_file']                             = 'Fichier';
+$lang['Contacts']    = 'Contacts' ;
+$lang['Contact']    = 'Contact' ;
+$lang['Home slider'] = 'Home slider';
+
+
+

@@ -11,12 +11,13 @@ class Projects extends Admin_controller
         $this->load->model('currencies_model');
         $this->load->helper('date');
     }
-    public function index($clientid = '')
+    public function index($clientid = '',$is_client = 1)
     {
         if ($this->input->is_ajax_request()) {
-            $this->perfex_base->get_table_data('projects', array(
-                'clientid' => $clientid
-            ));
+                $this->perfex_base->get_table_data('projects', array(
+                    'clientid' => $clientid
+                ));
+
         }
         $data['statuses'] = $this->projects_model->get_project_statuses();
         $data['title'] = _l('projects');

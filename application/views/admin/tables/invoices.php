@@ -10,12 +10,12 @@ $aColumns = array(
     'company',
     'duedate',
     'status',
-    );
+);
 
 $join = array(
     'LEFT JOIN tblclients ON tblclients.userid = tblinvoices.clientid',
     'LEFT JOIN tblcurrencies ON tblcurrencies.id = tblinvoices.currency'
-    );
+);
 
 $custom_fields = get_custom_fields('invoice',array('show_on_table'=>1));
 
@@ -46,7 +46,7 @@ foreach($statuses as $status){
     }
 }
 if(count($_statuses) > 0){
-     array_push($filter, 'AND status IN (' . implode(', ',$_statuses) . ')');
+    array_push($filter, 'AND status IN (' . implode(', ',$_statuses) . ')');
 }
 $agents = $this->_instance->invoices_model->get_sale_agents();
 $_agents = array();
@@ -56,17 +56,17 @@ foreach($agents as $agent){
     }
 }
 if(count($_agents) > 0){
-     array_push($filter, 'AND sale_agent IN (' . implode(', ',$_agents) . ')');
+    array_push($filter, 'AND sale_agent IN (' . implode(', ',$_agents) . ')');
 }
 
 $_modes = array();
 foreach($data['payment_modes'] as $mode){
     if($this->_instance->input->post('invoice_payments_by_'.$mode['id'])){
-         array_push($_modes,$mode['id']);
+        array_push($_modes,$mode['id']);
     }
 }
 if(count($_modes) > 0){
-       array_push($where,'AND tblinvoices.id IN (SELECT invoiceid FROM tblinvoicepaymentrecords WHERE paymentmode IN ("'. implode('", "', $_modes) .'"))');
+    array_push($where,'AND tblinvoices.id IN (SELECT invoiceid FROM tblinvoicepaymentrecords WHERE paymentmode IN ("'. implode('", "', $_modes) .'"))');
 }
 
 $years = $this->_instance->invoices_model->get_invoices_years();
@@ -77,7 +77,7 @@ foreach($years as $year){
     }
 }
 if(count($_years) > 0){
-    array_push($filter,'AND year IN ('.implode(', ',$_years).')');
+    array_push($filter,'AND tblinvoices.clientid != 0 AND year IN ('.implode(', ',$_years).')');
 }
 
 if(count($filter) > 0){
@@ -102,7 +102,7 @@ $result       = data_tables_init($aColumns, $sIndexColumn, $sTable, $join, $wher
     'symbol',
     'total',
     'status'
-    ));
+));
 $output       = $result['output'];
 $rResult      = $result['rResult'];
 
@@ -117,29 +117,29 @@ foreach ($rResult as $aRow) {
         }
 
         if ($aColumns[$i] == 'number') {
-                        // If is from client area table
+            // If is from client area table
             if (is_numeric($clientid)) {
                 $__data = '<a href="' . admin_url('invoices/list_invoices/' . $aRow['id']) . '" target="_blank">' . format_invoice_number($aRow['id']) . '</a><br />';
             } else {
-             $__data = '<a href="#" onclick="init_invoice(' . $aRow['id'] . '); return false;">' . format_invoice_number($aRow['id']) . '</a><br />';
-         }
+                $__data = '<a href="#" onclick="init_invoice(' . $aRow['id'] . '); return false;">' . format_invoice_number($aRow['id']) . '</a><br />';
+            }
 
-     } else if ($aColumns[$i] == 'date') {
-        $__data = _d($_data);
-    } else if ($aColumns[$i] == 'company') {
-        $__data = '<a href="' . admin_url('clients/client/' . $aRow['clientid']) . '">' . $aRow['company'] . '</a><br />';
-    } else if ($aColumns[$i] == 'duedate') {
-        $__data = _d($_data);
-    } else if ($aColumns[$i] == 'total' || $aColumns[$i] == 'total_tax') {
-        $__data = format_money($_data, $aRow['symbol']);
-    } else if($aColumns[$i] == 'status') {
-        $__data = format_invoice_status($aRow['status']);
-        // Status
-    } else {
-        $__data = $_data;
+        } else if ($aColumns[$i] == 'date') {
+            $__data = _d($_data);
+        } else if ($aColumns[$i] == 'company') {
+            $__data = '<a href="' . admin_url('clients/client/' . $aRow['clientid']) . '">' . $aRow['company'] . '</a><br />';
+        } else if ($aColumns[$i] == 'duedate') {
+            $__data = _d($_data);
+        } else if ($aColumns[$i] == 'total' || $aColumns[$i] == 'total_tax') {
+            $__data = format_money($_data, $aRow['symbol']);
+        } else if($aColumns[$i] == 'status') {
+            $__data = format_invoice_status($aRow['status']);
+            // Status
+        } else {
+            $__data = $_data;
+        }
+        $row[] = $__data;
     }
-    $row[] = $__data;
-}
 
-$output['aaData'][] = $row;
+    $output['aaData'][] = $row;
 }

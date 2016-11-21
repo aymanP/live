@@ -12,7 +12,6 @@ function get_other_merge_fields()
 }
 
 
-
 function get_project_merge_fields($project_id, $additional_data = array())
 {
     $fields = array();
@@ -76,60 +75,60 @@ function get_project_merge_fields($project_id, $additional_data = array())
     return $fields;
 }
 
-function get_supplier_contact_merge_fields($supplier_id, $contact_id = '')
+function get_supplier_contact_merge_fields($supplier_id, $supplierContact_id = '')
 {
 
     $fields = array();
 
-    if ($contact_id == '') {
-        $contact_id = get_primary_contact_user_id($supplier_id);
+    if ($supplierContact_id == '') {
+        $supplierContact_id = get_primary_contact_user_id($supplier_id);
     }
 
-    $fields['{contact_firstname}'] = '';
-    $fields['{contact_lastname}'] = '';
-    $fields['{contact_email}'] = '';
-    $fields['{client_company}'] = '';
-    $fields['{client_phonenumber}'] = '';
-    $fields['{client_country}'] = '';
-    $fields['{client_city}'] = '';
-    $fields['{client_zip}'] = '';
-    $fields['{client_state}'] = '';
-    $fields['{client_address}'] = '';
+    $fields['{supplierContact_firstname}'] = '';
+    $fields['{supplierContact_lastname}'] = '';
+    $fields['{supplierContact_email}'] = '';
+    $fields['{supplier_company}'] = '';
+    $fields['{supplier_phonenumber}'] = '';
+    $fields['{supplier_country}'] = '';
+    $fields['{supplier_city}'] = '';
+    $fields['{supplier_zip}'] = '';
+    $fields['{supplier_state}'] = '';
+    $fields['{supplier_address}'] = '';
 
     $CI =& get_instance();
-    $CI->db->where('userid', $supplier_id);
+    $CI->db->where('supplierid', $supplier_id);
     $CI->db->join('tblcountries', 'tblcountries.country_id=tblsuppliers.country', 'left');
     $supplier = $CI->db->get('tblsuppliers')->row();
     if (!$supplier) {
         return $fields;
     }
 
-    $CI->db->where('userid', $supplier_id);
-    $CI->db->where('id', $contact_id);
-    $contact = $CI->db->get('tblcontacts')->row();
+    $CI->db->where('supplierid', $supplier_id);
+    $CI->db->where('id', $supplierContact_id);
+    $contact = $CI->db->get('tblsuppliercontacts')->row();
 
     if ($contact) {
-        $fields['{contact_firstname}'] = $contact->firstname;
-        $fields['{contact_lastname}'] = $contact->lastname;
-        $fields['{contact_email}'] = $contact->email;
+        $fields['{supplierContact_firstname}'] = $contact->firstname;
+        $fields['{supplierContact_lastname}'] = $contact->lastname;
+        $fields['{supplierContact_email}'] = $contact->email;
     }
 
-    $fields['{client_company}'] = $supplier->company;
-    $fields['{client_phonenumber}'] = $supplier->company;
-    $fields['{client_country}'] = $supplier->short_name;
-    $fields['{client_city}'] = $supplier->city;
-    $fields['{client_zip}'] = $supplier->zip;
-    $fields['{client_state}'] = $supplier->state;
-    $fields['{client_address}'] = $supplier->address;
+    $fields['{supplier_company}'] = $supplier->company;
+    $fields['{supplier_phonenumber}'] = $supplier->company;
+    $fields['{supplier_country}'] = $supplier->short_name;
+    $fields['{supplier_city}'] = $supplier->city;
+    $fields['{supplier_zip}'] = $supplier->zip;
+    $fields['{supplier_state}'] = $supplier->state;
+    $fields['{supplier_address}'] = $supplier->address;
 
-    $custom_fields = get_custom_fields('customers');
+    $custom_fields = get_custom_fields('suppliers');
     foreach ($custom_fields as $field) {
-        $fields['{' . $field['slug'] . '}'] = get_custom_field_value($supplier_id, $field['id'], 'customers');
+        $fields['{' . $field['slug'] . '}'] = get_custom_field_value($supplier_id, $field['id'], 'suppliers');
     }
 
     $custom_fields = get_custom_fields('contacts');
     foreach ($custom_fields as $field) {
-        $fields['{' . $field['slug'] . '}'] = get_custom_field_value($contact_id, $field['id'], 'contacts');
+        $fields['{' . $field['slug'] . '}'] = get_custom_field_value($supplierContact_id, $field['id'], 'contacts');
     }
 
     return $fields;

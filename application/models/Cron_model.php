@@ -663,6 +663,9 @@ class Cron_model extends CRM_Model
                 } else if ($reminder['rel_type'] == 'invoice') {
                     $not_link             = 'invoices/list_invoices/' . $reminder['rel_id'];
                     $_rel_type_translated = _l('invoice_lowercase');
+                }else if ($reminder['rel_type'] == 'supplier_invoice') {
+                    $not_link             = 'supplier_invoices/list_invoice/' . $reminder['rel_id'];
+                    $_rel_type_translated = _l('invoice_lowercase');
                 } else if ($reminder['rel_type'] == 'proposal') {
                     $not_link             = 'proposals/list_proposals/' . $reminder['rel_id'];
                     $proposal             = $this->proposals_model->get($reminder['rel_id']);

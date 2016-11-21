@@ -375,6 +375,22 @@ function is_customer_admin($id,$staff_id = ''){
     }
     return false;
 }
+
+
+function is_supplier_admin($id,$staff_id = ''){
+
+    $_staff_id = get_staff_user_id();
+    if(is_numeric($staff_id)){
+        $_staff_id = $staff_id;
+    }
+    $supplier_admin_found = total_rows('tblsupplieradmins',array('supplier_id'=>$id,'staff_id'=>$_staff_id));
+    if($supplier_admin_found > 0){
+        return true;
+    }
+    return false;
+}
+
+
 function have_assigned_customers($staff_id = ''){
     $_staff_id = get_staff_user_id();
     if(is_numeric($staff_id)){
@@ -382,6 +398,19 @@ function have_assigned_customers($staff_id = ''){
     }
     $customers_found = total_rows('tblcustomeradmins',array('staff_id'=>$_staff_id));
     if($customers_found > 0){
+        return true;
+    }
+    return false;
+}
+
+
+function have_assigned_suppliers($staff_id = ''){
+    $_staff_id = get_staff_user_id();
+    if(is_numeric($staff_id)){
+        $_staff_id = $staff_id;
+    }
+    $supplierss_found = total_rows('tblsupplieradmins',array('staff_id'=>$_staff_id));
+    if($supplierss_found > 0){
         return true;
     }
     return false;

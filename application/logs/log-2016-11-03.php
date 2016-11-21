@@ -1,0 +1,11 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2016-11-03 10:55:46 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 863
+ERROR - 2016-11-03 10:55:46 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 863
+ERROR - 2016-11-03 10:56:28 --> Could not find the language line "Home slider"
+ERROR - 2016-11-03 13:16:25 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 863
+ERROR - 2016-11-03 13:16:25 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 863
+ERROR - 2016-11-03 17:35:06 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 863
+ERROR - 2016-11-03 17:35:06 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 863
+ERROR - 2016-11-03 17:35:14 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 35 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 863
+ERROR - 2016-11-03 17:35:14 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\authentication\includes\head.php on line 78 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 863
