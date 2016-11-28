@@ -29,14 +29,14 @@
                                     <i class="fa fa-filter" aria-hidden="true"></i>
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-left" style="width:300px;">
-                                    <li class="active"><a href="#" data-cview="all" onclick="dt_custom_view('','.table-suppliers',''); return false;"><?php echo _l('suppliers_sort_all'); ?></a></li>
+                                    <li class="active"><a href="#" data-cview="all" onclick="dt_custom_view('','.table-clients',''); return false;"><?php echo _l('suppliers_sort_all'); ?></a></li>
                                     <li class="divider"></li>
                                     <?php if(count($groups) > 0){ ?>
                                         <li class="dropdown-submenu pull-left groups">
                                             <a href="#" tabindex="-1"><?php echo _l('supplier_groups'); ?></a>
                                             <ul class="dropdown-menu dropdown-menu-left">
                                                 <?php foreach($groups as $group){ ?>
-                                                    <li><a href="#" data-cview="supplier_group_<?php echo $group['id']; ?>" onclick="dt_custom_view('supplier_group_<?php echo $group['id']; ?>','.table-suppliers','supplier_group_<?php echo $group['id']; ?>'); return false;"><?php echo $group['name']; ?></a></li>
+                                                    <li><a href="#" data-cview="supplier_group_<?php echo $group['id']; ?>" onclick="dt_custom_view('supplier_group_<?php echo $group['id']; ?>','.table-clients','supplier_group_<?php echo $group['id']; ?>'); return false;"><?php echo $group['name']; ?></a></li>
                                                 <?php } ?>
                                             </ul>
                                         </li>
@@ -60,15 +60,15 @@
 <!--                                        <ul class="dropdown-menu dropdown-menu-left">-->
 <!--                                            --><?php //foreach($estimate_statuses as $status){ ?>
 <!--                                                <li>-->
-<!--                                                    <a href="#" data-cview="estimates_--><?php //echo $status; ?><!--" onclick="dt_custom_view('estimates_--><?php //echo $status; ?>//','.table-suppliers','estimates_<?php //echo $status; ?>//'); return false;">
+<!--                                                    <a href="#" data-cview="estimates_<?php //echo $status; ?>" onclick="dt_custom_view('estimates_<?php //echo $status; ?>','.table-suppliers','estimates_<?php //echo $status; ?>'); return false;"> -->
                                                         <?php //echo _l('supplier_have_estimates_by',format_estimate_status($status,'',false)); ?>
 <!--                                                    </a>-->
 <!--                                                </li>-->
 <!--                                            --><?php //} ?>
 <!--                                        </ul>-->
 <!--                                    </li>-->
-                                    <div class="clearfix"></div>
-                                    <li class="divider"></li>
+<!--                                    <div class="clearfix"></div>-->
+<!--                                    <li class="divider"></li>-->
                                     <li class="dropdown-submenu pull-left project">
                                         <a href="#" tabindex="-1"><?php echo _l('projects'); ?></a>
                                         <ul class="dropdown-menu dropdown-menu-left">
