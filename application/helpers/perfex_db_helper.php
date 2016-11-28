@@ -11,6 +11,28 @@ function client_have_transactions($id){
     }
     return false;
 }
+
+/**
+ * @param int $max
+ * @return int
+ */
+function rel_id(){
+    // static $max;
+    $CI = &get_instance();
+    $CI->db->select_max('id');
+    $rows = $CI->db->get('tblinvoices')->result_array();
+    foreach($rows as $key=>$row){
+       if($key == 'id'){
+        $max = $row['id'];}
+//        if($key == 'id')
+//        $max = 25;
+       // if($max<=$row) $max = $row;
+
+    //    continue 1 ;
+    }
+
+    return intval($max+1);
+}
 function supplier_have_transactions($id){
     $total_transactions = 0;
     $total_transactions += total_rows('tblinvoices',array('supplierid'=>$id));
@@ -26,6 +48,34 @@ function supplier_have_transactions($id){
 
  function is_supplier(){
 return 1;
+}
+
+
+function get_supplier_invoice_attachments($invoiceid, $id = '')
+{
+    // If is passed id get return only 1 attachment
+
+    $CI =& get_instance();
+    if (is_numeric($id)) {
+        $CI->db->where('id', $id);
+    } else {
+        $CI->db->where('rel_id', $invoiceid);
+    }
+    $CI->db->where('rel_type','invoice');
+    $result = $CI->db->get('tblsalesattachments');
+    if (is_numeric($id)) {
+        $row_r =  $result->row();
+    } else {
+        $array_r = $result->result_array();
+    }
+
+    if($array_r){
+        foreach($array_r as $array_){
+            $file_name = $array_['file_name'];
+        }
+    }
+
+    return $file_name;
 }
 
 /**

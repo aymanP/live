@@ -37,6 +37,13 @@ class Misc extends Admin_controller
     {
         handle_sales_attachments($this->input->post('rel_id'),$this->input->post('type'));
     }
+    
+    public function upload_supplier_sales_file()
+    {
+        
+        handle_sales_attachments(rel_id(),'invoice');
+        
+    }
     public function toggle_sales_attachment_visibility($id){
 
         $this->db->where('id',$id);

@@ -48,18 +48,20 @@
                       <div class="panel_s">
 
                           <div class="panel-heading">
-
-                            <span class="client-profile-company">
+                              <div class="row">
+                                  <div class="col-md-12 col-sm-12">
+                            <div class="col-md-6 col-sm-6">
                                 <?php
                                 echo '<a href="' . admin_url('clients/client/' . $client->userid) . '">' . client_profile_image($client->userid, array('client-profile-image-small')) . '</a>';
                                 ?>
-                            </span>
-                              <span class="client-profile-company1">
+                            </div>
+                              <div align="right" class="col-md-6 col-sm-6 client-profile-company1" style="margin-left:0 !important">
                               <?php echo $title;
 
                               ?>
-                          </span>
-
+                          </div>
+                                  </div>
+                              </div>
                               <div class="clearfix"></div>
                           </div>
                         <div class="panel-body">

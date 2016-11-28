@@ -58,17 +58,20 @@
                 <div class="panel_s">
 
                     <div class="panel-heading">
-
-                            <span class="client-profile-company">
+                        <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="col-md-6 col-sm-6">
                                 <?php
                                 echo '<a href="' . admin_url('suppliers/supplier/' . $supplier->supplierid) . '">' . supplier_profile_image($supplier->supplierid, array('client-profile-image-small')) . '</a>';
                                 ?>
-                            </span>
-                        <span class="client-profile-company1">
+                            </div>
+                        <div align="right" class="col-md-6 col-sm-6 client-profile-company1" style="margin-left:0 !important">
                               <?php echo $title;
 
                               ?>
-                          </span>
+                          </div>
+                        </div>
+                        </div>
 
                         <div class="clearfix"></div>
                     </div>

@@ -164,6 +164,34 @@
                     ?>
                 </div>
 
+                 <?php /*
+                $table_data = array();
+                $_table_data = array(
+                    _l('settings_general_company_logo'),
+                    _l('clients_list_company'),
+                    _l('contact_primary'),
+                    _l('company_primary_email'),
+                    _l('clients_list_phone'),
+                    _l('customer_groups'),
+                    _l('customer_active'),
+                    _l('customer_mode_alami'),
+                );
+                foreach($_table_data as $_t){
+                    array_push($table_data,$_t);
+                }
+                $custom_fields = get_custom_fields('customers',array('show_on_table'=>1));
+                foreach($custom_fields as $field){
+                    array_push($table_data,$field['name']);
+                }
+                $_op = _l('options');
+                if(has_permission('customers','','delete')){
+                    $_op .= '<div class="checkbox hide mass_select_all_wrap"><input type="checkbox" id="mass_select_all" data-to-table="clients"><label></label></div>';
+                }
+                array_push($table_data, $_op);
+
+                render_datatable($table_data,'clients');*/
+                ?>
+                <!-- meeeeeeee -->
                 <div class="panel_s">
                     <div class="panel-body">
                         <div class="clearfix"></div>
@@ -208,7 +236,7 @@
     });
     var headers_clients = $('.table-clients').find('th');
     var not_sortable_clients = (headers_clients.length - 1);
-    initDataTable('.table-clients', window.location.href, [not_sortable_clients], [not_sortable_clients], CustomersServerParams);
+   initDataTable('.table-clients', window.location.href, [not_sortable_clients], [not_sortable_clients], CustomersServerParams);
 </script>
 </body>
 </html>

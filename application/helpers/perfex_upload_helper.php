@@ -277,11 +277,100 @@ function handle_purchase_file_uploads($project_id)
         return true;
     return false;
 }
+
+
+
+
+function handle_invoice_file_uploads($invoice_id='')
+{
+    $CI =& get_instance();
+    $data['supplierid'] = $CI->input->post('supplierid');
+    $data['number'] = $CI->input->post('number');
+    //$data['description'] = $CI->input->post('description');
+    $data['date'] = $CI->input->post('date');
+    $data['duedate'] = $CI->input->post('duedate');
+   // $data['taxname'] = $CI->input->post('taxname');
+    $data['subtotal'] = $CI->input->post('subtotal');
+    $data['total'] = $CI->input->post('total');
+    if(isset($_FILES['file']) && _perfex_upload_error($_FILES['file']['error']))
+    {
+        header('HTTP/1.0 400 Bad error');
+        echo _perfex_upload_error($_FILES['file']['error']);
+        die;
+    }
+    if (isset($_FILES['file']['name']) && $_FILES['file']['name'] != '')
+    {
+        do_action('before_upload_project_attachment',$invoice_id);
+        $path        = INVOICE_ATTACHMENTS_FOLDER . $invoice_id . '/';
+        // Get the temp file path
+        $tmpFilePath = $_FILES['file']['tmp_name'];
+        // Make sure we have a filepath
+        if (!empty($tmpFilePath) && $tmpFilePath != '')
+        {
+            // Setup our new file path
+
+            if (!file_exists($path)) {
+                mkdir($path);
+                fopen($path . 'index.html', 'w');
+            }
+            $filename    = unique_filename($path, $_FILES["file"]["name"]);
+            $newFilePath = $path . $filename;
+            // Upload the file into the company uploads dir
+            if (move_uploaded_file($tmpFilePath, $newFilePath))
+            {
+
+                $CI->load->model('supplier_invoices_model');
+
+                $data['supplierid'] = $CI->input->post('supplierid');
+                $data['number'] = $CI->input->post('number');
+               // $data['description'] = $CI->input->post('description');
+                $data['date'] = $CI->input->post('date');
+                $data['duedate'] = $CI->input->post('duedate');
+               // $data['taxname'] = $CI->input->post('taxname');
+                $data['subtotal'] = $CI->input->post('subtotal');
+                $data['total'] = $CI->input->post('total');
+                $data['id'] = $invoice_id;
+                $CI->db->insert('tblinvoices', $data);
+                $invoiceid = $CI->db->insert_id();
+                $key = md5(date('Y-m-d H:i:s').$invoiceid);
+                $file = array(
+                    'rel_id' => $invoiceid,
+                    'rel_type' =>'supplier_invoice',
+                    'file_name' => $filename,
+                    'filetype' => $_FILES["file"]["type"],
+                    'datecreated' => date('Y-m-d H:i:s'),
+                    'attachment_key'=>$key,
+                    'visible_to_customer'=>0,
+                   // 'staffid' => get_staff_user_id(),
+                );
+
+                $CI->db->insert('tblsalesattachments', $file);
+                $insert_id = $CI->db->insert_id();
+
+
+                $additional_data = '';
+                $additional_data .= $filename . '<br />'.$_FILES["file"]["type"];
+                $CI->supplier_invoices_model->log_activity($invoice_id,'project_activity_uploaded_file',$additional_data,$data['visible_to_customer']);
+
+                return true;
+            }
+        }
+    }
+    $CI->db->insert('tblinvoices', $data);
+    $invoiceid = $CI->db->insert_id();
+    if($invoiceid != 0)
+        return true;
+    return false;
+}
 /**
  * Handle contract attachments if any
  * @param  mixed $contractid
  * @return boolean
  */
+
+
+
+
 function handle_contract_attachment($contractid)
 {
 
@@ -464,6 +553,7 @@ function handle_sales_attachments($rel_id,$rel_type)
                     'filetype' => $type,
                     'datecreated' => date('Y-m-d H:i:s'),
                     'attachment_key'=>$key,
+
                 ));
                 $insert_id = $CI->db->insert_id();
                 if($rel_type == 'invoice'){

@@ -258,6 +258,13 @@ class CI_Upload {
 	 */
 	public $client_name = '';
 
+	/**
+	 * Filename sent by the client
+	 *
+	 * @var	bool
+	 */
+	public $supplier_name = '';
+
 	// --------------------------------------------------------------------
 
 	/**
@@ -604,6 +611,7 @@ class CI_Upload {
 				'raw_name'		=> substr($this->file_name, 0, -strlen($this->file_ext)),
 				'orig_name'		=> $this->orig_name,
 				'client_name'		=> $this->client_name,
+				'supplier_name'		=> $this->supplier_name,
 				'file_ext'		=> $this->file_ext,
 				'file_size'		=> $this->file_size,
 				'is_image'		=> $this->is_image(),

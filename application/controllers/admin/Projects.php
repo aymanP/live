@@ -13,12 +13,9 @@ class Projects extends Admin_controller
 
         $this->load->helper('date');
     }
-<<<<<<< HEAD
-    public function index($clientid = '',$is_client = 1)
-=======
+
 
     public function index($clientid = '')
->>>>>>> dabfdf1117f6c1e2e751dab0c2e71a3937477043
     {
         if ($this->input->is_ajax_request()) {
                 $this->perfex_base->get_table_data('projects', array(

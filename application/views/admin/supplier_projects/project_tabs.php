@@ -20,11 +20,11 @@
 <!--    <li>-->
 <!--        <a data-group="project_discussions" href="--><?php //echo admin_url('supplier_projects/view/'.$project->id.'?group=project_discussions'); ?><!--" role="tab"><i class="fa fa-commenting" aria-hidden="true"></i> --><?php //echo _l('project_discussions'); ?><!--</a>-->
 <!--    </li>-->
-    <?php if((get_option('access_tickets_to_none_staff_members') == 1 && !is_staff_member()) || is_staff_member()){ ?>
-    <li>
-        <a data-group="project_tickets" href="<?php echo admin_url('supplier_projects/view/'.$project->id.'?group=project_tickets'); ?>" role="tab"><i class="fa fa-life-ring" aria-hidden="true"></i> <?php echo _l('project_tickets'); ?></a>
-    </li>
-    <?php } ?>
+<!--    --><?php //if((get_option('access_tickets_to_none_staff_members') == 1 && !is_staff_member()) || is_staff_member()){ ?>
+<!--    <li>-->
+<!--        <a data-group="project_tickets" href="--><?php //echo admin_url('supplier_projects/view/'.$project->id.'?group=project_tickets'); ?><!--" role="tab"><i class="fa fa-life-ring" aria-hidden="true"></i> --><?php //echo _l('project_tickets'); ?><!--</a>-->
+<!--    </li>-->
+<!--    --><?php //} ?>
     <?php if(has_permission('invoices','','view')){ ?>
     <li>
         <a data-group="project_invoices" href="<?php echo admin_url('supplier_projects/view/'.$project->id.'?group=project_invoices'); ?>" role="tab"><i class="fa fa-sun-o" aria-hidden="true"></i> <?php echo _l('project_invoices'); ?></a>

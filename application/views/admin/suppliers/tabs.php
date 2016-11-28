@@ -85,27 +85,27 @@
 <!--                </a>-->
 <!--            </li>-->
 <!--        --><?php //} ?>
-        <li>
-            <a href="<?php echo admin_url('suppliers/supplier/'.$supplier->supplierid.'?group=tasks'); ?>" data-group="tasks">
-                <?php echo _l( 'tasks'); ?>
-            </a>
-        </li>
-        <li>
-            <a href="<?php echo admin_url('suppliers/supplier/'.$supplier->supplierid.'?group=reminders'); ?>" data-group="reminders">
-                <?php echo _l( 'client_reminders_tab'); ?>
-            </a>
-        </li>
+<!--        <li>-->
+<!--            <a href="--><?php //echo admin_url('suppliers/supplier/'.$supplier->supplierid.'?group=tasks'); ?><!--" data-group="tasks">-->
+<!--                --><?php //echo _l( 'tasks'); ?>
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="--><?php //echo admin_url('suppliers/supplier/'.$supplier->supplierid.'?group=reminders'); ?><!--" data-group="reminders">-->
+<!--                --><?php //echo _l( 'client_reminders_tab'); ?>
+<!--            </a>-->
+<!--        </li>-->
 
         <li>
             <a href="<?php echo admin_url('suppliers/supplier/'.$supplier->supplierid.'?group=attachments'); ?>" data-group="attachments">
                 <?php echo _l( 'supplier_attachments'); ?>
             </a>
         </li>
-        <li>
-            <a href="<?php echo admin_url('suppliers/supplier/'.$supplier->supplierid.'?group=notes'); ?>" data-group="notes">
-                <?php echo _l( 'contracts_notes_tab'); ?>
-            </a>
-        </li>
+<!--        <li>-->
+<!--            <a href="--><?php //echo admin_url('suppliers/supplier/'.$supplier->supplierid.'?group=notes'); ?><!--" data-group="notes">-->
+<!--                --><?php //echo _l( 'contracts_notes_tab'); ?>
+<!--            </a>-->
+<!--        </li>-->
     <?php } ?>
 </ul>
 

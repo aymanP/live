@@ -325,6 +325,10 @@ class Supplier_invoices_model extends CRM_Model
             $items = $data['newitems'];
             unset($data['newitems']);
         }
+        if(isset($data['file'])){
+            $file = $data['file'];
+            unset($data['file']);
+        }
         if (!isset($data['include_shipping'])) {
             foreach ($this->shipping_fields as $_s_field) {
                 if (isset($data[$_s_field])) {
@@ -357,6 +361,10 @@ class Supplier_invoices_model extends CRM_Model
         $items = $_data['items'];
         $this->db->insert('tblinvoices', $data);
         $insert_id = $this->db->insert_id();
+
+                //handle_sales_attachments($insert_id,'invoice');
+     //  rel_id($insert_id);
+
         if ($insert_id) {
             if (isset($custom_fields)) {
                 handle_custom_fields_post($insert_id, $custom_fields);
@@ -374,25 +382,25 @@ class Supplier_invoices_model extends CRM_Model
                                     'invoiceid' => $insert_id
                                 ));
                             }
-                            if (total_rows('tblestimates', array(
-                                    'invoiceid' => $or_merge->id
-                                )) > 0) {
-                                $this->db->where('invoiceid', $or_merge->id);
-                                $estimate = $this->db->get('tblestimates')->row();
-                                $this->db->where('id', $estimate->id);
-                                $this->db->update('tblestimates', array(
-                                    'invoiceid' => $insert_id
-                                ));
-                            } else if (total_rows('tblproposals', array(
-                                    'invoice_id' => $or_merge->id
-                                )) > 0) {
-                                $this->db->where('invoice_id', $or_merge->id);
-                                $proposal = $this->db->get('tblproposals')->row();
-                                $this->db->where('id', $proposal->id);
-                                $this->db->update('tblproposals', array(
-                                    'invoice_id' => $insert_id
-                                ));
-                            }
+//                            if (total_rows('tblestimates', array(
+//                                    'invoiceid' => $or_merge->id
+//                                )) > 0) {
+//                                $this->db->where('invoiceid', $or_merge->id);
+//                                $estimate = $this->db->get('tblestimates')->row();
+//                                $this->db->where('id', $estimate->id);
+//                                $this->db->update('tblestimates', array(
+//                                    'invoiceid' => $insert_id
+//                                ));
+//                            } else if (total_rows('tblproposals', array(
+//                                    'invoice_id' => $or_merge->id
+//                                )) > 0) {
+//                                $this->db->where('invoice_id', $or_merge->id);
+//                                $proposal = $this->db->get('tblproposals')->row();
+//                                $this->db->where('id', $proposal->id);
+//                                $this->db->update('tblproposals', array(
+//                                    'invoice_id' => $insert_id
+//                                ));
+//                            }
                         }
                     } else {
                         $this->mark_as_cancelled($m);
@@ -721,6 +729,7 @@ class Supplier_invoices_model extends CRM_Model
         unset($data['task_id']);
         unset($data['expense_id']);
         if (isset($data['merge_current_invoice'])) {
+
             unset($data['merge_current_invoice']);
         }
         $items = array();

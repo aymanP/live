@@ -9,7 +9,7 @@ define('ADMIN_URL', 'admin');
 define('TEMP_FOLDER',FCPATH .'temp' . '/');
 define('BACKUPS_FOLDER',FCPATH.'backups'.'/');
 define('CLIENT_ATTACHMENTS_FOLDER',FCPATH.'uploads/clients'.'/');
-define('SUPPLIER_ATTACHMENTS_FOLDER',FCPATH.'uploads/clients'.'/');
+define('SUPPLIER_ATTACHMENTS_FOLDER',FCPATH.'uploads/suppliers'.'/');
 define('FRONTEND_SLIDER_FOLDER',FCPATH.'uploads/sliders'.'/');
 define('TICKET_ATTACHMENTS_FOLDER',FCPATH .'uploads/ticket_attachments' . '/');
 define('COMPANY_FILES_FOLDER',FCPATH .'uploads/company' . '/');

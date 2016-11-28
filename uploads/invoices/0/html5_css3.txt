@@ -1,0 +1,433 @@
+Le langage HTML 5 est à la base de tous les sites web!
+HTML5 est utilisé en combinaison avec le langage css3 qui permet de faire la mise en forme du site web!
+
+1- Comment un site web fonctionne!
+2- Différence entre HTML5 et CSS3?
+--> Créer deux langages différents pour un même truc, est dû à une bonne raison, c'est de séparer les concepts, ben HTML nous permet d'écrire le contenu de la page, par exemple texte, image....
+--> Alors que le CSS permet lui de faire la mise en forme de ce contenu crée par HTML.
+--> HTML est né au début des années 1990, et CSS est apparue après HTML vers le milieux des années 90
+--> HTML a été inventé par un certain Tim Berners-Lee en 1991
+--> Tim Berners-Lee suit encore aujourd'hui avec attention l'évolution du Web. Il a créé le World Wide Web Consortium (W3C) qui définit les nouvelles versions des langages liés au Web. Il a par ailleurs créé plus récemment la World Wide Web Foundation qui analyse et suit l'évolution du Web.
+--> De nombreuses personnes confondent (à tort) Internet et le Web. Il faut savoir que le Web fait partie d'Internet.
+Internet est un grand ensemble qui comprend, entre autres : le Web, les e-mails, la messagerie instantanée, etc.
+Tim Berners-Lee n'est donc pas l'inventeur d'Internet, c'est « seulement » l'inventeur du Web.
+--> HTML (HyperText Markup Language)*
+--> CSS (Cascading Style Sheets, aussi appelées Feuilles de style), Ce langage est venu compléter le HTML en 1996.
+-->  XHTML. Il s'agit d'une variante du HTML qui se veut plus rigoureuse et qui est donc un peu plus délicate à manipuler. Elle n'est plus vraiment utilisée aujourd'hui.
+--> HTML 5 : c'est LA dernière version. De plus en plus répandue, elle fait beaucoup parler d'elle car elle apporte de nombreuses améliorations comme la possibilité d'inclure facilement des vidéos, un meilleur agencement du contenu, de nouvelles fonctionnalités pour les formulaires, etc.
+--> CSS 3 : c'est la dernière version, qui apporte des fonctionnalités particulièrement attendues comme les bordures arrondies, les dégradés, les ombres, etc.
+--V On peut classer ces logiciels de création de site web en deux catégories :
+
+Les WYSIWYG (What You See Is What You Get - Ce Que Vous Voyez Est Ce Que Vous Obtenez) : ce sont des programmes qui se veulent très faciles d'emploi, ils permettent de créer des sites web sans apprendre de langage particulier. Parmi les plus connus d'entre eux : Mozilla Composer, Microsoft Expression Web, Dreamweaver… et même Word ! Leur principal défaut est la qualité souvent assez mauvaise du code HTML et CSS qui est automatiquement généré par ces outils. Un bon créateur de site web doit tôt ou tard connaître HTML et CSS, c'est pourquoi je ne recommande pas l'usage de ces outils.
+Les éditeurs de texte : ce sont des programmes dédiés à l'écriture de code. On peut en général les utiliser pour de multiples langages, pas seulement HTML et CSS. Ils se révèlent être de puissants alliés pour les créateurs de sites web !
+--> L'éditeur Sublime Text : c'est beau, c'est propre, c'est pur!
+--> Il est conseillé d'installer plusieurs navigateurs sur son ordinateur pour s'assurer que son site fonctionne correctement sur chacun d'eux. De manière générale, je conseille de tester son site web régulièrement au moins sur Google Chrome, Mozilla Firefox et Internet Explorer/Edge.
+Notez que Safari et Google Chrome affichent les sites web quasiment de la même façon. Il n'est pas forcément nécessaire de tester son site sur Safari et Google Chrome, même si c'est toujours plus sûr.
+ 
+
+3- Le rôle des navigateurs web?
+--> Prendre le code HTML et CSS qui permet de générer une page web, et de générer un visuel comme tout le monde peut comprendre.
+--> Mais faut tjrs garder en tête que chaque navigateur peut intérpréter différement quelques fonctionnalités de HTML et CSS par exemple certanis gérent quelques fonctionnalités d'autres ne les font pas!
+Mais je suis déjà au courant qu il y a un site "caniuse.com" qui liste toutes les fonctionalités html css javascript et on va voir que si on clique sur une fonctionnalité x on va voir est ce qu elle est gérée ou pas par chaque navigateur!
+
+--> la plupart des navigateurs sur smartphones sont les mêmes que sur ordinateur, dans une version plus légère adaptée aux mobiles. Tout dépend du type de téléphone.
+
+iPhone : sur l'iPhone d'Apple, le navigateur utilisé est Safari Mobile. Il s'agit d'une version light et néanmoins très complète de Safari pour ordinateur.
+Android : les portables sous Android bénéficient du navigateur Chrome Mobile. Là encore, il s'agit d'une version adaptée aux mobiles.
+Windows Phone : sous Windows Phone, on retrouve… Internet Explorer/Edge Mobile ! Le principe est le même que pour les précédents navigateurs : il s'agit d'une version dédiée aux mobiles.
+Blackberry : les Blackberry font exception car ils ont leur propre navigateur (il n'existe pas d'équivalent sur ordinateur). Néanmoins, les versions les plus récentes de ce navigateur se basent sur un noyau commun à Safari et Chrome (il s'agit du moteur de rendu Webkit). Par conséquent, l'affichage est en général proche de celui proposé par Safari et Chrome. Enfin, il faut reconnaître que les Blackberry sont de moins en moins utilisés.
+--> Sachez néanmoins que des différences existent entre ces différents navigateurs mobiles et qu'il est conseillé de tester son site sur ces appareils aussi ! En particulier, l'écran étant beaucoup moins large, il faudra vérifier que votre site s'affiche correctement.
+Les tablettes tactiles sont équipées des mêmes navigateurs, l'écran est simplement plus large. Ainsi, l'iPad est fourni avec Safari Mobile.
+--> Le navigateur web est un programme qui permet d'afficher des sites web. Il lit les langages HTML et CSS pour savoir ce qu'il doit afficher.
+
+4- L'utilité des éditeurs de texte?!
+--> Pour écrire le code HTML et CSS
+
+5- une balise html:
+--> Les pages HTML sont remplies de ce qu'on appelle des balises. Celles-ci sont invisibles à l'écran pour vos visiteurs, mais elles permettent à l'ordinateur de comprendre ce qu'il doit afficher.
+Les balises se repèrent facilement. Elles sont entourées de « chevrons », c'est-à-dire des symboles < et >, comme ceci : <balise>
+--> On distingue deux types de balises : les balises en paires et les balises orphelines.
+--> Dans une balise en pair On distingue une balise ouvrante (<titre>) et une balise fermante (</titre>) 
+-->Ce sont des balises qui servent le plus souvent à insérer un élément à un endroit précis (par exemple une image). Il n'est pas nécessaire de délimiter le début et la fin de l'image, on veut juste dire à l'ordinateur « Insère une image ici ». Une balise orpheline s'écrit comme ceci:<image/>.
+-->Notez que le / de fin n'est pas obligatoire. On pourrait écrire seulement <image>. Néanmoins, pour ne pas les confondre avec le premier type de balise, les webmasters recommandent de rajouter ce / (slash) à la fin des balises orphelines.
+--> Les attributs sont un peu les options des balises. Ils viennent les compléter pour donner des informations supplémentaires. L'attribut se place après le nom de la balise ouvrante et a le plus souvent une valeur, comme ceci : <balise attribut="valeur">
+--> J'ai mis des espaces au début de certaines lignes pour « décaler » les balises. Ce n'est pas obligatoire et cela n'a aucun impact sur l'affichage de la page, mais cela rend le code source plus lisible. On appelle cela l'indentation. Dans votre éditeur, il suffit d'appuyer sur la touche Tab pour avoir le même résultat.
+--> <!DOCTYPE html> La toute première ligne s'appelle le doctype. Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML.
+--> UTF-8. Cette méthode d'encodage permet d'afficher sans aucun problème pratiquement tous les symboles de toutes les langues de notre planète ! 
+--> le contenu de la balise title indique Le titre de la page apparaît en haut du navigateur, Il faut savoir que le titre apparaît aussi dans les résultats de recherche, comme sur Google (figure suivante).
+--> <em> permet d écrire en Italique du texte à l intérieur du paragraphe!
+--> <strong> en gras
+--> <mark> mettre du texte suligné par défaut c'est en jaune!
+--> <ul> pour dire là c'est une liste à puce et à l'intérieur chaque élément de la liste est représenté par <li> pour dire ça c'est une puce!
+--> <ol> pour dire une liste automatiquement numérotée!
+--> Un lien vers un autre site:
+-Il est facile de reconnaître les liens sur une page : ils sont écrits d'une façon différente (par défaut, en bleu et soulignés) et un curseur en forme de main apparaît lorsqu'on pointe dessus.
+Pour faire un lien, la balise que nous allons utiliser est très simple à retenir : <a>. Il faut cependant lui ajouter un attribut, href, pour indiquer vers quelle page le lien doit conduire.
+-Si vous faites un lien vers un site qui comporte une adresse un peu bizarre avec des &, comme : http://www.site.com/?data=15&name=mateo21, vous devrez remplacer tous les « & » par « &amp; » dans votre lien comme ceci : http://www.site.com/?data=15&amp;name=mateo21.
+Vous ne verrez pas la différence, mais cela est nécessaire pour avoir une page web correctement construite en HTML5.
+--> Un lien vers une autre page de son site:
+- il suffit d'écrire comme cible du lien le nom du fichier vers lequel on veut amener. On dit que c'est un lien relatif.
+- Si votre fichier cible est placé dans un dossier qui se trouve « plus haut » dans l'arborescence, il faut écrire deux points comme ceci :
+<a href="../page2.html">
+- Un lien vers une ancre
+--> Une ancre est une sorte de point de repère que vous pouvez mettre dans vos pages HTML lorsqu'elles sont très longues.
+En effet, il peut alors être utile de faire un lien amenant plus bas dans la même page pour que le visiteur puisse sauter directement à la partie qui l'intéresse.
+Pour créer une ancre, il suffit de rajouter l'attribut id à une balise qui va alors servir de repère. Ce peut être n'importe quelle balise, un titre par exemple.
+Utilisez l'attribut id pour donner un nom à l'ancre. Cela nous servira ensuite pour faire un lien vers cette ancre. Par exemple :
+<h2 id="mon_ancre">Titre</h2>
+Ensuite, il suffit de créer un lien comme d'habitude, mais cette fois l'attribut href contiendra un dièse (#) suivi du nom de l'ancre. Exemple :
+<a href="#mon_ancre">Aller vers l'ancre</a>
+-en CSS, il nous sera très utile pour « repérer » une balise précise, vous verrez. 
+--> Lien vers une ancre située dans une autre page:
+ il suffit de taper le nom de la page, suivi d'un dièse (#), suivi du nom de l'ancre.
+Par exemple : <a href="ancres.html#rollers">
+-->l'attribut title permet au lien d'afficher une infobulle au survol
+--> Il est possible de « forcer » l'ouverture d'un lien dans une nouvelle fenêtre. Pour cela, on rajoutera target="_blank" à la balise <a>
+--> Selon la configuration du navigateur, la page s'affichera dans une nouvelle fenêtre ou un nouvel onglet. Vous ne pouvez pas choisir entre l'ouverture d'une nouvelle fenêtre ou d'un nouvel onglet.
+--> Maj + Clic sur le lien pour ouvrir dans une nouvelle fenêtre ou Ctrl + Clic pour ouvrir dans un nouvel onglet.
+--> Un lien pour envoyer un e-mail
+Si vous voulez que vos visiteurs puissent vous envoyer un e-mail, vous pouvez utiliser des liens de type mailto. Rien ne change au niveau de la balise, vous devez simplement modifier la valeur de l'attribut href comme ceci :
+<p><a href="mailto:votrenom@bidule.com">Envoyez-moi un e-mail !</a></p>
+Il suffit donc de faire commencer le lien par mailto: et d'écrire l'adresse e-mail où on peut vous contacter. Si vous cliquez sur le lien, un nouveau message vide s'ouvre, prêt à être envoyé à votre adresse e-mail.
+--> Un lien pour télécharger un fichier
+<p><a href="monfichier.zip">Télécharger le fichier</a></p>
+--> Insértion image:
+Il y a trois formats d images à connaître:
+le png(sert à tous le reste logos, illustrations, l essentiel k c pas photo) le gif ( un peu comme les png mais avec le pouvoir d'être annimées), et le jpg(fait pr sauvegarder les photos, son avantage est qu il permet d enregistrer plusieurs couleurs, et compressent bien les photos donc les fichiers sont moins lourd à telecharger 
+--> Toutes les images diffusées sur Internet ont un point commun : elles sont compressées. Cela veut dire que l'ordinateur fait des calculs pour qu'elles soient moins lourdes et donc plus rapides à charger.
+Le JPEG:
+Les images au format JPEG (Joint Photographic Expert Group) sont très répandues sur le Web. Ce format est conçu pour réduire le poids des photos (c'est-à-dire la taille du fichier associé), qui peuvent comporter plus de 16 millions de couleurs différentes. Les images JPEG sont enregistrées avec l'extension.jpgou.jpeg.
+-Notez que le JPEG détériore un peu la qualité de l'image, d'une façon généralement imperceptible. C'est ce qui le rend si efficace pour réduire le poids des photos.
+- Quand il s'agit d'une photo, on ne peut généralement pas détecter la perte de qualité. Par contre, si ce n'est pas une photo, vous risquez de voir l'image un peu « baver ». Dans ce cas, il vaut mieux utiliser le format PNG.
+-Le format PNG (Portable Network Graphics) est le plus récent de tous. Ce format est adapté à la plupart des graphiques (je serais tenté de dire « à tout ce qui n'est pas une photo »). Le PNG a deux gros avantages : il peut être rendu transparent et il n'altère pas la qualité de l'image.
+-Le PNG existe en deux versions, en fonction du nombre de couleurs que doit comporter l'image :
+	-PNG 8 bits : 256 couleurs ;
+	-PNG 24 bits : 16 millions de couleurs (autant qu'une image JPEG).
+-Au fait, si le PNG 24 bits peut afficher autant de couleurs qu'une image JPEG, et qu'en plus il peut être rendu transparent sans modifier la qualité de l'image… quel est l'intérêt du JPEG ?
+	-La compression du JPEG est plus puissante sur les photos. Une photo enregistrée en JPEG se chargera toujours beaucoup plus vite que si elle était enregistrée en PNG. Je vous conseille donc toujours de réserver le format JPEG aux photos.
+-Le GIF: C'est un format assez vieux, qui a été néanmoins très utilisé (et qui reste très utilisé par habitude). Aujourd'hui, le PNG est globalement bien meilleur que le GIF : les images sont généralement plus légères et la transparence est de meilleure qualité. Je vous recommande donc d'utiliser le PNG autant que possible.
+-Le format GIF est limité à 256 couleurs (alors que le PNG peut aller jusqu'à plusieurs millions de couleurs).
+-Néanmoins, le GIF conserve un certain avantage que le PNG n'a pas : il peut être animé. D'où l'explosion ces dernières années des GIF animés sur le web (aussi appelé "reaction gifs").
+--> Il existe un format adapté à chaque image:
+	-Si on résume, voici quel format adopter en fonction de l'image que vous avez :
+	-Une photo : utilisez un JPEG.
+	-N'importe quel graphique avec peu de couleurs (moins de 256) : utilisez un PNG 8 bits ou éventuellement un GIF.
+	-N'importe quel graphique avec beaucoup de couleurs : utilisez un PNG 24 bits.
+	-Une image animée : utilisez un GIF animé.
+--> <img src="images/montagne.jpg" alt="Photo de montagne" />
+-src  : il permet d'indiquer où se trouve l'image que l'on veut insérer. 
+-alt  : cela signifie « texte alternatif ». On doit toujours indiquer un texte alternatif à l'image, c'est-à-dire un court texte qui décrit ce que contient l'image. Ce texte sera affiché à la place de l'image si celle-ci ne peut pas être téléchargée (cela arrive), ou dans les navigateurs de personnes handicapées (non-voyants) qui ne peuvent malheureusement pas « voir » l'image. Cela aide aussi les robots des moteurs de recherche pour les recherches d'images.
+-title pour Ajouter une infobulle
+-Miniature cliquable:
+    <a href="img/montagne.jpg"><img src="img/montagne_mini.jpg" alt="Photo de montagne" title="Cliquez pour agrandir" /></a>
+-Création d'une figure:
+-->En HTML5, on dispose de la balise  <figure>. Voici comment on pourrait l'utiliser : Une figure est le plus souvent accompagnée d'une légende. Pour ajouter une légende, utilisez la balise  <figcaption>à l'intérieur de la balise  <figure>, comme ceci :
+--> <figure>
+    <img src="images/blocnotes.png" alt="Bloc-Notes" />
+    <figcaption>Le logiciel Bloc-Notes</figcaption>
+</figure>
+--> Si vous faites de votre image une figure, l'image peut être située en-dehors d'un paragraphe.
+--> Le HTML est né en 1991 et CSS en 1996.
+--> il y avait quatre versions importantes de CSS :
+		-CSS 1 ;
+		-CSS 2.0 ;
+		-CSS 2.1 ;
+--> On peut écrire du code en langage CSS à trois endroits différents :
+	-Dans un fichier .css (méthode la plus recommandée) ;
+	-Dans l'en-tête <head> du fichier HTML ;
+	-Directement dans les balises du fichier HTML via un attribut style 	 (méthode la moins recommandée).
+--> Dans un fichier .css:
+<head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Premiers tests du CSS</title>
+</head>	
+- c'est elle qui indique que ce fichier HTML est associé à un fichier appelé style.css et chargé de la mise en forme.
+--> Dans l'en-tête <head> du fichier HTML, cela consiste à insérer le code CSS directement dans une balise <style> à l'intérieur de l'en-tête <head>.
+--> Directement dans les balises (non recommandé),  ajouter un attribut style à n'importe quelle balise. Vous insérerez votre code CSS directement dans cet attribut
+--> Si vous travaillez avec un fichier CSS externe, vous n'aurez besoin d'écrire cette instruction qu'une seule fois pour tout votre site
+--> Le code CSS est donné une fois pour toutes dans un fichier CSS
+-Dans un code CSS comme celui-ci, on trouve trois éléments différents :
+
+Des noms de balises : on écrit les noms des balises dont on veut modifier l'apparence. Par exemple, si je veux modifier l'apparence de tous les paragraphes <p>, je dois écrire p.
+Des propriétés CSS : les « effets de style » de la page sont rangés dans des propriétés. Il y a par exemple la propriété color qui permet d'indiquer la couleur du texte, font-size qui permet d'indiquer la taille du texte, etc. Il y a beaucoup de propriétés CSS et, comme je vous l'ai dit, je ne vous obligerai pas à les connaître toutes par cœur.
+Les valeurs : pour chaque propriété CSS, on doit indiquer une valeur. Par exemple, pour la propriété color, il faut indiquer le nom de la couleur. Pour font-size, il faut indiquer quelle taille on veut, etc.
+--> balise1
+{
+    propriete1: valeur1;
+    propriete2: valeur2;
+    propriete3: valeur3;
+}
+
+balise2
+{
+    propriete1: valeur1;
+    propriete2: valeur2;
+    propriete3: valeur3;
+    propriete4: valeur4;
+}
+
+balise3
+{
+    propriete1: valeur1;
+}
+-->Pour Appliquer un style à plusieurs balises,Il suffit de combiner la déclaration en séparant les noms des balises par une virgule, comme ceci :
+balise1, balise2
+--> les commentaires en css:
+Tapez /*, suivi de votre commentaire, puis */
+-->Appliquer un style : class et id
+--> on peut utiliser ces attributs spéciaux qui fonctionnent sur toutes les balises :
+	-l'attribut class ; .nomClasse dans css
+
+	-l'attribut id.     # nomClasse dans css
+-->Lui, il fonctionne exactement de la même manière que class, à un détail près : il ne peut être utilisé qu'une fois dans le code html.
+--> Si vous vous emmêlez les pinceaux entre class et id retenez que deux balises peuvent avoir le même nom avec l'attribut class. Un nom d'id doit en revanche être unique dans la page HTML.
+--> Les balises universelles:
+	-Il arrivera parfois que vous ayez besoin d'appliquer une class (ou un id) à certains mots qui, à l'origine, ne sont pas entourés par des balises.
+	-En effet, le problème de class, c'est qu'il s'agit d'un attribut. Vous ne pouvez donc en mettre que sur une balise. Si, par exemple, je veux modifier uniquement « bienvenue » dans un paragraphe 
+	-<span> </span> : c'est une balise de type inline, c'est-à-dire une balise que l'on place au sein d'un paragraphe de texte, pour sélectionner certains mots uniquement. Les balises <strong> et <em> sont de la même famille. Cette balise s'utilise donc au milieu d'un paragraphe et c'est celle dont nous allons nous servir pour colorer « bienvenue ».
+	-<div> </div> : c'est une balise de type block, qui entoure un bloc de texte. Les balises <p>, <h1>, etc. sont de la même famille. Ces balises ont quelque chose en commun : elles créent un nouveau « bloc » dans la page et provoquent donc obligatoirement un retour à la ligne. <div> est une balise fréquemment utilisée dans la construction d'un design, comme nous le verrons plus tard.
+--Les sélecteurs avancés sont aussi une façon adoptée pour cibler un contenu x afin de lui appliquer un style y!
+	-* : sélecteur universel
+		*
+			{
+
+				}
+--> Sélectionne toutes les balises sans exception. On l'appelle le sélecteur universel.
+--> A B : une balise contenue dans une autre
+	A B
+		{
+			}
+--> A + B : une balise qui en suit une autre
+	A+B
+		{
+			}
+--> A[attribut] : une balise qui possède un attribut
+	A[attribut] 
+		{
+			}
+--> A[attribut="Valeur"] : une balise, un attribut et une valeur exacte
+	A[attribut="Valeur"] 
+		{
+			}
+--> A[attribut*="Valeur"] : une balise, un attribut et une valeur (peu importe sa position).
+	A[attribut*="Valeur"] 
+		{
+			}
+--> Pour modifier la taille du texte, on utilise la propriété CSS font-size
+	-Une taille absolue,Pour indiquer une taille absolue, on utilise généralement les pixels. On dit x pixels de hauteur, font-size: 16px; on peut également définir des tailles en centimètres ou millimètres. Remplacez « px » par « 	cm » ou « mm ». Ces unités sont cependant moins bien adaptées aux écrans.
+	-Une valeur relative, C'est la méthode recommandée car le texte s'adapte alors plus facilement aux préférences de tous les visiteurs.
+
+--> Il y a plusieurs moyens d'indiquer une valeur relative. Vous pouvez par exemple écrire la taille avec des mots en anglais comme ceux-ci :
+	
+	-xx-small : minuscule ;
+	-x-small : très petit ;
+	-small : petit ;
+	-medium : moyen ;
+	-large : grand ;
+	-x-large : très grand ;
+	-xx-large : euh… gigantesque.
+
+--> Bon, cette technique a un défaut : il n'y a que sept tailles disponibles (car il n'y a que sept noms). Heureusement, il existe d'autres moyens. Ma technique préférée consiste à indiquer la taille en « em ».			
+	-Si vous écrivez 1em, le texte a une taille normale.
+	-Si vous voulez grossir le texte, vous pouvez inscrire une valeur supérieure à 1, comme 1.3em.
+	-Si vous voulez réduire le texte, inscrivez une valeur inférieure à 1, comme 0.8em.
+
+--> On peut essayer le « ex » (qui fonctionne sur le même principe que le em mais qui est plus petit de base) et le pourcentage (80%, 130%…).
+
+--> La propriété CSS qui permet d'indiquer la police à utiliser est font-family:
+		balise
+			{
+    				font-family: police;
+			}
+ Et pour éviter les problèmes si l'internaute n'a pas la même police que vous, on précise en général plusieurs noms de police, séparés par des virgules. En général, on indique en tout dernier serif, ce qui correspond à une police par défaut (qui ne s'applique que si aucune autre police n'a été trouvée). Il existe aussi une autre police par défaut appelée sans-serif. La différence entre les deux est la présence de petites pattes de liaison en bas des lettres, que la police sans-serif n'a pas. Oui, c'est subtil.
+--> Par exemple: 
+		p
+			{
+    				font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+			}
+
+--> Aujourd'hui, avec CSS 3, il existe heureusement un moyen d'utiliser n'importe quelle police sur son site. Cela fonctionne bien avec la plupart des navigateurs.
+--> En CSS, pour définir une nouvelle police, vous devez la déclarer comme ceci :
+    	@font-face {
+    			font-family: 'MaSuperPolice';
+    			src: url('MaSuperPolice.eot'); // .eot un des formats de fichiers de polices 
+			}
+--> Le fichier de police (ici MaSuperPolice.eot) doit ici être situé dans le même dossier que le fichier CSS (ou dans un sous-dossier, si vous utilisez un chemin relatif).
+--> Oui, d'ailleurs les .eot ne fonctionnent que sur Internet Explorer. L'idéal est de proposer plusieurs formats pour la police : le navigateur téléchargera celui qu'il sait lire. Voici comment indiquer plusieurs formats :
+@font-face {
+    font-family: 'MaSuperPolice';
+    src: url('MaSuperPolice.eot') format('eot'),
+         url('MaSuperPolice.woff') format('woff'),
+         url('MaSuperPolice.ttf') format('truetype'),
+         url('MaSuperPolice.svg') format('svg');
+}
+--> La première (grosse) section @font-face permet de définir un nouveau nom de police qui pourra être utilisé dans le fichier CSS. Ensuite, nous utilisons ce nom de police avec la propriété font-family, que nous connaisson.
+--> en CSS, pour mettre en italique, on utilise font-style qui peut prendre trois valeurs :
+		-italic : le texte sera mis en italique.
+		-oblique : le texte sera passé en oblique (les lettres sont penchées, le résultat est légèrement différent de l'italique proprement dit).
+		-normal : le texte sera normal (par défaut). Cela vous permet d'annuler une mise en italique. Par exemple, si vous voulez que les textes entre <em> ne soient plus en italique, vous devrez écrire 
+
+--> La propriété CSS pour mettre en gras est font-weight et prend les valeurs suivantes :
+		-bold : le texte sera en gras ;
+		-normal : le texte sera écrit normalement (par défaut).
+
+--> text-decoration. Elle permet, entre autres, de souligner le texte, mais pas seulement. Voici les différentes valeurs qu'elle peut prendre :
+	-underline : souligné.
+	-line-through : barré.
+	-overline : ligne au-dessus.
+	-blink : clignotant. Ne fonctionne pas sur tous les navigateurs (Internet Explorer et Google Chrome, notamment).
+	-none : normal (par défaut).
+
+-->On utilise la propriété text-align et on indique l'alignement désiré :
+	-left : le texte sera aligné à gauche (c'est le réglage par défaut).
+	-center : le texte sera centré.
+	-right : le texte sera aligné à droite.
+	-justify : le texte sera « justifié ». Justifier le texte permet de faire en sorte qu'il prenne toute la largeur possible sans laisser d'espace blanc à la fin des lignes. Les textes des journaux, par exemple, sont toujours 	justifiés.
+--> Vous ne pouvez pas modifier l'alignement du texte d'une balise inline (comme <span>, <a>, <em>, <strong>…). L'alignement ne fonctionne que sur des balises de type block (<p>, <div>, <h1>, <h2>, …) et c'est un peu logique, quand on y pense : on ne peut pas modifier l'alignement de quelques mots au milieu d'un paragraphe !
+C'est donc en général le paragraphe entier qu'il vous faudra aligner.
+--> Le CSS nous permet de faire flotter un élément autour du texte. On dit aussi qu'on fait un « habillage ».
+	-float (« flottant » en anglais). Cette propriété peut prendre deux valeurs très simples,  appliquez un float à une balise, puis continuer à écrire du texte à la suite normalement.
+		-left : l'élément flottera à gauche.
+		-right : l'élément flottera… à droite ! 
+--> On peut aussi bien utiliser la propriété float sur des balises block que sur des balises inline. Il est courant de faire flotter une image pour qu'elle soit habillée par du texte par exemple!
+--> Faire flotter une image
+	-<p><img src="flash.gif" class="imageflottante" alt="Image flottante" /> Ceci est un texte normal de paragraphe, écrit à la suite de l'image et qui l'habillera car l'image est flottante.</p>
+--> Vous devez placer l'élément flottant en premier dans le code HTML. Si vous placez l'image après le paragraphe, l'effet ne fonctionnera pas.
+-->Stopper un flottant:
+		-Quand vous mettez en place un flottant, le texte autour l'habille. Mais comment faire si vous voulez qu'au bout d'un moment le texte continue en dessous du flottant ? On pourrait enchaîner plusieurs <br /> à la suite 		 	  mais cela ne serait ni élégant ni très propre…
+		-Il existe en fait une propriété CSS qui permet de dire : « Stop, ce texte doit être en-dessous du flottant et non plus à côté ». C'est la propriété clear, qui peut prendre ces trois valeurs :
+			left : le texte se poursuit en-dessous après un float: left;
+			right : le texte se poursuit en-dessous après un float: right;
+			both : le texte se poursuit en-dessous, que ce soit après un float: left; ou après un float: right;.
+			Pour simplifier, on va utiliser tout le temps le clear: both, qui marche après un flottant à gauche et après un flottant à droite (cela fonctionne donc à tous les coups). 
+	-<p class="dessous">Ce texte est écrit sous l'image flottante.</p> (code html)
+	-.dessous{ clear: both;}
+-->On applique un clear: both; au paragraphe que l'on veut voir continuer sous l'image flottante et le tour est joué !
+-->Couleur du texte:
+	- la propriété qui permet de modifier la couleur du texte est color. Pour indiquer le nom de la couleur. La méthode la plus simple et la plus pratique pour choisir une couleur consiste à taper son nom (in english, of course).
+Le seul défaut de cette méthode est qu'il n'existe que seize couleurs dites « standard ». D'autres couleurs officieuses existent mais, comme elles ne fonctionneront pas forcément de la même manière sur tous les navigateurs. Et il existe aussi La notation hexadécimale. Un nom de couleur en hexadécimal, cela ressemble à : #FF5A28. Pour faire simple, c'est une combinaison de lettres et de chiffres qui indiquent une couleur.n doit toujours commencer par écrire un dièse (#), suivi de six lettres ou chiffres allant de 0 à 9 et de A à F. Ces lettres ou chiffres fonctionnent deux par deux. Les deux premiers indiquent une quantité de rouge, les deux suivants une quantité de vert et les deux derniers une quantité de bleu. En mélangeant ces quantités (qui sont les composantes Rouge-Vert-Bleu de la couleur) on peut obtenir la couleur qu'on veut.
+Certains logiciels de dessin, comme Photoshop, Gimp et Paint.NET, vous indiquent les couleurs en hexadécimal. Il vous est alors facile de copier-coller le code hexadécimal d'une couleur dans votre fichier CSS.
+Et il existe aussi La méthode RGB,rgb(Rouge, Vert, Bleu).
+-Vous pouvez aussi trouver des extensions de navigateur qui permettent de "récupérer" n'importe quelle couleur qui vous plaît sur un site web :
+	-ColorPicker pour Firefox
+	-ColorZilla pour Chrome
+--> Couleur de fond:
+	-Pour indiquer une couleur de fond, on utilise la propriété CSS background-color. Elle s'utilise de la même manière que la propriété color, c'est-à-dire que vous pouvez taper le nom d'une couleur, l'écrire en notation hexadécimale ou encore utiliser la méthode RGB. Pour indiquer la couleur de fond de la page web, il faut travailler sur la balise <body>.
+--> Le CSS et l'héritage:
+	-En CSS, si vous appliquez un style à une balise, toutes les balises qui se trouvent à l'intérieur prendront le même style. C'est d'ailleurs de là que vient le nom « CSS », qui signifie « Cascading Style Sheets », c'est-à-dire « Feuilles de style en cascade ». Les propriétés CSS sont héritées en cascade : si vous donnez un style à un élément, tous les sous-éléments auront le même style.
+--> Images de fond: La propriété permettant d'indiquer une image de fond est background-image. Comme valeur, on doit renseigner url("nom_de_l_image.png").
+--> Options disponibles pour l'image de fond, qui permettent de changer le comportement de l'image de fond.
+--> background-repeat : répétition du fond:
+	-Par défaut, l'image de fond est répétée en mosaïque. Vous pouvez changer cela avec la propriété background-repeat :
+
+no-repeat : le fond ne sera pas répété. L'image sera donc unique sur la page.
+repeat-x : le fond sera répété uniquement sur la première ligne, horizontalement.
+repeat-y : le fond sera répété uniquement sur la première colonne, verticalement.
+repeat : le fond sera répété en mosaïque (par défaut).
+
+-->background-attachment : fixer le fond:
+	fixed : l'image de fond reste fixe ;
+	scroll : l'image de fond défile avec le texte (par défaut).
+--> background-position : position du fond, Cette propriété n'est intéressante que si elle est combinée avec background-repeat: no-repeat; (un fond qui ne se répète pas).
+	-Vous devez donner à background-position deux valeurs en pixels pour indiquer la position du fond par rapport au coin supérieur gauche de la page (ou du paragraphe, si vous appliquez le fond à un paragraphe). Ainsi, si vous tapez :
+		background-position: 30px 50px; … votre fond sera placé à 30 pixels de la gauche et à 50 pixels du haut. Il est aussi possible d'utiliser ces valeurs en anglais :
+			-top : en haut ;
+			-bottom : en bas ;
+			-left : à gauche ;
+			-center : centré ;
+			-right : à droite.
+Il est possible de combiner ces mots. Par exemple, pour aligner une image en haut à droite, vous taperez : background-position: top right;
+-->Combiner les propriétés comme suit:
+	-body
+		{
+    			background: url("soleil.png") fixed no-repeat top right;
+		}
+-L'ordre des valeurs n'a pas d'importance. Vous pouvez combiner les valeurs dans n'importe quel ordre.
+-on peut appliquer un fond à n'importe quel élément (un titre, un paragraphe, certains mots d'un paragraphe, etc.).
+-La transparence, La propriété opacity, très simple, permet d'indiquer le niveau d'opacité (c'est l'inverse de la transparence). Avec une valeur de 1, l'élément sera totalement opaque : c'est le comportement par défaut.
+Avec une valeur de 0, l'élément sera totalement transparent. Il faut donc choisir une valeur comprise entre 0 et 1. Ainsi, avec une valeur de 0.6, votre élément sera opaque à 60%… et on verra donc à travers !
+-Si vous appliquez la propriété opacity à un élément de la page, tout le contenu de cet élément sera rendu transparent (même les images, les autres blocs à l'intérieur, etc.). Si vous voulez juste rendre la couleur de fond transparente, utilisez plutôt la notation RGBa que nous allons découvrir.
+-La notation RGBa, CSS3 nous propose une autre façon de jouer avec la transparence : la notation RGBa. Il s'agit en fait de la notation RGB que nous avons vue précédemment, mais avec un quatrième paramètre : le niveau de transparence (appelé « canal alpha »). De la même façon que précédemment, avec une valeur de 1, le fond est complètement opaque. Avec une valeur inférieure à 1, il est transparent. C'est aussi simple que cela. Vous pouvez obtenir exactement le même effet qu'avec opacity juste en jouant avec la notation RGBa.
+
+-->LES BORDURES ET LES OMBRES:
+utiliser directement la super-propriété border qui regroupe l'ensemble de ces propriétés. Pour border on peut utiliser jusqu'à trois valeurs pour modifier l'apparence de la bordure :
+	-La largeur : indiquez la largeur de votre bordure. Mettez une valeur en pixels (comme 2px).
+	-La couleur : c'est la couleur de votre bordure. Utilisez, comme on l'a appris, soit un nom de couleur (black, red,…), soit une valeur hexadécimale (#FF0000), soit une valeur RGB (rgb(198, 212, 37)).
+	-Le type de bordure : là, vous avez le choix. Votre bordure peut être un simple trait, ou des pointillés, ou encore des tirets, etc. Voici les différentes valeurs disponibles :
+		none : pas de bordure (par défaut) ;
+		solid : un trait simple ;
+		dotted : pointillés ;
+		dashed : tirets ;
+		double : bordure double ;
+		groove : en relief ;
+		ridge : autre effet relief ;
+		inset : effet 3D global enfoncé ;
+		outset : effet 3D global surélevé.
+-->border-top : bordure du haut ;
+border-bottom : bordure du bas ;
+border-left : bordure de gauche ;
+border-right : bordure de droite.
+-->  border-top-width pour modifier l'épaisseur de la bordure du haut, border-top-color pour la couleur du haut, etc.
+--> La propriété border-radius va nous permettre d'arrondir facilement les angles de n'importe quel élément. Il suffit d'indiquer la taille (« l'importance ») de l'arrondi en pixels 
+	p
+		{
+    			border-radius: 10px;
+		}
+--> On peut aussi préciser la forme de l'arrondi pour chaque coin. Dans ce cas, indiquez quatre valeurs :
+		p
+			{
+    			border-radius: 10px 5px 10px 5px;
+			}
+-->Pour les ombres, il existe deux types d'ombres :
+	-les ombres des boîtes ; La propriété box-shadow s'applique à tout le bloc et prend quatre valeurs dans l'ordre suivant :
+			le décalage horizontal de l'ombre ;
+			le décalage vertical de l'ombre ;
+			l'adoucissement du dégradé ;  L'adoucissement peut être faible (inférieur au décalage), normal (égal au décalage) ou élevé (supérieur au décalage). 
+			la couleur de l'ombre.
+			On peut aussi rajouter une cinquième valeur facultative : inset. Dans ce cas, l'ombre sera placée à l'intérieur du bloc, pour donner un effet enfoncé
+	-les ombres du texte; Avec text-shadow, vous pouvez ajouter une ombre directement sur les lettres de votre texte ! Les valeurs fonctionnent exactement de la même façon que box-shadow : décalage, adoucissement et couleur.
+--> le CSS nous permet aussi de modifier l'apparence des éléments de façon dynamique, c'est-à-dire que des éléments peuvent changer de forme une fois que la page a été chargée. Nous allons faire appel à une fonctionnalité puissante du CSS : les pseudo-formats(c'est une information que l'on rajoute après le nom de la balise (ou de la classe) dans le CSS) .comment changer l'apparence :
+		-au survol ; balise ou nom clsse :hover signifie « survoler ». a:hover peut donc se traduire par : « Quand la souris est sur le lien » (quand on pointe dessus).
+		-lors du clic ; :active permet d'appliquer un style particulier au moment du clic. En pratique, il n'est utilisé que sur les liens. On peut par exemple changer la couleur de fond du lien lorsque l'on clique dessus avec     		background-color: #FFCC66;
+		-lors du focus (élément sélectionné) ; Le pseudo-format :focus applique un style lorsque l'élément est sélection. c'est à dire qu'une fois que vous avez cliqué, le lien reste « sélectionné » (il y a une petite bordure en 		pointillés autour). C'est cela, la sélection.
+		-lorsqu'un lien a été consulté. Vous pouvez changer cette apparence avec :visited (qui signifie « visité »). En pratique, sur les liens consultés, on ne peut pas changer beaucoup de choses à part la couleur
+
+--> Les balises structurantes de HTML5 pour structurer nos pages:
+	- <header> : l'en-tête --> 
+				<header>
+    					<!-- Placez ici le contenu de l'en-tête de votre page -->
+				</header>
+	- <footer> : le pied de page -->
+				<footer>
+    					<!-- Placez ici le contenu du pied de page -->
+				</footer>
+	-<nav> : principaux liens de navigation -->
+				<nav>
+    					<ul>
+        					<li><a href="index.html">Accueil</a></li>
+        					<li><a href="forum.html">Forum</a></li>
+        					<li><a href="contact.html">Contact</a></li>
+    					</ul>
+				</nav>
+	-<section> : une section de page --> La balise <section> sert à regrouper des contenus en fonction de leur thématique. Elle englobe généralement une portion du contenu au centre de la page.
+				<section>
+    					<h1>Ma section de page</h1>
+    					<p>Bla bla bla bla</p>
+				</section>
+	-<aside> : informations complémentaires, La balise <aside> est conçue pour contenir des informations complémentaires au document que l'on visualise
+				<aside>
+   					 <!-- Placez ici des informations complémentaires -->
+				</aside>
+	-<article> : un article indépendant, La balise <article> sert à englober une portion généralement autonome de la page. C'est une partie de la page qui pourrait ainsi être reprise sur un autre site.
+				<article>
+    					<h1>Mon article</h1>
+   					 <p>Bla bla bla bla</p>
+				</article>
+
+-En général, une page web est constituée d'un en-tête (tout en haut), de menus de navigation (en haut ou sur les côtés), de différentes sections au centre… et d'un pied de page (tout en bas).
+
+
+
+
+

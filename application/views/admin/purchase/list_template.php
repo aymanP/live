@@ -36,8 +36,7 @@
                 <?php foreach($purchase as $purchas)
                       {
                           //$val = 1;
-                          foreach($purchase_files as $file)
-                          {
+
 
                                   foreach($purchase_files as $file)
                                   {
@@ -79,7 +78,8 @@
                             <?php
                                // print_r($purchase_files) ;
 
-
+                          foreach($purchase_files as $file)
+                          {
                               if($file['id_purchase'] == $purchas['id_purchase'])
                               {
 

@@ -27,11 +27,11 @@ $aColumns = array('tblsuppliers.profile_image',
 $join = array();
 array_push($join,'LEFT JOIN tblsuppliercontacts ON tblsuppliercontacts.supplierid=tblsuppliers.supplierid AND tblsuppliercontacts.is_primary=1');
 $i    = 0;
-//foreach ($custom_fields as $field) {
-//    array_push($aColumns, 'ctable_' . $i . '.value as cvalue_' . $i);
-//    array_push($join, 'LEFT JOIN tblcustomfieldsvalues as ctable_' . $i . ' ON tblsuppliers.supplierid = ctable_' . $i . '.relid AND ctable_' . $i . '.fieldto="' . $field['fieldto'] . '" AND ctable_' . $i . '.fieldid=' . $field['id']);
-//    $i++;
-//}
+foreach ($custom_fields as $field) {
+    array_push($aColumns, 'ctable_' . $i . '.value as cvalue_' . $i);
+    array_push($join, 'LEFT JOIN tblcustomfieldsvalues as ctable_' . $i . ' ON tblsuppliers.supplierid = ctable_' . $i . '.relid AND ctable_' . $i . '.fieldto="' . $field['fieldto'] . '" AND ctable_' . $i . '.fieldid=' . $field['id']);
+    $i++;
+}
 $sIndexColumn = "supplierid";
 $sTable       = 'tblsuppliers';
 
@@ -121,9 +121,9 @@ if(!has_permission('suppliers','','view')) {
 }
 
 // Fix for big queries. Some hosting have max_join_limit
-//if (count($custom_fields) > 4) {
-//    @$this->_instance->db->query('SET SQL_BIG_SELECTS=1');
-//}
+if (count($custom_fields) > 4) {
+    @$this->_instance->db->query('SET SQL_BIG_SELECTS=1');
+}
 
 $result  = data_tables_init($aColumns, $sIndexColumn, $sTable, $join, $where, array(
     'company',
@@ -159,16 +159,12 @@ foreach ($rResult as $aRow) {
                 }
             }
         }else if ($aColumns[$i] == 'company') {
-
             $_data = ' <a href="' . admin_url('suppliers/supplier/' . $aRow['supplierid']) . '">' . $aRow['company'] . '</a>';
-        }else if ($aColumns[$i] == 'tblsuppliers.profile_image')
-        {
+        }else if ($aColumns[$i] == 'tblsuppliers.profile_image') {
             $_data =  supplier_profile_image($aRow['supplierid'], array(
                 'client-profile-image-small'
             )) ;
-
-        }
-        else if ($aColumns[$i] == 'phonenumber') {
+        }else if ($aColumns[$i] == 'phonenumber') {
             $_data =  $_data;
         } else if ($aColumns[$i] == $aColumns[2]) {
             $_data =  $aRow['firstname']. ' ' .$aRow['lastname'] ;
@@ -176,34 +172,24 @@ foreach ($rResult as $aRow) {
             // primary contact add link
             $_data = '<a href="'.admin_url('suppliers/supplier/'.$aRow['supplierid'].'?contactid='.get_supplier_primary_contact_user_id($aRow['supplierid'])).'" target="_blank">'.$aRow['firstname']. ' ' .$aRow['lastname']. '</a>';
         }
-//        else if ($aColumns[$i] == 'actif')
-//        {
-//            $checked = '';
-//            if ($aRow['actif'] == 1) {
-//                $checked = 'checked';
-//            }
-//            $_data = '<input type="checkbox" class="switch-box input-xs" data-size="mini" data-id="' . $aRow['supplierid'] . '" data-switch-url="'.ADMIN_URL.'/suppliers/change_suppliers_status" ' . $checked . '>';
-//            // For exporting
-//            $_data .=  '<span class="hide">' . ($checked == 'checked' ? _l('is_active_export') : _l('is_not_active_export')) .'</span>';
-//        }
         $row[] = $_data;
     }
 
-    $options = '';
+    $options = '<div class="checkbox"><input type="checkbox" value="'.$aRow['supplierid'].'"><label></label></div>';
     $options .= icon_btn('suppliers/supplier/' . $aRow['supplierid'], 'pencil-square-o');
-    if(has_permission('suppliers','','delete'))
-    {
-        $options .= icon_btn('suppliers/delete/' . $aRow['supplierid'], 'remove', 'btn-danger _delete', array(
-            'data-toggle' => 'tooltip',
-            'data-placement' => 'left',
-            'title' => _l('supplier_delete_tooltip')
-        ));
-    }
-    if(has_permission('suppliers','','delete')){
-        $options .= '<div class="checkbox"><input type="checkbox" value="'.$aRow['supplierid'].'"><label></label></div>';
-    }
+//    if(has_permission('suppliers','','delete'))
+//    {
+    $options .= icon_btn('suppliers/delete/' . $aRow['supplierid'], 'remove', 'btn-danger _delete', array(
+        'data-toggle' => 'tooltip',
+        'data-placement' => 'left',
+        'title' => _l('supplier_delete_tooltip')
+    ));
+//    }
+//    if(has_permission('suppliers','','delete')){
+    $options .= '<div class="checkbox"><input type="checkbox" value="'.$aRow['supplierid'].'"><label></label></div>';
+//    }
     $row[]   = $options;
 
-    $output['aaData'][] = $row;
+   $output['aaData'][] = $row;
 }
 

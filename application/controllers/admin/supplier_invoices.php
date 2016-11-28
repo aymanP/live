@@ -23,6 +23,13 @@ class Supplier_invoices extends Admin_controller
         $this->list_invoice($id);
     }
     /* List all invoices datatables */
+
+    public function invoice_upload_file($invoice_id)
+    {
+        handle_invoice_file_uploads($invoice_id);
+        redirect(admin_url('supplier_invoices/list_invoice'));
+    }
+
     public function list_invoice($id = '', $supplierid = '')
     {
 
@@ -31,6 +38,8 @@ class Supplier_invoices extends Admin_controller
         }
         $this->load->model('payment_modes_model');
         $data['payment_modes'] = $this->payment_modes_model->get('', true);
+        $data['files'] = $this->supplier_invoices_model->get_attachments($id);
+
         $_custom_view          = '';
         $_status               = '';
         if ($this->input->get('custom_view')) {
@@ -53,12 +62,20 @@ class Supplier_invoices extends Admin_controller
         if (is_numeric($id)) {
             $data['invoiceid'] = $id;
         }
+      //  $invoice                            = $this->supplier_invoices_model->get($id);
+       // $data['invoice'] = $invoice;
+        $this->load->model('taxes_model');
+        $data['taxes'] = $this->taxes_model->get();
         $data['custom_view'] = $_custom_view;
         $data['chosen_invoice_status']      = $_status;
         $data['title']       = _l('supplier_invoices');
+        $this->load->model('supplier_model');
+        $data['suppliers']    = $this->supplier_model->get();
         $data['invoices_years'] = $this->supplier_invoices_model->get_invoices_years();
         $data['invoices_sale_agents'] = $this->supplier_invoices_model->get_sale_agents();
         $data['invoices_statuses']       = $this->supplier_invoices_model->get_statuses();
+
+        
        $this->load->view('admin/supplier_invoices/manage', $data);
     }
 
@@ -164,7 +181,7 @@ class Supplier_invoices extends Admin_controller
                 $id = $this->supplier_invoices_model->add($this->input->post());
                 if ($id) {
                     set_alert('success', _l('added_successfuly', _l('invoice')));
-                    redirect(admin_url('supplier_invoices/list_invoice/' . $id));
+                    redirect(admin_url('supplier_invoices/list_invoice/'));
                 }
             } else {
                 if (!has_permission('invoices', '', 'edit')) {

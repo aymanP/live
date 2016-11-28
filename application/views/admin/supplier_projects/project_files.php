@@ -46,7 +46,7 @@
                             echo $_data;
                             } else {
                      echo ' <img src="'.contact_profile_image_url($file['contact_id'],'thumb').'" class="client-profile-image-small mrigh5">
-                     <a href="'.admin_url('clients/client/'.get_user_id_by_contact_id($file['contact_id']).'?contactid='.$file['contact_id']).'">'.get_contact_full_name($file['contact_id']).'</a>';
+                     <a href="'.admin_url('suppliers/supplier/'.get_user_id_by_contact_id($file['contact_id']).'?contactid='.$file['contact_id']).'">'.get_contact_full_name($file['contact_id']).'</a>';
                             }
                             ?>
                     </td>
@@ -66,4 +66,4 @@
         </table>
     </div>
 </div>
-<?php include_once(APPPATH . 'views/admin/clients/modals/send_file_modal.php'); ?>
+<?php include_once(APPPATH . 'views/admin/suppliers/modals/send_file_modal.php'); ?>
