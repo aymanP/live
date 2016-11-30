@@ -350,6 +350,9 @@ class Supplier_invoices_model extends CRM_Model
             }
             // else its just like they are passed
         }
+
+        $data['total_tax'] = $data['total'] - $data['subtotal'];
+
         if (isset($data['discount_total']) && $data['discount_total'] == 0) {
             $data['discount_type'] = '';
         }
@@ -362,8 +365,10 @@ class Supplier_invoices_model extends CRM_Model
         $this->db->insert('tblinvoices', $data);
         $insert_id = $this->db->insert_id();
 
-                //handle_sales_attachments($insert_id,'invoice');
+//       handle_sales_attachments($insert_id,'invoice');
      //  rel_id($insert_id);
+
+
 
         if ($insert_id) {
             if (isset($custom_fields)) {
@@ -382,25 +387,6 @@ class Supplier_invoices_model extends CRM_Model
                                     'invoiceid' => $insert_id
                                 ));
                             }
-//                            if (total_rows('tblestimates', array(
-//                                    'invoiceid' => $or_merge->id
-//                                )) > 0) {
-//                                $this->db->where('invoiceid', $or_merge->id);
-//                                $estimate = $this->db->get('tblestimates')->row();
-//                                $this->db->where('id', $estimate->id);
-//                                $this->db->update('tblestimates', array(
-//                                    'invoiceid' => $insert_id
-//                                ));
-//                            } else if (total_rows('tblproposals', array(
-//                                    'invoice_id' => $or_merge->id
-//                                )) > 0) {
-//                                $this->db->where('invoice_id', $or_merge->id);
-//                                $proposal = $this->db->get('tblproposals')->row();
-//                                $this->db->where('id', $proposal->id);
-//                                $this->db->update('tblproposals', array(
-//                                    'invoice_id' => $insert_id
-//                                ));
-//                            }
                         }
                     } else {
                         $this->mark_as_cancelled($m);
@@ -1129,11 +1115,11 @@ class Supplier_invoices_model extends CRM_Model
      */
     public function delete($id, $merge = false)
     {
-        if (get_option('delete_only_on_last_invoice') == 1 && $merge == false) {
-            if (!is_last_invoice($id)) {
-                return false;
-            }
-        }
+//        if (get_option('delete_only_on_last_invoice') == 1 && $merge == false) {
+//            if (!is_last_invoice($id)) {
+//                return false;
+//            }
+//        }
         do_action('before_invoice_deleted', $id);
         $this->db->where('id', $id);
         $this->db->delete('tblinvoices');
@@ -1166,19 +1152,7 @@ class Supplier_invoices_model extends CRM_Model
                 ));
 
                 // if is converted from estimate set the estimate invoice to null
-                if (total_rows('tblestimates', array(
-                        'invoiceid' => $id
-                    )) > 0) {
-                    $this->db->where('invoiceid', $id);
-                    $estimate = $this->db->get('tblestimates')->row();
-                    $this->db->where('id', $estimate->id);
-                    $this->db->update('tblestimates', array(
-                        'invoiceid' => NULL,
-                        'invoiced_date' => NULL
-                    ));
-                    $this->load->model('estimates_model');
-                    $this->estimates_model->log_estimate_activity($estimate->id, 'not_estimate_invoice_deleted');
-                }
+                
             }
             $this->db->where('rel_type', 'invoice');
             $this->db->where('rel_id', $id);

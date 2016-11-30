@@ -1144,6 +1144,9 @@ function toggle_small_view(table, main_data) {
     _table.columns.adjust().draw(false);
     $(main_data).toggleClass('hide')
 }
+
+
+
 function stripTags(html) {
     var tmp = document.createElement("DIV");
     tmp.innerHTML = html;

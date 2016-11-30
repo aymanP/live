@@ -181,6 +181,9 @@ class Supplier_invoices extends Admin_controller
                 $id = $this->supplier_invoices_model->add($this->input->post());
                 if ($id) {
                     set_alert('success', _l('added_successfuly', _l('invoice')));
+
+//                    set_alert('modal');
+                    //$script = $this->session->set_flashdata($script);
                     redirect(admin_url('supplier_invoices/list_invoice/'));
                 }
             } else {
@@ -190,8 +193,10 @@ class Supplier_invoices extends Admin_controller
                 $success = $this->supplier_invoices_model->update($this->input->post(), $id);
                 if ($success) {
                     set_alert('success', _l('updated_successfuly', _l('invoice')));
+                }else{
+                    set_alert('danger', _l('updated_failed'));
                 }
-                redirect(admin_url('supplier_invoices/list_invoice/' . $id));
+                redirect(admin_url('supplier_invoices/list_invoice/'));
             }
         }
         if ($id == '') {
@@ -209,6 +214,7 @@ class Supplier_invoices extends Admin_controller
             $data['supplier_id'] = $this->input->get('supplier_id');
             $data['do_not_auto_toggle'] = true;
         }
+        
         $this->load->model('payment_modes_model');
         $data['payment_modes'] = $this->payment_modes_model->get();
         $this->load->model('taxes_model');
@@ -265,7 +271,8 @@ class Supplier_invoices extends Admin_controller
         $data['payments']    = $this->payments_model->get_invoice_payments($id);
         $data['activity']    = $this->supplier_invoices_model->get_invoice_activity($id);
         $data['invoice']     = $invoice;
-        $this->load->view('admin/supplier_invoices/invoice_preview_template', $data);
+        $this->load->view('admin/supplier_invoices/ ', $data);
+//        $this->load->view('admin/supplier_invoices/invoice_preview_template', $data);
     }
     public function get_invoices_total()
     {

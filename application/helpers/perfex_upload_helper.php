@@ -511,6 +511,7 @@ function handle_tasks_attachments($taskid)
  */
 function handle_sales_attachments($rel_id,$rel_type)
 {
+//    $_FILES = $file ;
 
     if(isset($_FILES['file']) && _perfex_upload_error($_FILES['file']['error'])){
         header('HTTP/1.0 400 Bad error');

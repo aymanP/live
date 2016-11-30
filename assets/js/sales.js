@@ -338,6 +338,33 @@ function init_invoice(id) {
         }, 600);
     }
 }
+
+function init_invoice_details(id) {
+    var _invoiceid = $('input[name="invoiceid"]').val();
+    // Check if invoice passed from url, hash is prioritized becuase is last
+    if (_invoiceid != '' && !window.location.hash) {
+        id = _invoiceid;
+        // Clear the current invoice value in case user click on the left sidebar invoices
+        $('input[name="invoiceid"]').val('');
+    } else {
+        // check first if hash exists and not id is passed, becuase id is prioritized
+        if(window.location.hash && !id) {
+            id = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+        }
+    }
+    if (typeof(id) == 'undefined' || id == '') { return; }
+    if (!$('body').hasClass('small-table')) {
+        modal('.table-invoices', '#display_file_');
+    }
+    $('input[name="invoiceid"]').val(id);
+    do_hash_helper(id);
+    $('#invoice').load(admin_url + 'invoices/get_invoice_data_ajax/' + id);
+    if (is_mobile()) {
+        $('html, body').animate({
+            scrollTop: $('#invoice').offset().top + 150
+        }, 600);
+    }
+}
 function init_supplier_invoice(id) {
     var _invoiceid = $('input[name="invoiceid"]').val();
     // Check if invoice passed from url, hash is prioritized becuase is last
@@ -353,7 +380,7 @@ function init_supplier_invoice(id) {
     }
     if (typeof(id) == 'undefined' || id == '') { return; }
     if (!$('body').hasClass('small-table')) {
-        toggle_small_view('.table-supplier_invoices', '#supplier_invoice');
+        show_modal('.table-supplier_invoices', '#supplier_invoice');
     }
     $('input[name="invoiceid"]').val(id);
     do_hash_helper(id);

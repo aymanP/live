@@ -9,12 +9,13 @@
             echo form_hidden('merge_current_invoice',$invoice->id);
             }
             ?>
-        <div class="row" id="merge">
-            <?php if(isset($invoice)){
-                $this->load->view('admin/supplier_invoices/merge_invoice',array('invoices_to_merge'=>$invoices_to_merge));
-                }
-                ?>
-        </div>
+        <?php echo form_open(admin_url('supplier_invoices/invoice/'.$invoice->id)); ?>
+<!--        <div class="row" id="merge">-->
+<!--            --><?php //if(isset($invoice)){
+//                $this->load->view('admin/supplier_invoices/merge_invoice',array('invoices_to_merge'=>$invoices_to_merge));
+//                }
+//                ?>
+<!--        </div>-->
         <div class="row">
             <div class="col-md-12 container ">
                 <p class="bold">
@@ -83,7 +84,7 @@
                             <label for="number"><?php echo _l('invoice_add_edit_number'); ?></label>
                             <div class="input-group" style="width:100%">
 <!--                        <span class="input-group-addon">--><?php //echo $prefix; ?><!--</span>-->
-                                <input type="text" name="number" class="form-control" value="<?php echo $_invoice_number; ?>" data-isedit="<?php echo $isedit; ?>" data-original-number="<?php echo $data_original_number; ?>">
+                                <input type="text" name="number" class="form-control" value="<?php echo $data_original_number; ?>" data-isedit="<?php echo $isedit; ?>" data-original-number="<?php echo $data_original_number; ?>">
                             </div>
                         </div>
                     </div>
@@ -156,8 +157,8 @@
                 <div class="form-group">
                     <label for="ht_amount"><?php echo _l('invoice_table_amount_heading'); ?></label>
                     <div class="input-group" style="width:100%">
-<!--                        <input type="text" name="ht_amount" style="width:100%" class="form-control" data-isedit="--><?php //echo $isedit; ?><!-- id="autocomplete_main" placeholder="--><?php //echo _l('invoice_subject_placeholder'); ?><!--">-->
-                        <input type="number" value="" class="form-control pull-left" name="ht_amount">
+                        <input type="text" name="subtotal" value="<?php echo $invoice->subtotal; ?>" class="form-control" data-isedit="<?php echo $isedit; ?> id="autocomplete_main" placeholder="<?php echo _l('invoice_subject_placeholder'); ?>">
+<!--                        <input type="number" value="" class="form-control pull-left" name="ht_amount">-->
                     </div>
                 </div>
             </div>
@@ -167,8 +168,8 @@
                 <div class="form-group">
                     <label for="ttc_amount"><?php echo _l('invoice_total'); ?></label>
                     <div class="input-group" style="width:100%">
-<!--                        <input type="text" name="ttc_amount" style="width:100%" class="form-control" data-isedit="--><?php //echo $isedit; ?><!-- id="autocomplete_main" placeholder="--><?php //echo _l('invoice_subject_placeholder'); ?><!--">-->
-                        <input type="number" value="" class="form-control pull-left" name="ttc_amount">
+                        <input type="text" name="total" value="<?php echo $invoice->total ?>" class="form-control" data-isedit="<?php echo $isedit; ?> id="autocomplete_main" placeholder="<?php echo _l('invoice_subject_placeholder'); ?>">
+<!--                        <input type="number" value="" class="form-control pull-left" name="ttc_amount">-->
 
                     </div>
                 </div>
@@ -184,9 +185,7 @@
                 <button type="submit" class="btn-tr btn btn-info mleft10 text-right pull-right" <?php if((isset($invoice) && $invoice->status == 2 && !is_admin()) || (isset($invoice) && $invoice->status == 5)){echo 'disabled';} ?>>
                 <?php echo _l('submit'); ?>
                 </button>
-                <?php if (has_permission('suppliers', '', 'create') || has_permission('suppliers', '', 'edit')) { ?>
-                    <a href="#" data-toggle="modal" data-target="#new_supplier_invoice" class="btn btn-info mbot15"><?php echo _l('assign_admin'); ?></a>
-                <?php } ?>
+<?php echo form_close() ?>
             </div>
         </div>
     </div>

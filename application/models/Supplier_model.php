@@ -762,8 +762,8 @@ class Supplier_model extends CRM_Model
     {
         $attachments              = array();
         $attachments['invoice']  = array();
-        $attachments['estimate']  = array();
-        $attachments['proposal']  = array();
+//        $attachments['estimate']  = array();
+//        $attachments['proposal']  = array();
 
         $attachments['contracts'] = array();
         $attachments['leads']     = array();
@@ -786,37 +786,8 @@ class Supplier_model extends CRM_Model
             }
         }
         // Estimates
-        $this->db->select('supplierid,id');
-        $this->db->where('supplierid', $id);
-        $this->db->from('tblestimates');
-        $estimates = $this->db->get()->result_array();
-        foreach ($estimates as $estimate) {
-            $this->db->where('rel_id', $estimate['id']);
-            $this->db->where('rel_type','estimate');
-            $_attachments = $this->db->get('tblsalesattachments')->result_array();
-            if (count($_attachments) > 0) {
-                foreach ($_attachments as $_att) {
-                    array_push($attachments['estimate'], $_att);
-                }
-            }
-        }
 
-        // Proposals
-        $this->db->select('rel_id,id');
-        $this->db->where('rel_id', $id);
-        $this->db->where('rel_type', 'supplier');
-        $this->db->from('tblproposals');
-        $proposals = $this->db->get()->result_array();
-        foreach ($proposals as $proposal) {
-            $this->db->where('rel_id', $proposal['id']);
-            $this->db->where('rel_type','proposal');
-            $_attachments = $this->db->get('tblsalesattachments')->result_array();
-            if (count($_attachments) > 0) {
-                foreach ($_attachments as $_att) {
-                    array_push($attachments['proposal'], $_att);
-                }
-            }
-        }
+
         // Contracts
         $this->db->select('supplier,id');
         $this->db->where('supplier', $id);

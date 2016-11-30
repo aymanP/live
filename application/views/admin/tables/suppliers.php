@@ -11,7 +11,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $custom_fields = get_custom_fields('suppliers', array(
-    'show_on_table' => 0
+    'show_on_table' => 1
 ));
 
 $aColumns = array('tblsuppliers.profile_image',
@@ -175,7 +175,7 @@ foreach ($rResult as $aRow) {
         $row[] = $_data;
     }
 
-    $options = '<div class="checkbox"><input type="checkbox" value="'.$aRow['supplierid'].'"><label></label></div>';
+    $options = '';
     $options .= icon_btn('suppliers/supplier/' . $aRow['supplierid'], 'pencil-square-o');
 //    if(has_permission('suppliers','','delete'))
 //    {

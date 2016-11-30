@@ -26,6 +26,7 @@
             init_supplier_invoice();
         });
     </script>
+
     </body>
     </html>
 

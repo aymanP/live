@@ -3196,5 +3196,7 @@ $lang['Contacts']    = 'Contacts' ;
 $lang['Contact']    = 'Contact' ;
 $lang['Home slider'] = 'Home slider';
 
+$lang['import_suppliers']            = 'Importer des fournisseurs';
+
 
 

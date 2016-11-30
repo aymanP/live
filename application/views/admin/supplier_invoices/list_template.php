@@ -25,6 +25,8 @@
             <?php if (has_permission('suppliers_invoices', '', 'create')) { ?>
                 <a href="#" data-toggle="modal" data-target="#new_supplier_invoice" class="btn btn-info pull-left new new-invoice-list"><?php echo _l('create_new_invoice'); ?></a>
             <?php } ?>
+
+
             <div class="display-block text-right">
                 <div class="btn-group pull-right mleft4 invoice-view-buttons btn-with-tooltip-group _filter_data" data-toggle="tooltip" data-title="<?php echo _l('filter_by'); ?>">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -86,7 +88,6 @@
 
                     </ul>
                 </div>
-                <a href="#" class="btn btn-default btn-with-tooltip toggle-small-view hidden-xs" onclick="toggle_small_view('.table-invoices','#supplier_invoice'); return false;" data-toggle="tooltip" title="<?php echo _l('invoices_toggle_table_tooltip'); ?>"><i class="fa fa-angle-double-left"></i></a>
                 <?php if(has_permission('invoices','','create')){ ?>
                     <a href="#" class="btn btn-default btn-with-tooltip" onclick="slideToggle('#stats-top'); return false;" data-toggle="tooltip" title="<?php echo _l('view_stats_tooltip'); ?>"><i class="fa fa-bar-chart"></i></a>
                 <?php } ?>
@@ -175,7 +176,7 @@
                                     <?php echo render_select('supplierid',$suppliers,array('supplierid','company'),'invoice_select_supplier',$selected,array(),array(),'',$auto_toggle_class); ?>
                                 </div>
                                 <?php
-                                if(!isset($invoice_from_project)){ ?>
+//                                if(isset($invoice_from_project)){ ?>
                                     <div class="form-group projects-wrapper<?php if(!isset($invoice) && !isset($supplier_id)){ echo ' hide';} ?>">
                                         <label for="project_id"><?php echo _l('project'); ?></label>
                                         <select name="project_id" class="selectpicker projects" data-live-search="true" data-width="100%" data-non-selected-text="<?php echo _l('dropdown_non_selected_tex'); ?>">
@@ -204,7 +205,7 @@
                                             ?>
                                         </select>
                                     </div>
-                                <?php } ?>
+<!--                                --><?php //} ?>
 
                                 <?php
                                 $next_invoice_number = get_option('next_invoice_number');
@@ -247,9 +248,9 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="description"><?php echo _l('invoice_subject'); ?></label>
+                                            <label for="subject"><?php echo _l('invoice_subject'); ?></label>
                                             <div class="input-group" style="width:100%">
-                                                <input type="text" name="description" style="width:100%" class="form-control" data-isedit="<?php echo $isedit; ?> id="autocomplete_main" placeholder="<?php echo _l('invoice_subject_placeholder'); ?>">
+                                                <input type="text" name="subject" style="width:100%" class="form-control" data-isedit="<?php echo $isedit; ?> id="autocomplete_main" placeholder="<?php echo _l('invoice_subject_placeholder'); ?>">
                                             </div>
                                         </div>
                                     </div>
@@ -343,7 +344,8 @@
 
                                 <input type="file" name="file" multiple aria-required="true" /> </br>
                                 <?php echo form_close(); ?>
-
+                                <div class="row mtop15" id="sales_uploaded_files_preview">
+                                </div>
                                 <button type="submit" class="btn-tr btn btn-info mleft10 text-right pull-right" <?php if((isset($invoice) && $invoice->status == 2 && !is_admin()) || (isset($invoice) && $invoice->status == 5)){echo 'disabled';} ?>>
                                     <?php echo _l('submit'); ?>
                                 </button>
@@ -351,21 +353,14 @@
                             </div>
                         </div>
                     </div>
-                    <!--                    </div>-->
 
-
-
-
-
-
-
-                    <!--- END MODAL BODY ---->
                 </div>
                 <!--                <div class="modal-footer">-->
                 <!--                    <button type="button" class="btn btn-default" data-dismiss="modal">--><?php //echo _l('close'); ?><!--</button>-->
                 <!--                    <button type="submit" class="btn btn-info">--><?php //echo _l('submit'); ?><!--</button>-->
                 <!--                </div>-->
             </div>
+
             <!-- /.modal-content -->
 
         </div>
@@ -373,4 +368,27 @@
     </div>
     <!-- /.modal -->
 <?php } ?>
+<!---->
+<!--<div class="modal fade" tabindex="-1" id="--><?php //echo 'display_file'?><!--" role="dialog">-->
+<!--    <div class="modal-dialog">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+<!--                <h4 class="modal-title">--><?php //echo _l('invoice_detail'); ?><!--</h4>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-12">-->
+<!--                       <img src="--><?php //echo site_url('uploads/invoices/'.$aRow['id'].'/'.get_supplier_invoice_attachments($aRow['id'])) ?><!--" />-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <!-- /.modal-content -->
+<!--    </div>-->
+<!--    <!-- /.modal-dialog -->
+<!--</div>-->
+
+
+
 

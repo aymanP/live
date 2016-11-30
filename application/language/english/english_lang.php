@@ -3153,3 +3153,15 @@ $lang['supplier_update_address_info_on_invoices']              = 'Update the shi
 $lang['invoice_dt_table_heading_supplier']  = 'Supplier';
 $lang['list_suppliers'] = 'All suppliers';
 $lang['invoices_suppliers'] = 'Invoices';
+
+
+$lang['invoice_select_supplier']      = 'Supplier';
+$lang['invoice_add_edit_supplier_note'] = 'Supplier\'s Note';
+$lang['supplier_have_invoices_by']       = 'Invoices with the status %s';
+$lang['supplier_attachments_file']                             = 'File';
+$lang['Contacts']    = 'Contacts' ;
+$lang['Contact']    = 'Contact' ;
+$lang['Home slider'] = 'Home slider';
+
+$lang['import_suppliers']            = 'Import suppliers';
+

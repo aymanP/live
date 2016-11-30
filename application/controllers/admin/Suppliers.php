@@ -263,7 +263,9 @@ class Suppliers extends Admin_controller
     {
         $this->load->model('supplier_model');
         if (has_permission('suppliers', '', 'delete') || is_supplier_admin($customer_id)) {
-            $this->supplier_model->delete_attachment($id);
+           $sucess = $this->supplier_model->delete_attachment($id);
+
+            if($sucess);
         }
         redirect($_SERVER['HTTP_REFERER']);
     }
