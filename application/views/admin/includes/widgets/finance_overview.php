@@ -6,12 +6,12 @@
 
       <div class="row home-summary">
        <?php if(has_permission('invoices','','view')){
-        $total_invoices = total_rows('tblinvoices');
-        $total_unpaid = total_rows('tblinvoices',array('status'=>1));
-        $total_overdue = total_rows('tblinvoices',array('status'=>4));
-        $total_not_sent = total_rows('tblinvoices',array('sent'=>0,'status !='=>2));
-        $total_partialy = total_rows('tblinvoices',array('status'=>3));
-        $total_paid = total_rows('tblinvoices',array('status'=>2));
+        $total_invoices = total_rows('tblinvoices',array('clientid !='=>0));
+        $total_unpaid = total_rows('tblinvoices',array('status'=>1,'clientid !='=>0));
+        $total_overdue = total_rows('tblinvoices',array('status'=>4,'clientid !='=>0));
+        $total_not_sent = total_rows('tblinvoices',array('sent'=>0,'status !='=>2,'clientid !='=>0));
+        $total_partialy = total_rows('tblinvoices',array('status'=>3,'clientid !='=>0));
+        $total_paid = total_rows('tblinvoices',array('status'=>2,'clientid !='=>0));
         $percent_unpaid = ($total_invoices > 0 ? number_format(($total_unpaid * 100) / $total_invoices,2) : 0);
         $percent_overdue = ($total_invoices > 0 ? number_format(($total_overdue * 100) / $total_invoices,2) : 0);
         $percent_not_sent = ($total_invoices > 0 ? number_format(($total_not_sent * 100) / $total_invoices,2) : 0);

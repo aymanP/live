@@ -3,8 +3,8 @@
     <div class="col-xs-12 col-md-6 col-sm-6 col-lg-3 mbot15">
       <div class="top_stats_wrapper">
          <?php
-         $total_invoices = total_rows('tblinvoices','status NOT IN (5)');
-         $total_invoices_awaiting_payment = total_rows('tblinvoices','status NOT IN (2,5)');
+         $total_invoices = total_rows('tblinvoices','status NOT IN (5) AND clientid != 0');
+         $total_invoices_awaiting_payment = total_rows('tblinvoices','status NOT IN (2,5) AND clientid != 0');
          $percent_total_invoices_awaiting_payment = ($total_invoices > 0 ? number_format(($total_invoices_awaiting_payment * 100) / $total_invoices,2) : 0);
          ?>
          <h5 class="text-uppercase text-muted bold"><i class="hidden-sm fa fa-balance-scale"></i> <?php echo _l('invoices_awaiting_payment'); ?>
@@ -47,12 +47,12 @@
    <div class="col-xs-12 col-md-6 col-sm-6 col-lg-3 mbot15">
       <div class="top_stats_wrapper">
         <?php
-        $_where = '';
+        $_where = 'tblprojects.clientid != 0';
         if(!has_permission('projects','','view')){
-            $_where = 'id IN (SELECT project_id FROM tblprojectmembers WHERE staff_id='.get_staff_user_id().')';
+            $_where = ' AND  id IN (SELECT project_id FROM tblprojectmembers WHERE staff_id='.get_staff_user_id().')';
         }
         $total_projects = total_rows('tblprojects',$_where);
-        $where = ($_where == '' ? '' : $_where.' AND ').'status = 2';
+        $where = ($_where == '' ? '' : $_where.' AND ').'status = 2 AND clientid != 0';
         $total_projects_in_progress = total_rows('tblprojects',$where);
         $percent_in_progress_projects = ($total_projects > 0 ? number_format(($total_projects_in_progress * 100) / $total_projects,2) : 0);
         ?>

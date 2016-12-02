@@ -3,7 +3,7 @@
   <div class="panel_s">
     <div class="panel-body">
       <?php
-      $where_all = array();
+      $where_all = array('clientid !='=>0);
       if(isset($project)){
        $where_all['project_id'] = $project->id;
      }
@@ -12,7 +12,7 @@
      <div class="row text-left quick-top-stats">
       <?php foreach($invoices_statuses as $status){ if($status == 5){continue;}
 
-      $where = array('status'=>$status);
+      $where = array('status'=>$status,'clientid !='=>0);
       if(isset($project)){
        $where['project_id'] = $project->id;
      }

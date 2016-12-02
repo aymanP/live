@@ -124,24 +124,24 @@ foreach ($rResult as $aRow) {
         if ($aColumns[$i] == 'number') {
             // If is from client area table
             if (is_numeric($supplierid)) {
-                $__data = '<a target="_blank" href="'.site_url('uploads/invoices/'.$aRow['id'].'/'.get_supplier_invoice_attachments($aRow['id'])).'">' . $aRow['number'].'</a><br />' ;
+                $__data = '<a  href="#" data-toggle="modal" data-target="#display_file">' . $aRow['number'].'</a><br />' ;
             } else {
               //  $__data = '<a href="'.site_url('uploads/invoices/'.$aRow['id'].'/'.$file['file_name']).">' . format_invoice_number($aRow['id']) . '</a><br />';onclick="init_invoice(' . $aRow['id'] . '); return false;">'
                 if(has_permission('invoices','','download') )
-                $__data = '<a href="#" data-toggle="modal" data-target="#display_file">' .$aRow['number'] ; //'.site_url('uploads/invoices/'.$aRow['id'].'/'.get_supplier_invoice_attachments($aRow['id'])).'
+                $__data = '<a href="#" data-toggle="modal" data-target="#display_file">' .$aRow['number'].'</a><br/>'  ; //'.site_url('uploads/invoices/'.$aRow['id'].'/'.get_supplier_invoice_attachments($aRow['id'])).'
 //                $__data.= '<input type="hidden" id="invoiceid__" name="invoiceid__" onclick="keepId(this)" value ="'.$aRow['id'].'"/>'. '</a><br />';
 //                $__data = '<a target="_blank" href="'.site_url('uploads/invoices/'.$aRow['id'].'/'.get_supplier_invoice_attachments($aRow['id'])).'">' .$aRow['number'] . '</a><br />';
 //                $__data = '<a href="'.'localhost/CRM/live/uploads/purchases/5/templatemo_image_03-1.jpg'.'">' . format_invoice_number($aRow['id']) . '</a><br />';
                 //localhost/CRM/live/uploads/purchases/5/templatemo_image_03-1.jpg
                 //else   $__data = '<a href="#" onclick="init_invoice(' . $aRow['id'] . '); return false;">' . format_invoice_number($aRow['id']) . '</a><br />';
-$__data .= '<div class="modal fade in" tabindex="-1" id="display_file" role="dialog" style="width: 90%;height: 90%;padding-right: 5px;margin: 5%;">'.
-            '<div class="modal-dialog" style="padding: 0;margin: 0;width: 100%;height: 100%;">'.
-                '<div class="modal-content" style="margin: 0;width: 90%;height: 90%;">'.
+$__data .= '<div class="modal fade in" tabindex="-1" id="display_file" role="dialog" style="height: 90%;margin: 5%;">'.
+            '<div class="modal-dialog" style="margin: 0;width: 100%;height: 100%;">'.
+                '<div class="modal-content" style="margin: 0;height: 90%;">'.
                     '<div class="modal-header">'.
                         '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>'.
                         '<h4 class="modal-title">invoice_detail</h4>'.
                     '</div>'.
-                    '<div class="modal-body">'.
+                    '<div class="modal-body">'.format_invoice_status($aRow['status']).'<br>'.
                         '<div class="row">'.
                             '<div class="col-md-12">'.
                                 '<div class="col-md-6">'.

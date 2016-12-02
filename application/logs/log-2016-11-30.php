@@ -6827,3 +6827,824 @@ ERROR - 2016-11-30 15:59:11 --> Could not find the language line "invoice_delete
 ERROR - 2016-11-30 15:59:11 --> Could not find the language line "invoice_delete_tooltip"
 ERROR - 2016-11-30 15:59:11 --> Could not find the language line "invoice_delete_tooltip"
 ERROR - 2016-11-30 15:59:11 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:19 --> Could not find the language line "suppliers_sort_all"
+ERROR - 2016-11-30 16:25:48 --> Could not find the language line "supplier_invoices"
+ERROR - 2016-11-30 16:25:49 --> Could not find the language line "invoice_subject"
+ERROR - 2016-11-30 16:25:49 --> Could not find the language line "invoice_subject_placeholder"
+ERROR - 2016-11-30 16:25:49 --> Could not find the language line "add_edit_description"
+ERROR - 2016-11-30 16:25:49 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:25:49 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:49 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:49 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:49 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:49 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:49 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:50 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:51 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:51 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:51 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:51 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:25:51 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:25:51 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 16:26:40 --> Could not find the language line "supplier_invoices"
+ERROR - 2016-11-30 16:26:40 --> Could not find the language line "invoice_subject"
+ERROR - 2016-11-30 16:26:40 --> Could not find the language line "invoice_subject_placeholder"
+ERROR - 2016-11-30 16:26:40 --> Could not find the language line "add_edit_description"
+ERROR - 2016-11-30 16:26:41 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:26:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:43 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 16:26:51 --> Could not find the language line "supplier_invoices"
+ERROR - 2016-11-30 16:26:51 --> Could not find the language line "invoice_subject"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_subject_placeholder"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "add_edit_description"
+ERROR - 2016-11-30 16:26:52 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:52 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:26:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:26:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 16:27:58 --> Could not find the language line "supplier_invoices"
+ERROR - 2016-11-30 16:27:58 --> Could not find the language line "invoice_subject"
+ERROR - 2016-11-30 16:27:58 --> Could not find the language line "invoice_subject_placeholder"
+ERROR - 2016-11-30 16:27:58 --> Could not find the language line "add_edit_description"
+ERROR - 2016-11-30 16:27:59 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:27:59 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:28:00 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:28:01 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 16:29:52 --> Could not find the language line "supplier_invoices"
+ERROR - 2016-11-30 16:29:52 --> Could not find the language line "invoice_subject"
+ERROR - 2016-11-30 16:29:52 --> Could not find the language line "invoice_subject_placeholder"
+ERROR - 2016-11-30 16:29:52 --> Could not find the language line "add_edit_description"
+ERROR - 2016-11-30 16:29:53 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:53 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:29:54 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:54 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:55 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:55 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:55 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:55 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:55 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:55 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:55 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:55 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:29:55 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:30:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:30:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:30:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:30:55 --> Could not find the language line "supplier_invoices"
+ERROR - 2016-11-30 16:30:55 --> Could not find the language line "invoice_subject"
+ERROR - 2016-11-30 16:30:55 --> Could not find the language line "invoice_subject_placeholder"
+ERROR - 2016-11-30 16:30:55 --> Could not find the language line "add_edit_description"
+ERROR - 2016-11-30 15:30:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:30:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:30:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:30:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:30:57 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:57 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:30:58 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:30:59 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 16:32:17 --> Could not find the language line "supplier_invoices"
+ERROR - 2016-11-30 16:32:17 --> Could not find the language line "invoice_subject"
+ERROR - 2016-11-30 16:32:17 --> Could not find the language line "invoice_subject_placeholder"
+ERROR - 2016-11-30 16:32:17 --> Could not find the language line "add_edit_description"
+ERROR - 2016-11-30 15:32:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:32:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:32:18 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:32:18 --> Some variable did not contain a value.
+ERROR - 2016-11-30 15:32:18 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:32:18 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:18 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:18 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:18 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:18 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:19 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:20 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:20 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:20 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:20 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:20 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:20 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:20 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:20 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 16:32:39 --> Could not find the language line "supplier_invoices"
+ERROR - 2016-11-30 16:32:39 --> Could not find the language line "invoice_subject"
+ERROR - 2016-11-30 16:32:39 --> Could not find the language line "invoice_subject_placeholder"
+ERROR - 2016-11-30 16:32:39 --> Could not find the language line "add_edit_description"
+ERROR - 2016-11-30 15:32:39 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:32:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:32:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:32:40 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:32:40 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 15:32:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:32:40 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:40 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:40 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:40 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:40 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:41 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:32:42 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:32:42 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 16:36:22 --> Could not find the language line "supplier_invoices"
+ERROR - 2016-11-30 16:36:23 --> Could not find the language line "invoice_subject"
+ERROR - 2016-11-30 16:36:23 --> Could not find the language line "invoice_subject_placeholder"
+ERROR - 2016-11-30 16:36:23 --> Could not find the language line "add_edit_description"
+ERROR - 2016-11-30 15:36:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:36:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:36:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:36:24 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:36:24 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 15:36:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:36:24 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:24 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:24 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:24 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:24 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:24 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:24 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:24 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:24 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:24 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Some variable did not contain a value.
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:25 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:26 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 16:36:26 --> Could not find the language line "invoice_delete_tooltip"
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:36:26 --> 404 Page Not Found: Uploads/invoices
+ERROR - 2016-11-30 15:37:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:37:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:37:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:37:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:38:42 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:38:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:38:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:38:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:49:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:49:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:49:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:49:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:53:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:53:26 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:53:26 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:53:26 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:56:22 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:56:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:56:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:56:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:57:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:57:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:57:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:57:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:58:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:58:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:58:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:58:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:59:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:59:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:59:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:59:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:59:52 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:59:52 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:59:52 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 15:59:52 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:01:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:01:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:01:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:01:59 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:02:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:02:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:02:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:02:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:02:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:02:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:02:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:02:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:03:27 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:03:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:03:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:03:29 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:04:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:04:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:04:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:04:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:08:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:08:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:08:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:08:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 17:08:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\manage.php 92
+ERROR - 2016-11-30 16:08:55 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:08:55 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:08:55 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:08:56 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:08:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:08:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:08:58 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:08:59 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:15 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 16:09:16 --> 404 Page Not Found: Assets/plugins
+ERROR - 2016-11-30 17:10:22 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\manage.php 92
+ERROR - 2016-11-30 17:10:27 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\manage.php 92
+ERROR - 2016-11-30 17:10:30 --> Severity: Warning --> Invalid argument supplied for foreach() C:\wamp64\www\CRM\live\application\views\admin\estimates\manage.php 92
+ERROR - 2016-11-30 17:12:06 --> Severity: Warning --> Missing argument 1 for generate_slider(), called in C:\wamp64\www\CRM\live\application\views\admin\utilities\home_slider.php on line 6 and defined C:\wamp64\www\CRM\live\application\helpers\perfex_html_helper.php 916
